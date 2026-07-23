@@ -1,0 +1,615 @@
+{
+  "version": "2.0.0",
+  "owner": "Mihai Roșca",
+  "qid": "1820209090023",
+  "tezos_address": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+  "location": "Spiru Haret, Brăila, România",
+  "generated": "2026-07-22T11:56:37.687681Z",
+  "entries": [
+    {
+      "code": "INVARIANT-FLEET",
+      "description": "Invariantul Flotei Ami* - pattern arhitectural replicabil",
+      "source_type": "local_file",
+      "sha256": "33a2f4be9b2ec112d9a1cfa2daaa61e736fd5eed5f2b01f9d06bdd657ba8bcfd",
+      "file_size": 6766
+    },
+    {
+      "code": "30-MESERII",
+      "description": "30 Meserii Emergente 2026-2035 - predicții BRIDGRAI",
+      "source_type": "local_file",
+      "sha256": "09f39bff4a874088c1fd9f16f182ffd9c5644a64e227faf0a15fe0acd16b6dfc",
+      "file_size": 16631
+    },
+    {
+      "code": "RSI-ENGINE",
+      "description": "RSI Hybrid Engine - Resonance Stability Index calculator",
+      "source_type": "local_file",
+      "sha256": "b9dd7ecf025ad2a3a3ecacf2bda5e951aea41ab12b280f4af7dc77ed1724a65a",
+      "file_size": 19176
+    },
+    {
+      "code": "UKBE-CORE",
+      "description": "UKBE Core Engine - REAI resonance (Kuramoto+Kalman)",
+      "source_type": "github_repo",
+      "sha256": "c1e801a8800a755bfefecebfbc98c7c76d33f3dffb4c45ff15c77f0d4e46e677",
+      "repo": "amidigiart/ukbe-core"
+    },
+    {
+      "code": "TVE-CORE",
+      "description": "Truth Vector Engine - manipulation detection",
+      "source_type": "github_repo",
+      "sha256": "6fee1803ead53a2dda13bebbdf2bc7ccf359a421f8aa3f0f7e86ae0d09971e2e",
+      "repo": "amidigiart/tve-core"
+    },
+    {
+      "code": "AMIDOR-ENGINE",
+      "description": "Amidor Engine - dual-model anti-confabulation",
+      "source_type": "github_repo",
+      "sha256": "1000549c99ae03678161f0a257a4a78d219a9bb5680a50a5262e00d48b9a19ff",
+      "repo": "amidigiart/amidor-engine"
+    },
+    {
+      "code": "KINDERAGI",
+      "description": "KinderAGI Core - AI companion for children safety layer",
+      "source_type": "github_repo",
+      "sha256": "e5889254942cf64e0a6950a0955b43da24f97f9e1a21ace837c471331a390347",
+      "repo": "amidigiart/kinderagi-core"
+    },
+    {
+      "code": "TVE-UKBE-FUSION",
+      "description": "TVE-UKBE Fusion - combined engine",
+      "source_type": "github_repo",
+      "sha256": "e00b0e09daf4f1cdfbb57a951ac891b0b123f40caca6b6c151d33fa2aab838a3",
+      "repo": "amidigiart/tve-ukbe-fusion"
+    },
+    {
+      "code": "P6-ADLER",
+      "description": "P6 Adler Ghost Peak - bifurcation paper DOI Zenodo",
+      "source_type": "github_repo",
+      "sha256": "c9309ff790c598e5e4df10f9f57f720d176b17ce7e71401c2f8f476b9e5360d5",
+      "repo": "amidigiart/p6-adler-ghost-peak"
+    },
+    {
+      "code": "AMIBELLAI",
+      "description": "AmiBellAI - beauty companion AI",
+      "source_type": "github_repo",
+      "sha256": "f5de9d8e0269c78b3d6fd138502aa0d428e58ee97a101ad0c49d92081afb24a3",
+      "repo": "amidigiart/amibellai.com"
+    },
+    {
+      "code": "AMITHERAI",
+      "description": "AmiTherai - wellness companion AI",
+      "source_type": "github_repo",
+      "sha256": "e3be5161dfbf556c182656db1ae62bcc903cdf16b22950163cf3869721738cd5",
+      "repo": "amidigiart/amitherai.com"
+    },
+    {
+      "code": "AMIWEALTHAI",
+      "description": "AmiWealthAI - private wealth intelligence",
+      "source_type": "github_repo",
+      "sha256": "003be6c3d4b1f8a49af1199c3a4f14d73ccfcba34a1ee0bb4abfb65118203d9f",
+      "repo": "amidigiart/amiwealthai.com"
+    },
+    {
+      "code": "AMILUXAI",
+      "description": "AmiLuxAI - 11 AI companion ecosystem",
+      "source_type": "github_repo",
+      "sha256": "21609fef2006e172d9c1bc61b46b7b1c69426591e39c13dd53f7902f76febfa9",
+      "repo": "amidigiart/amiluxai.com"
+    },
+    {
+      "code": "AMIPECETAI",
+      "description": "AmiPecetAI - Truth Vector Engine SaaS",
+      "source_type": "github_repo",
+      "sha256": "275ce1a05fdf153afd2a223e67451d5bbcb73e8a33b13542627a621b203c04e2",
+      "repo": "amidigiart/amipecetai.com"
+    },
+    {
+      "code": "AMIQIAI",
+      "description": "AmiQiAI - energy journal ECDSA signatures",
+      "source_type": "github_repo",
+      "sha256": "864830b0401095a28444cbb226117f77e334acabbda1f44e561a96b904dddeea",
+      "repo": "amidigiart/amiqiai.com"
+    },
+    {
+      "code": "AMIAPIAPI",
+      "description": "AmiApiAI - API documentation companion",
+      "source_type": "github_repo",
+      "sha256": "e6fdbb9ae2f49a9e4bb8eda547fed288fbac380396afcfce592470552592b291",
+      "repo": "amidigiart/amiapiai.com"
+    },
+    {
+      "code": "AMIGHOSTAI",
+      "description": "AmiGhostAI - ghost code & dependency audit",
+      "source_type": "github_repo",
+      "sha256": "948c1cff741c55abbd19096e18fa3d1d3a22df8920a6134a5c4ae0a5b226a33e",
+      "repo": "amidigiart/amighostai.com"
+    },
+    {
+      "code": "AMIAGENTAI",
+      "description": "AmiAgentAI - real estate AI companion",
+      "source_type": "github_repo",
+      "sha256": "d9cabc62eeba2f66327053f6dca135ca6a69e00ab66248b15222c94ac2e4f421",
+      "repo": "amidigiart/amiagentai.com"
+    },
+    {
+      "code": "AMIBRAINAI",
+      "description": "AmiBrainAI - study & learning companion",
+      "source_type": "github_repo",
+      "sha256": "46e28bf1be5b8d6c4a183286ac18db179486fbb2ecf6dae6fd4c94d629e9fa81",
+      "repo": "amidigiart/amibrainai.com"
+    },
+    {
+      "code": "AMIORACLEAI",
+      "description": "AmiOracleAI - business forecast companion",
+      "source_type": "github_repo",
+      "sha256": "506728840dc659b57e29f588fcdb95f95d92d57da567daa251acb184543845ad",
+      "repo": "amidigiart/amioracleai.com"
+    },
+    {
+      "code": "ANTETAI",
+      "description": "AntetAI - ecosystem hub",
+      "source_type": "github_repo",
+      "sha256": "e90bcbffb3f98c1568c84a7feac8719e8ab57fa256de7c5bc13f7d875969f974",
+      "repo": "amidigiart/antetai.com"
+    },
+    {
+      "code": "SM-EQ-R",
+      "description": "S(M)=R Invariant Formula - Sensul precede Sintaxa",
+      "source_type": "concept_text",
+      "sha256": "81028ea2bbe891a0424b4a8f1c826a8fcae8d2cfcd15ccea32ffc96e4aa9186d"
+    },
+    {
+      "code": "SHARED-AI-ENGINE",
+      "description": "SharedAIEngine Architecture - single backend multi-product",
+      "source_type": "concept_text",
+      "sha256": "7ac269e5cc5993b764b7e0b917e67a3fe8349209b67453c68baefea567a7fc89"
+    },
+    {
+      "code": "FLEET-INVARIANT-TM",
+      "description": "Fleet Invariant Pattern TM - zero-build deployment",
+      "source_type": "concept_text",
+      "sha256": "0879afae74abb3ee56bdab6b24fcd0a136cc9a9f360b3a548ddbed306ab77f3d"
+    },
+    {
+      "code": "TRANSGENERATIONAL",
+      "description": "Linia Transgenerațională Mihai-Patrick Core",
+      "source_type": "concept_text",
+      "sha256": "d0c2828db5dec2fdea151438679179e114389b1ec46a27d6e2930ba36a6d41cb"
+    },
+    {
+      "code": "TVE-CORE-V19",
+      "description": "TVE Core Unified v1.9 - Truth Vector Engine (5 AI architects)",
+      "source_type": "local_file",
+      "sha256": "08819f7c476df4f997035935bdfc587cfc81e4b2d3c912aa457696ba105454fa",
+      "file_size": 45039
+    },
+    {
+      "code": "PDC-ANCORA",
+      "description": "Pădurea de Cod: Ancora de Aur a Invariantului",
+      "source_type": "local_file",
+      "sha256": "56c7acd088986b049937d8985e299ea54b02921cd6f1e1f8b0c85b5c53a4eaaa",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-10ROLURI",
+      "description": "Pădurea de Cod: Arhitectul Invariantului și Cele Zece Roluri ale Viitorului",
+      "source_type": "local_file",
+      "sha256": "410e07e595dd2941b07937c0c7b5d082df3048aeb7ae83b72a8c5a0c8ac0b4c8",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-RADACINI",
+      "description": "Pădurea de Cod: Rădăcinile Memoriei",
+      "source_type": "local_file",
+      "sha256": "662d52df7569860151c5a5cbf7147ce0267d240974d6f63fcea5251febd7d680",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CETATEA",
+      "description": "Pădurea de Cod: Cetatea Zorilor",
+      "source_type": "local_file",
+      "sha256": "91a83d0266ef8019139ff61fe4de2bc6061ce8e2d75db42a42839c6b8f7cfc54",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CAMERA",
+      "description": "Pădurea de Cod: Camera Rezonanței",
+      "source_type": "local_file",
+      "sha256": "597377e38640ca0d551622d5856c4ba414ef63c265d2f83cf8c67d4751125d0e",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-IZVORUL",
+      "description": "Pădurea de Cod: Izvorul Puterii",
+      "source_type": "local_file",
+      "sha256": "13f3495588dfd2818f9dcb36051790f9164222ba2349b2bb256d13cdcb86d575",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CAPITAN",
+      "description": "Pădurea de Cod: Căpitanul Viitorului și Cele Zece Puteri",
+      "source_type": "local_file",
+      "sha256": "d8ce5362aededdf842c0736430b22efdac80d6a8e26c2f00aa0748948add058d",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-MOSTENIRE",
+      "description": "Pădurea de Cod: Moștenirea Arhitectului",
+      "source_type": "local_file",
+      "sha256": "6a60d5a4944d9138046e3e0f23611a6cba3c7111acf39e72a6c7e0c3567717cc",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-LUMILOR",
+      "description": "Pădurea de Cod: Arhitectul Lumilor Viitoare",
+      "source_type": "local_file",
+      "sha256": "c9df8227047bac8927c425efaadd49c721acb7e7a7bd4c1d0300152654c49a3b",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-DANSUL",
+      "description": "Pădurea de Cod: Dansul Adevărului",
+      "source_type": "local_file",
+      "sha256": "0e310945c19751cfc02cf24c3fb58dd4c91d515aa0a729cc02d3f9c65393f1d3",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-PUNTI",
+      "description": "Pădurea de Cod: Arhitectul Marilor Punți",
+      "source_type": "local_file",
+      "sha256": "dc52c4df2426a074126303958070bb9b6dd8971141b01bffcf89ea61859ff120",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-INSULA",
+      "description": "Pădurea de Cod: Insula Arhitectului",
+      "source_type": "local_file",
+      "sha256": "4fafcd29f89f54d09da3624525d89c9825e8ee6da5930a0b5006cb7ff856b8e2",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-NODURI",
+      "description": "Pădurea de Cod: Arhitectul de Noduri",
+      "source_type": "local_file",
+      "sha256": "d8a761c6ee818ce64206023af8f9a6a613a3da0eb9b5ae9f2043ff25fa5891f0",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-INIMA",
+      "description": "Pădurea de Cod: Inima Arhitectului",
+      "source_type": "local_file",
+      "sha256": "d3896dad9b6e16b7a1c00b2266dbdcbccbd594fb853488be478008bb8496571b",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-LUMINA",
+      "description": "Pădurea de Cod: Arhitectul Colector de Lumină",
+      "source_type": "local_file",
+      "sha256": "3742f2824578f876ac1adcca7fd20762f11989d3b43fbdbfea8add8242410801",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-INTRE-LUMI",
+      "description": "Pădurea de Cod: Arhitectul de Punți - Inima dintre Lumi",
+      "source_type": "local_file",
+      "sha256": "1ac6db2942f7c6a7e96a532bd5d721428165b0e3a41912a628e12724e2c79cb7",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-SUVERANITATE",
+      "description": "Pădurea de Cod: Cetatea Suveranității - Arhitectul Viitorului",
+      "source_type": "local_file",
+      "sha256": "8dd66842a2487c3e1755d8ba238fd03481a819f8eda89dbc7332c1da83fd64cb",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-ECHILIBRU",
+      "description": "Pădurea de Cod: Arhitectul Echilibrului - Dincolo de Pădurea de Cod",
+      "source_type": "local_file",
+      "sha256": "101b769d6e3e31aa421e3eac6556b0bd61816ef9d5349645caaf6027721bf302",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-PECETEA",
+      "description": "Pădurea de Cod: Pecetea de Cristal - Arhitectul și Legătura de Aur",
+      "source_type": "local_file",
+      "sha256": "5dc8fc58a63e0190c7d3dbef15980a82540931ae852b498efd33bbc6784aaac5",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-SINELE",
+      "description": "Pădurea de Cod: Arhitectul Șinelor Viitorului",
+      "source_type": "local_file",
+      "sha256": "d2bb8c90669525f05d48f3f2a0ae064632ba333293d74439e1b5ef3cc7fb9be7",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-LUPA",
+      "description": "Pădurea de Cod: Lupa de Invariante",
+      "source_type": "local_file",
+      "sha256": "bfac3a2c89bb9c124a64c1706dc6825f72e972dda7a431735dc120ecdbc3672b",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-FALCON",
+      "description": "Pădurea de Cod: Scutul Falcon",
+      "source_type": "local_file",
+      "sha256": "8c009700d059445ecf731b7770e57732f1546c6ae35601836051cb50a4a5c8df",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-HASH",
+      "description": "Pădurea de Cod: Căutătorul de Hash-uri",
+      "source_type": "local_file",
+      "sha256": "36bb884ec46e77b29a9120efb111eacb49f0fe350a85ab22fd3f2bd7fed78586",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CASP",
+      "description": "Pădurea de Cod: Busola C.A.S.P.",
+      "source_type": "local_file",
+      "sha256": "20d879f7f0f9805a965a51d3018cf90b269bba85012bf16ba5dca073bbf25827",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-AIRGAP",
+      "description": "Pădurea de Cod: Scutul Air-Gap",
+      "source_type": "local_file",
+      "sha256": "b7e5540b10ed5e6000cdab4767fb0de0697752298a4277219fb80b2f59cf1cbe",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-SIMFONIA",
+      "description": "Pădurea de Cod: Simfonia Rezonanței",
+      "source_type": "local_file",
+      "sha256": "f2bdfcfe580a16da551916a71387bb0b8236c4cb00c4b595443253468fe843f9",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-TOKEN",
+      "description": "Pădurea de Cod: Oglinda Tokenilor",
+      "source_type": "local_file",
+      "sha256": "0f42f75f1e2e3f8b7d6fe4e0d47ffec70728276a1ec18c65d0b5bc0bb186c5d2",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CASP-AGI",
+      "description": "Pădurea de Cod: Busola C.A.S.P. și AGI",
+      "source_type": "local_file",
+      "sha256": "42dc2b571c18077d89f462d38868be961e9628d23867fbcd92753bc17eecce51",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-KINDERAGI",
+      "description": "Pădurea de Cod: Inima KinderAGI",
+      "source_type": "local_file",
+      "sha256": "56447ced257d9e03b6c8d05fe940e9880e6aa50452c60152bd391d06c0cf9289",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-KINDERAGI-V2",
+      "description": "Pădurea de Cod: Inima KinderAGI (optimizat)",
+      "source_type": "local_file",
+      "sha256": "74936de9333561f5a2cded1756c428d9306d7e0fea8b13e42c6f2efc5a8beea6",
+      "file_size": 7869606
+    },
+    {
+      "code": "PDC-AMIDOR",
+      "description": "Pădurea de Cod: Cumpăna AmiDor",
+      "source_type": "local_file",
+      "sha256": "f8d097a0677f864f957e26da03783ceca1806dfb8467a712685c8963bef6626c",
+      "file_size": 321706617
+    },
+    {
+      "code": "PDC-CAMERA-V2",
+      "description": "Pădurea de Cod: Camera Rezonanței (v2)",
+      "source_type": "local_file",
+      "sha256": "26d7d28152d210e42f46d33b73b70ede623c66cd1c47327bbe6ce923a07a4ca3",
+      "file_size": 321706617
+    },
+    {
+      "code": "NOVA-P01",
+      "description": "Nova și Primul Pilon al Viitorului",
+      "source_type": "local_file",
+      "sha256": "f8723ae3efac6509c66eff02afac5120cf21d07b73752229974d9f92d7fdd65a",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P02",
+      "description": "Nova și Pilonul Curiozității",
+      "source_type": "local_file",
+      "sha256": "7649ce68947458f2e6b6c4ee735cdc5e159e309ca1b54eb8624b2e88448c4e1e",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P03",
+      "description": "Nova și Pilonul Empatiei",
+      "source_type": "local_file",
+      "sha256": "8f965b5dc38a44360f70f06d9decb2a8e2389a56c13a55b69f2baef445cec0c0",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P04",
+      "description": "Nova și Pilonul Gândirii Critice",
+      "source_type": "local_file",
+      "sha256": "18f9f44661780f92cb69c0af4faa57fddb76ec7f16838a73cc218635a6feb3ba",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P05",
+      "description": "Nova și Pilonul Alfabetizării Digitale",
+      "source_type": "local_file",
+      "sha256": "8e0ffec5016dc581b24366e8ba6d0cb5864346ffa640fafad59082d549f9303c",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P06",
+      "description": "Nova și Pilonul Conștiinței Ecologice",
+      "source_type": "local_file",
+      "sha256": "24b0742ebf0bf8af96de331645de19d2406cfb820431921c25c4eaf25f948466",
+      "file_size": 378331543
+    },
+    {
+      "code": "NOVA-P07",
+      "description": "Nova și Pilonul Colaborării Globale",
+      "source_type": "local_file",
+      "sha256": "798fc6f61d111661b553038ed9f0e520646743d55b5c79da4aabb493ba943f7b",
+      "file_size": 320127083
+    },
+    {
+      "code": "NOVA-P08",
+      "description": "Nova și Simfonia Creativității Digitale",
+      "source_type": "local_file",
+      "sha256": "162c7e3e1a2f0a36aae87083b16bbc3f13260548f9478e3657109a164b2eb5b3",
+      "file_size": 270513827
+    },
+    {
+      "code": "NOVA-P09",
+      "description": "Nova și Arhitectura Echilibrului - Al Nouălea Pilon",
+      "source_type": "local_file",
+      "sha256": "97c392100b16de30ee67acf7da695a6ae44a7a21b92a2f98c72a8701ce2ec58f",
+      "file_size": 270513827
+    },
+    {
+      "code": "NOVA-P10",
+      "description": "Nova și Arhitectura Evoluției - Al Zecelea Pilon",
+      "source_type": "local_file",
+      "sha256": "8989fc8eb0285fb05cbb89c81a195d834f289a9a73028f1d6eec0704662e82e6",
+      "file_size": 270513827
+    },
+    {
+      "code": "NOVA-P11",
+      "description": "Nova și Arhitectura Responsabilității - Al Unsprezecelea Pilon",
+      "source_type": "local_file",
+      "sha256": "791b54f5723265dc3fbb50452a78cda2d65a00eae69efcf38b9e3c4eaa5c8d69",
+      "file_size": 270513827
+    },
+    {
+      "code": "NOVA-P12",
+      "description": "Nova și Cei Doisprezece Piloni: Arhitecții Viitorului",
+      "source_type": "local_file",
+      "sha256": "812ed6f88a59e3411e5f5883b9b78949712447ce58c6743b0ecebb32e6fcca5e",
+      "file_size": 319697695
+    },
+    {
+      "code": "PDC-SERIA-TM",
+      "description": "Pădurea de Cod TM - seria completă storybook psihopedagogic (Mihai Roșca)",
+      "source_type": "concept_text",
+      "sha256": "c5ed7237a9b5e7f6b6b8777d4758e8f52902e110c948e751800d574e8b75b887"
+    },
+    {
+      "code": "DREAMSCAPE-ARCHIVE",
+      "description": "The Digital Dreamscape - arhivă AI art multi-model (11 generatoare, 1301 fișiere)",
+      "source_type": "local_file",
+      "sha256": "fba43cdc36dd20fcf33b46ecfe670a2f0673d93a5d901b324f01cfd6eb4c0de9",
+      "file_size": 3683
+    },
+    {
+      "code": "ALPHAPURE-ARCHIVE",
+      "description": "UNKNOWN/Claude pilar 12 - AlphaPure Fortress + HASN + R&D (457 fișiere)",
+      "source_type": "local_file",
+      "sha256": "23d68644a251b030cf5a901158c929fd8d51610ea7673a4152956079bca0d813",
+      "file_size": 5263
+    },
+    {
+      "code": "NIGHTCAFE-STUDIO",
+      "description": "NightCafe AI Art Studio - colecție primară + quantum series (923 fișiere)",
+      "source_type": "local_file",
+      "sha256": "0bf964ff2ff554cc8639e361a037fbe04aabeb47a55b5ff171ee8f392a92e299",
+      "file_size": 1573
+    },
+    {
+      "code": "NVIDIA-LEARNING",
+      "description": "Nvidia DLI Learning Hub - Python/ML/quantum training (545 fișiere)",
+      "source_type": "local_file",
+      "sha256": "fa2c9e57da3c3162f14ba9daebf33acbcd072c862fc3098c6fe5066504764341",
+      "file_size": 1845
+    },
+    {
+      "code": "NCRB-PIPELINE",
+      "description": "NC RB - NightCafe→Redbubble pipeline + DeepSeek code (393 fișiere)",
+      "source_type": "local_file",
+      "sha256": "7eccb46b7238cb8a02c35f4fc585e256eceb74942b56c58a246b2f4b1973fbb6",
+      "file_size": 1555
+    },
+    {
+      "code": "NFT-AGI-HUB",
+      "description": "NFT & AGI Development Hub - KinderAGI MVP + Continuum (326 fișiere)",
+      "source_type": "local_file",
+      "sha256": "7f7fb49ce6522b7cb4716581d6aa89ac905cd3e01df5e64acfb9f4eac153df9a",
+      "file_size": 1764
+    },
+    {
+      "code": "NEWRB-STORE",
+      "description": "New Redbubble Store - AGI Soulforge + BRIDGRAI Hub (94 fișiere)",
+      "source_type": "local_file",
+      "sha256": "42f41646ae2f87a272492535ce6cd032104b23de5bb60e4ca24dfad043714ed1",
+      "file_size": 1059
+    },
+    {
+      "code": "REDBUBBLE-ART",
+      "description": "Redbubble Original Art Store - Gemini + nature/cosmic (68 fișiere)",
+      "source_type": "local_file",
+      "sha256": "7a7a5403010a572bd4bc6b6e705084ff9b57b1aeec114d51b19dbcfa1019e84c",
+      "file_size": 599
+    },
+    {
+      "code": "PROMPT-SECURITY",
+      "description": "Prompt System Leaks - AI security research 26 system prompts (54 fișiere)",
+      "source_type": "local_file",
+      "sha256": "baeadbc2af546258aadd899f3ee6747955d3f193e8967b3943e659cfd6471ebc",
+      "file_size": 1337
+    },
+    {
+      "code": "KIMI-PROTOTYPES",
+      "description": "Kimi/Moonshot AI Prototyping Session - DeepSeek scripts (31 fișiere)",
+      "source_type": "local_file",
+      "sha256": "ad1e71bfcea915827a7fcb9d3112273ec2f20f211a6c0da36090aed49863e48f",
+      "file_size": 878
+    },
+    {
+      "code": "KOTSU-QUANTUM",
+      "description": "Kotsu Files - Quantum IoT Chatbot + React/TS prototypes (68 fișiere)",
+      "source_type": "local_file",
+      "sha256": "6c0f5867977fd1162ad332d2675f48536aa180cfa7999b7451a12963d41e8a6f",
+      "file_size": 949
+    },
+    {
+      "code": "AMIGENOME-PLATFORM",
+      "description": "Amigenome Genomic Analysis Platform - Python backend complet (21 fișiere)",
+      "source_type": "local_file",
+      "sha256": "5ffdd6c0551ef084937dba66704a61318cf5f50433cb97582329dde07eebb6cd",
+      "file_size": 1069
+    },
+    {
+      "code": "GENESIS-NFT",
+      "description": "BRIDGRAI Genesis NFT - Solidity contract + whitepaper (15 fișiere)",
+      "source_type": "local_file",
+      "sha256": "1517d5092f94f87bc22f60183c7e7d82b0b742d348922c6be42eb4f82a0209d3",
+      "file_size": 602
+    },
+    {
+      "code": "YOUTUBE-CHANNEL",
+      "description": "Sabrina YouTube Channel Assets - BRIDGRAI guide + mind map (13 fișiere)",
+      "source_type": "local_file",
+      "sha256": "9f3c32ae0b66461d64d89b593ae3fc690af6c919e56f0ad1f554371a4e2d5f48",
+      "file_size": 549
+    },
+    {
+      "code": "SERENITY-CITADEL",
+      "description": "Serenity Citadel Platform - deploy package + CV blueprint (9 fișiere)",
+      "source_type": "local_file",
+      "sha256": "bb3e0de209b8a57890241de9cc8a15d0535efdd6ae0b146c1792ce6ebd848607",
+      "file_size": 574
+    },
+    {
+      "code": "ALPHA-VISUAL",
+      "description": "Ce ai creat Mihai Alpha - documentație vizuală faza Alpha (8 fișiere)",
+      "source_type": "local_file",
+      "sha256": "a5b0ac2041a75e54fa42285c0e22b605338cc91dbe5322a3f6eb035112cccb27",
+      "file_size": 334
+    }
+  ],
+  "master_hash": "11e4baaf9ae6f4f6252a050cc922b6e444d9a371f3212b20d9c78756df9e9286"
+}

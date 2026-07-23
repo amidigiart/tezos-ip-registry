@@ -1,0 +1,17 @@
+{
+  "name": "tezos-ip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@taquito/signer": "^21.0.0",
+    "@taquito/taquito": "^21.0.0"
+  }
+}

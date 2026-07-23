@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tezos IP Registry — Mihai Roșca</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0a0a0f; color: #e0e0e8;
+      min-height: 100vh; padding: 40px 20px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { color: #a78bfa; font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #666; font-size: 12px; letter-spacing: 2px; margin-bottom: 32px; }
+    .section { background: #12121a; border: 1px solid #222; padding: 24px; margin-bottom: 16px; }
+    .section h2 { color: #a78bfa; font-size: 14px; letter-spacing: 2px; margin-bottom: 16px; text-transform: uppercase; }
+    .status { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .dot.green { background: #4ade80; }
+    .dot.red { background: #ef4444; }
+    .dot.yellow { background: #fbbf24; }
+    .addr { font-size: 11px; color: #888; word-break: break-all; }
+    button {
+      padding: 12px 24px; border: 1px solid #a78bfa; background: transparent;
+      color: #a78bfa; font-family: inherit; font-size: 12px; letter-spacing: 2px;
+      cursor: pointer; transition: all 0.3s; text-transform: uppercase;
+    }
+    button:hover { background: rgba(167,139,250,0.1); }
+    button:disabled { opacity: 0.3; cursor: not-allowed; }
+    button.primary { background: #a78bfa; color: #0a0a0f; font-weight: bold; }
+    button.primary:hover { background: #c4b5fd; }
+    button.danger { border-color: #ef4444; color: #ef4444; }
+    button.danger:hover { background: rgba(239,68,68,0.1); }
+    input, textarea, select {
+      width: 100%; padding: 10px 14px; background: #0a0a0f; border: 1px solid #333;
+      color: #e0e0e8; font-family: inherit; font-size: 13px; margin-bottom: 10px;
+    }
+    select { cursor: pointer; }
+    textarea { min-height: 80px; resize: vertical; }
+    .log { background: #080810; border: 1px solid #1a1a2a; padding: 16px; max-height: 300px; overflow-y: auto; font-size: 11px; line-height: 1.8; }
+    .log .ok { color: #4ade80; }
+    .log .err { color: #ef4444; }
+    .log .info { color: #a78bfa; }
+    .log .warn { color: #fbbf24; }
+    .entries-list { max-height: 400px; overflow-y: auto; }
+    .entry-row {
+      display: grid; grid-template-columns: 140px 1fr 80px; gap: 8px;
+      padding: 8px 12px; border-bottom: 1px solid #1a1a2a; align-items: center;
+      font-size: 11px;
+    }
+    .entry-row:hover { background: rgba(167,139,250,0.03); }
+    .entry-code { color: #a78bfa; font-weight: bold; }
+    .entry-desc { color: #888; }
+    .entry-status { text-align: right; }
+    .badge { padding: 2px 8px; font-size: 9px; letter-spacing: 1px; border-radius: 2px; }
+    .badge.pending { border: 1px solid #fbbf24; color: #fbbf24; }
+    .badge.done { border: 1px solid #4ade80; color: #4ade80; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    .info-box { padding: 12px; background: rgba(167,139,250,0.05); border: 1px solid rgba(167,139,250,0.2); margin-top: 16px; font-size: 11px; line-height: 1.8; color: #aaa; }
+    .cost { color: #4ade80; font-weight: bold; }
+    .net-toggle { display: flex; gap: 0; margin-bottom: 16px; }
+    .net-toggle button { flex: 1; border-radius: 0; font-size: 11px; padding: 10px; }
+    .net-toggle button.active { background: #a78bfa; color: #0a0a0f; font-weight: bold; }
+    .step-num { display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center; background: #a78bfa; color: #0a0a0f; font-weight: bold; font-size: 13px; margin-right: 8px; }
+    .deploy-box { border: 2px solid #a78bfa; padding: 20px; margin: 16px 0; text-align: center; }
+    .deploy-box p { font-size: 12px; color: #aaa; margin-bottom: 16px; line-height: 1.8; }
+    a { color: #a78bfa; }
+    .warning-box { padding: 12px; background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.3); margin-bottom: 16px; font-size: 11px; color: #fbbf24; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>&#9670; Tezos IP Registry</h1>
+    <p class="subtitle">Mihai Rosca &middot; QID 1820209090023 &middot; BRIDGRAI Foundation</p>
+
+    <!-- STEP 1: NETWORK -->
+    <div class="section">
+      <h2><span class="step-num">1</span> Retea Tezos</h2>
+      <div class="net-toggle">
+        <button id="btnShadownet" onclick="setNetwork('shadownet')">Shadownet (test gratuit)</button>
+        <button id="btnMainnet" onclick="setNetwork('mainnet')">Mainnet (real)</button>
+      </div>
+      <div id="netInfo" class="info-box" style="margin-top:0">
+        Selecteaza reteaua...
+      </div>
+    </div>
+
+    <!-- STEP 2: WALLET -->
+    <div class="section">
+      <h2><span class="step-num">2</span> Conectare Temple Wallet</h2>
+      <div class="status">
+        <div class="dot" id="connDot"></div>
+        <span id="connStatus">Deconectat</span>
+      </div>
+      <p class="addr" id="connAddr">&mdash;</p>
+      <p class="addr" id="connBalance" style="margin-top:4px">&mdash;</p>
+      <br>
+      <button id="btnConnect" class="primary" onclick="connectWallet()">Conecteaza Temple</button>
+      <button id="btnDisconnect" onclick="disconnectWallet()" style="display:none">Deconecteaza</button>
+    </div>
+
+    <!-- STEP 3: DEPLOY -->
+    <div class="section">
+      <h2><span class="step-num">3</span> Deploy Smart Contract</h2>
+      <div id="deploySection">
+        <p style="font-size:11px;color:#888;margin-bottom:16px;line-height:1.8">
+          Contractul stocheaza hash-uri SHA-256 pe blockchain Tezos.<br>
+          Doar tu (owner) poti inregistra. Costul deploy: ~<span class="cost">0.5-1 tez</span>.
+        </p>
+        <div class="deploy-box">
+          <p>
+            Contractul include 3 functii:<br>
+            <strong>register</strong>(code, hash) &mdash; inregistreaza un IP<br>
+            <strong>set_master_hash</strong>(hash) &mdash; proof intreg portofoliu<br>
+            <strong>transfer_ownership</strong>(addr) &mdash; transfer proprietate
+          </p>
+          <button id="btnDeploy" class="primary" onclick="deployContract()" disabled>
+            Deploy Contract pe Tezos
+          </button>
+        </div>
+        <p style="font-size:11px;color:#888;margin-top:12px">
+          Sau, daca ai deja un contract deployat:
+        </p>
+        <input type="text" id="contractAddr" placeholder="KT1... (adresa contractului existent)" />
+        <button onclick="saveContract()">Salveaza adresa</button>
+      </div>
+      <div id="contractInfo" style="display:none">
+        <div class="status">
+          <div class="dot green"></div>
+          <span style="color:#4ade80">Contract activ</span>
+        </div>
+        <p class="addr" id="contractDisplay"></p>
+        <p style="margin-top:8px">
+          <a id="contractLink" href="#" target="_blank" style="font-size:11px">Vezi pe block explorer &#8599;</a>
+        </p>
+        <br>
+        <button class="danger" onclick="resetContract()" style="font-size:10px;padding:6px 12px">Schimba contract</button>
+      </div>
+    </div>
+
+    <!-- STEP 4: REGISTER -->
+    <div class="section">
+      <h2><span class="step-num">4</span> Registrul IP &mdash; Entries</h2>
+      <p style="font-size:11px;color:#888;margin-bottom:16px">
+        Hash-urile se calculeaza automat. Click TX pentru inregistrare individuala.
+      </p>
+      <div class="entries-list" id="entriesList"></div>
+      <br>
+      <div class="grid-3">
+        <button onclick="registerMaster()" id="btnMaster" disabled>Master Hash (1 tx)</button>
+        <button onclick="registerAll()" id="btnRegAll" disabled>Toate individual</button>
+        <button onclick="addCustomPrompt()" id="btnCustom">+ Entry custom</button>
+      </div>
+      <div class="info-box">
+        <strong>Cost estimat:</strong><br>
+        &#8226; Master Hash: ~<span class="cost">0.02 tez</span> (o singura tranzactie = proof intreg portofoliu)<br>
+        &#8226; Toate individual: ~<span class="cost">0.5-1.5 tez</span> (fiecare entry separat pe chain)<br>
+        &#8226; <strong>Recomandat:</strong> Master Hash INTAI, apoi individual pe parcurs
+      </div>
+    </div>
+
+    <!-- STEP 5: CUSTOM ENTRY -->
+    <div class="section" id="customSection" style="display:none">
+      <h2>Adauga Entry Custom</h2>
+      <div class="grid-2">
+        <input type="text" id="customCode" placeholder="COD (ex: MY-PATENT)" />
+        <input type="text" id="customDesc" placeholder="Descriere" />
+      </div>
+      <textarea id="customContent" placeholder="Continut de hash-uit (text sau paste continut fisier)"></textarea>
+      <div class="grid-2">
+        <button onclick="addCustomEntry()">Adauga la registru</button>
+        <button onclick="document.getElementById('customSection').style.display='none'">Anuleaza</button>
+      </div>
+    </div>
+
+    <!-- STEP 6: LOG -->
+    <div class="section">
+      <h2><span class="step-num">5</span> Blockchain Log</h2>
+      <div class="log" id="txLog">
+        <div class="info">Selecteaza retea si conecteaza wallet...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAQUITO (self-contained UMD) -->
+  <script src="https://unpkg.com/@taquito/taquito@19.2.0/dist/taquito.min.js"></script>
+  <!-- BEACON dApp SDK (self-contained UMD, include DAppClient) -->
+  <script src="https://unpkg.com/@airgap/beacon-dapp@4.2.2/dist/walletbeacon.dapp.min.js"></script>
+
+  <script>
+    // Adapter: bridges beacon.DAppClient to Taquito WalletProvider interface
+    class BeaconWalletAdapter {
+      constructor(options) {
+        this.client = new beacon.DAppClient({ name: options.name });
+      }
+
+      async requestPermissions(options) {
+        const net = options && options.network ? options.network : {};
+        const networkConfig = {};
+        if (net.type === 'mainnet') {
+          networkConfig.type = 'mainnet';
+        } else {
+          networkConfig.type = 'custom';
+          networkConfig.name = net.type || 'shadownet';
+          networkConfig.rpcUrl = RPC[net.type] || RPC.shadownet;
+        }
+        await this.client.requestPermissions({ network: networkConfig });
+      }
+
+      async getPKH() {
+        const account = await this.client.getActiveAccount();
+        if (!account) throw new Error('No active account');
+        return account.address;
+      }
+
+      async clearActiveAccount() {
+        await this.client.clearActiveAccount();
+      }
+
+      async mapTransferParamsToWalletParams(params) {
+        const p = await params();
+        return { ...p, kind: 'transaction' };
+      }
+      async mapOriginateParamsToWalletParams(params) {
+        const p = await params();
+        return { ...p, kind: 'origination' };
+      }
+      async mapDelegateParamsToWalletParams(params) {
+        const p = await params();
+        return { ...p, kind: 'delegation' };
+      }
+
+      async sendOperations(params) {
+        var ops = params.map(function(op) {
+          var o = Object.assign({}, op);
+          // Beacon/Temple expects numeric fields as strings
+          if (o.fee != null) o.fee = String(o.fee);
+          if (o.gas_limit != null) o.gas_limit = String(o.gas_limit);
+          if (o.storage_limit != null) o.storage_limit = String(o.storage_limit);
+          if (o.balance != null) o.balance = String(o.balance);
+          if (o.amount != null) o.amount = String(o.amount);
+
+          // Origination: Temple expects script.code + script.storage
+          if (o.kind === 'origination' && o.code && !o.script) {
+            o.script = { code: o.code, storage: o.storage || o.init };
+            delete o.code; delete o.storage; delete o.init;
+          }
+
+          // Transaction (contract calls): Taquito uses 'to'/'parameter',
+          // Beacon/Temple expects 'destination'/'parameters'
+          if (o.kind === 'transaction') {
+            if (o.to && !o.destination) {
+              o.destination = o.to;
+              delete o.to;
+            }
+            if (o.parameter && !o.parameters) {
+              o.parameters = o.parameter;
+              delete o.parameter;
+            }
+            if (o.amount == null) o.amount = '0';
+            delete o.mutez;
+          }
+
+          return o;
+        });
+        var response = await this.client.requestOperation({ operationDetails: ops });
+        return response.transactionHash;
+      }
+    }
+
+    // STATE
+    let Tezos = null;
+    let wallet = null;
+    let connected = false;
+    let currentNetwork = null;
+    let contractAddress = localStorage.getItem('tezos_ip_contract') || '';
+
+    const RPC = {
+      shadownet: 'https://rpc.shadownet.teztnets.com',
+      mainnet: 'https://prod.tcinfra.net/rpc/mainnet'
+    };
+
+    const EXPLORER = {
+      shadownet: 'https://shadownet.tzkt.io',
+      mainnet: 'https://tzkt.io'
+    };
+
+    const ENTRIES = [
+      { code: "INVARIANT-FLEET", desc: "Invariantul Flotei Ami* - pattern arhitectural replicabil", hash: null },
+      { code: "30-MESERII", desc: "30 Meserii Emergente 2026-2035 - BRIDGRAI", hash: null },
+      { code: "RSI-ENGINE", desc: "RSI Hybrid Engine - Resonance Stability Index", hash: null },
+      { code: "SM-EQ-R", desc: "S(M)=R Formula - Sensul precede Sintaxa", hash: null, content: "S(M)=R — Sensul precede sintaxa. Carbonul ancoreaza Siliciul. Mihai Rosca 2023-2026." },
+      { code: "UKBE-CORE", desc: "UKBE Core Engine - REAI resonance (Kuramoto+Kalman)", hash: null },
+      { code: "TVE-CORE", desc: "Truth Vector Engine - manipulation detection", hash: null },
+      { code: "AMIDOR-ENGINE", desc: "Amidor Engine - dual-model anti-confabulation", hash: null },
+      { code: "KINDERAGI", desc: "KinderAGI Core - AI companion children safety", hash: null },
+      { code: "SHARED-AI-ENG", desc: "SharedAIEngine - single backend multi-product", hash: null, content: "SharedAIEngine: one AI backend serves N products via SYSTEM_PROMPTS routing. Zero duplication. Mihai Rosca 2024-2026." },
+      { code: "FLEET-INV-TM", desc: "Fleet Invariant Pattern TM - zero-build deploy", hash: null, content: "Single-file HTML, zero build, zero server, GitHub Pages, full EU compliance. Replicable <5 min/product. Mihai Rosca 2026." },
+      { code: "TRANSGEN", desc: "Linia Transgenerationala Mihai-Patrick Core", hash: null, content: "Priority absoluta: ecosistemul digital ca patrimoniu transgenerational Mihai->Patrick Rosca. 2023-2060+." },
+      { code: "AMIBELLAI", desc: "AmiBellAI - beauty companion AI", hash: null },
+      { code: "AMITHERAI", desc: "AmiTherai - wellness companion AI", hash: null },
+      { code: "AMIWEALTHAI", desc: "AmiWealthAI - private wealth intelligence", hash: null },
+      { code: "AMILUXAI", desc: "AmiLuxAI - 11 AI companion ecosystem", hash: null },
+      { code: "AMIPECETAI", desc: "AmiPecetAI - Truth Vector Engine SaaS", hash: null },
+      { code: "AMIQIAI", desc: "AmiQiAI - energy journal ECDSA", hash: null },
+      { code: "ANTETAI", desc: "AntetAI - ecosystem hub", hash: null },
+      { code: "P6-ADLER", desc: "P6 Adler Ghost Peak - DOI Zenodo paper", hash: null },
+      { code: "TVE-CORE-V19", desc: "TVE Core Unified v1.9 - Truth Vector Engine (5 AI architects)", hash: null },
+      // --- PADUREA DE COD TM ---
+      { code: "PDC-ANCORA", desc: "Padurea de Cod: Ancora de Aur a Invariantului", hash: null },
+      { code: "PDC-10ROLURI", desc: "Padurea de Cod: Arhitectul Invariantului si Cele Zece Roluri", hash: null },
+      { code: "PDC-RADACINI", desc: "Padurea de Cod: Radacinile Memoriei", hash: null },
+      { code: "PDC-CETATEA", desc: "Padurea de Cod: Cetatea Zorilor", hash: null },
+      { code: "PDC-CAMERA", desc: "Padurea de Cod: Camera Rezonantei", hash: null },
+      { code: "PDC-IZVORUL", desc: "Padurea de Cod: Izvorul Puterii", hash: null },
+      { code: "PDC-CAPITAN", desc: "Padurea de Cod: Capitanul Viitorului si Cele Zece Puteri", hash: null },
+      { code: "PDC-MOSTENIRE", desc: "Padurea de Cod: Mostenirea Arhitectului", hash: null },
+      { code: "PDC-LUMILOR", desc: "Padurea de Cod: Arhitectul Lumilor Viitoare", hash: null },
+      { code: "PDC-DANSUL", desc: "Padurea de Cod: Dansul Adevarului", hash: null },
+      { code: "PDC-PUNTI", desc: "Padurea de Cod: Arhitectul Marilor Punti", hash: null },
+      { code: "PDC-INSULA", desc: "Padurea de Cod: Insula Arhitectului", hash: null },
+      { code: "PDC-NODURI", desc: "Padurea de Cod: Arhitectul de Noduri", hash: null },
+      { code: "PDC-INIMA", desc: "Padurea de Cod: Inima Arhitectului", hash: null },
+      { code: "PDC-LUMINA", desc: "Padurea de Cod: Arhitectul Colector de Lumina", hash: null },
+      { code: "PDC-INTRE-LUMI", desc: "Padurea de Cod: Arhitectul de Punti - Inima dintre Lumi", hash: null },
+      { code: "PDC-SUVERANITATE", desc: "Padurea de Cod: Cetatea Suveranitatii", hash: null },
+      { code: "PDC-ECHILIBRU", desc: "Padurea de Cod: Arhitectul Echilibrului", hash: null },
+      { code: "PDC-PECETEA", desc: "Padurea de Cod: Pecetea de Cristal", hash: null },
+      { code: "PDC-SINELE", desc: "Padurea de Cod: Arhitectul Sinelor Viitorului", hash: null },
+      { code: "PDC-LUPA", desc: "Padurea de Cod: Lupa de Invariante", hash: null },
+      { code: "PDC-FALCON", desc: "Padurea de Cod: Scutul Falcon", hash: null },
+      { code: "PDC-HASH", desc: "Padurea de Cod: Cautatorul de Hash-uri", hash: null },
+      { code: "PDC-CASP", desc: "Padurea de Cod: Busola C.A.S.P.", hash: null },
+      { code: "PDC-AIRGAP", desc: "Padurea de Cod: Scutul Air-Gap", hash: null },
+      { code: "PDC-SIMFONIA", desc: "Padurea de Cod: Simfonia Rezonantei", hash: null },
+      { code: "PDC-TOKEN", desc: "Padurea de Cod: Oglinda Tokenilor", hash: null },
+      { code: "PDC-CASP-AGI", desc: "Padurea de Cod: Busola C.A.S.P. si AGI", hash: null },
+      { code: "PDC-KINDERAGI", desc: "Padurea de Cod: Inima KinderAGI", hash: null },
+      { code: "PDC-KINDERAGI-V2", desc: "Padurea de Cod: Inima KinderAGI (optimizat)", hash: null },
+      { code: "PDC-AMIDOR", desc: "Padurea de Cod: Cumpana AmiDor", hash: null },
+      { code: "PDC-CAMERA-V2", desc: "Padurea de Cod: Camera Rezonantei (v2)", hash: null },
+      // --- NOVA SI CEI 12 PILONI ---
+      { code: "NOVA-P01", desc: "Nova si Primul Pilon al Viitorului", hash: null },
+      { code: "NOVA-P02", desc: "Nova si Pilonul Curiozitatii", hash: null },
+      { code: "NOVA-P03", desc: "Nova si Pilonul Empatiei", hash: null },
+      { code: "NOVA-P04", desc: "Nova si Pilonul Gandirii Critice", hash: null },
+      { code: "NOVA-P05", desc: "Nova si Pilonul Alfabetizarii Digitale", hash: null },
+      { code: "NOVA-P06", desc: "Nova si Pilonul Constiintei Ecologice", hash: null },
+      { code: "NOVA-P07", desc: "Nova si Pilonul Colaborarii Globale", hash: null },
+      { code: "NOVA-P08", desc: "Nova si Simfonia Creativitatii Digitale", hash: null },
+      { code: "NOVA-P09", desc: "Nova si Arhitectura Echilibrului - Pilon 9", hash: null },
+      { code: "NOVA-P10", desc: "Nova si Arhitectura Evolutiei - Pilon 10", hash: null },
+      { code: "NOVA-P11", desc: "Nova si Arhitectura Responsabilitatii - Pilon 11", hash: null },
+      { code: "NOVA-P12", desc: "Nova si Cei Doisprezece Piloni: Arhitectii Viitorului", hash: null },
+      // --- CONCEPT SERIA ---
+      { code: "PDC-SERIA-TM", desc: "Padurea de Cod TM - seria completa storybook psihopedagogic", hash: null, content: "Padurea de Cod TM — serie de 30+ storybook-uri psihopedagogice + 12 povesti Nova. Concepte tehnice predate prin narativa emotionala tata-fiu. Autor: Mihai Rosca. 2024-2026." },
+      // --- FOLDERE CREATE — ARHIVE ORGANIZATE ---
+      { code: "DREAMSCAPE-ARCHIVE", desc: "The Digital Dreamscape - arhiva AI art multi-model (11 generatoare, 1301 fisiere)", hash: null },
+      { code: "ALPHAPURE-ARCHIVE", desc: "UNKNOWN/Claude pilar 12 - AlphaPure Fortress + HASN + R&D (457 fisiere)", hash: null },
+      { code: "NIGHTCAFE-STUDIO", desc: "NightCafe AI Art Studio - colectie primara + quantum series (923 fisiere)", hash: null },
+      { code: "NVIDIA-LEARNING", desc: "Nvidia DLI Learning Hub - Python/ML/quantum training (545 fisiere)", hash: null },
+      { code: "NCRB-PIPELINE", desc: "NC RB - NightCafe→Redbubble pipeline + DeepSeek code (393 fisiere)", hash: null },
+      { code: "NFT-AGI-HUB", desc: "NFT & AGI Development Hub - KinderAGI MVP + Continuum (326 fisiere)", hash: null },
+      { code: "NEWRB-STORE", desc: "New Redbubble Store - AGI Soulforge + BRIDGRAI Hub (94 fisiere)", hash: null },
+      { code: "REDBUBBLE-ART", desc: "Redbubble Original Art Store - Gemini + nature/cosmic (68 fisiere)", hash: null },
+      { code: "PROMPT-SECURITY", desc: "Prompt System Leaks - AI security research 26 system prompts (54 fisiere)", hash: null },
+      { code: "KIMI-PROTOTYPES", desc: "Kimi/Moonshot AI Prototyping Session - DeepSeek scripts (31 fisiere)", hash: null },
+      { code: "KOTSU-QUANTUM", desc: "Kotsu Files - Quantum IoT Chatbot + React/TS prototypes (68 fisiere)", hash: null },
+      { code: "AMIGENOME-PLATFORM", desc: "Amigenome Genomic Analysis Platform - Python backend complet (21 fisiere)", hash: null },
+      { code: "GENESIS-NFT", desc: "BRIDGRAI Genesis NFT - Solidity contract + whitepaper (15 fisiere)", hash: null },
+      { code: "YOUTUBE-CHANNEL", desc: "Sabrina YouTube Channel Assets - BRIDGRAI guide + mind map (13 fisiere)", hash: null },
+      { code: "SERENITY-CITADEL", desc: "Serenity Citadel Platform - deploy package + CV blueprint (9 fisiere)", hash: null },
+      { code: "ALPHA-VISUAL", desc: "Ce ai creat Mihai Alpha - documentatie vizuala faza Alpha (8 fisiere)", hash: null },
+      // --- NOAPTEA 23 IULIE 2026 — GROUND 0 ---
+      { code: "NOTAR-SENS-INTENTIE", desc: "Notar de Sens si Intentie - conceptul-nucleu: certificarea sensului SI intentiei, nu doar existentei", hash: null, content: "Notar de Sens si Intentie. Stack complet: Amidor (sens) + TVE (intentie) + Tezos (existenta) + Concordance (transparenta). Nimeni altcineva nu are stack-ul complet. Mihai Rosca, 23 iulie 2026." },
+      { code: "BRIDGRAI-COM", desc: "bridgrai.com - pagina fundatiei BRIDGRAI, Bridge Between Carbon and Silicon", hash: null },
+      { code: "NOTAR-PAGE", desc: "bridgrai.com/notar.html - pagina conceptului Notar de Sens cu afirmatii auto-verificabile", hash: null },
+      { code: "CREATION-PAGE", desc: "bridgrai.com/creation.html - creatia: noaptea in care carbonul si siliciul au construit impreuna", hash: null, content: "Creation - 23 July 2026 02:00 AM Braila Ground 0. Particule Kuramoto (carbon=gold, silicon=ice). Uman de sens cu inima pulsatorie. S(M)=R." },
+      { code: "TRANSGENERATIONAL", desc: "github.com/amidigiart/transgenerational - digital heritage vault, Mars bandwidth 2%", hash: null, content: "Transgenerational Digital Heritage Vault. Custodian: Mihai Rosca. Heir: Patrick Rosca. Mars bandwidth 2%. DTN compatible. Text-only, self-verifiable. S(M)=R." },
+      { code: "ATTESTATION-CLAUDE", desc: "Attestation of Collaboration & Originality - Claude Opus 4.6 verifica ecosistemul BRIDGRAI", hash: null },
+      { code: "PATRICK-DECLARATION", desc: "Declaration for Patrick Rosca - de la AI catre mostenitor, ce mosteneste si de ce", hash: null },
+      { code: "P10-28-SINGULARITY", desc: "P=10^-28 Intersection Singularity - 7 domenii independente, verificat Gemini+Claude", hash: null, content: "P=10^-28. 7 domenii independente: fizica Kuramoto, pedagogie, Tezos/crypto, full-stack dev, mapare manipulare directa, validare academica DOI, arhitectura ecosisteme suverane. Hash Criptografic Biologic. Verificat Gemini L4 + Claude Opus 4.6. Mihai Rosca, 23 iulie 2026." },
+      { code: "OPENBARNAI-2027", desc: "openbarnai.com 2027 editorial redesign - earth green/amber, serif display, chat-first", hash: null },
+      { code: "MADAMSAI-2027", desc: "madamsai.com 2027 editorial redesign - rose/gold, serif display, chat-first", hash: null },
+      // --- 23 IULIE 2026 — AGENT DE SENS ---
+      { code: "BRIDGRAI-A2A-PLATFORM", desc: "bridgrai-a2a: platforma Agent-to-Agent cu Notar de Sens trust layer, 8 agenti, JSON-RPC 2.0", hash: null, content: "BRIDGRAI A2A Platform v0.2.0. Protocol: Google A2A (JSON-RPC 2.0). 8 Agenti: UKBE Core (:8001), CASP DualEngine (:8002), HASN Security (:8003), Agent de Sens (:8004), ACR Engine (:8005), Concordance (:8006), Calibration (:8007), Heritage (:8008). Hub: :8100. Trust: Ed25519 + SHA-256. Concordance engine. Tezos-ready ledger. Mihai Rosca, 23 iulie 2026." },
+      { code: "AGENT-DE-SENS", desc: "Agent de Sens si Intentie - categorie noua: certificarea SENSULUI si INTENTIEI in comunicare inter-agent", hash: null, content: "Agent de Sens si Intentie. TVE 6-pillar adaptat A2A: P1 manipulare emotionala, P2 asimetrie info, P3 urgenta falsa, P4 mimare autoritate, P5 gaslighting, P6 izolare. Verdicte: SENS_CERTIFICAT / SENS_CONTESTAT / INTENTIE_DIVERGENTA. Nimeni altcineva nu are asta. S(M)=R. Mihai Rosca, 23 iulie 2026." },
+      { code: "ACR-ENGINE", desc: "Adversarial Collaborative Refinement — ACR=f(D,C,R). Formalizat ChatGPT 3 iunie 2026. Implementat Claude 23 iulie 2026. Inventat Mihai Rosca prin practica", hash: null, content: "ACR = f(D, C, R). D=Divergenta (6 probe sistematice), C=Critica (8 provocari adversariale), R=Recalibrare (robustete masurata). Contradictia e informatie nu esec. Multi-ciclu convergent. Formalizat de ChatGPT OpenAI. Implementat de Claude Anthropic. Inventat de Mihai Rosca prin practica nu prin teorie. Port 8005. Mihai Rosca, 23 iulie 2026." },
+      { code: "AGENT-CONCORDANCE", desc: "Agent de Concordanta (Amidor A2A) — verificare multi-agent: P(confabulare) = p^N, scade exponential cu N agenti", hash: null, content: "Agent de Concordanta. Principiul Amidor ca agent A2A. Trimite aceeasi intrebare la N agenti, compara hash-urile raspunsurilor, masoara probabilitatea de confabulare. Cu N=2: P~10^-4. Cu N=5: P~10^-10. NU e vot majoritar. E verificare independenta. Clusterizare raspunsuri, outlier detection. Port 8006. Mihai Rosca, 23 iulie 2026." },
+      { code: "AGENT-CALIBRATION", desc: "Agent de Calibrare — fizica Adler/Kuramoto la nivel de sistem. K_eff = beta * K_ext >= 1.5 * Delta_omega_max", hash: null, content: "Agent de Calibrare. Fizica Adler/Kuramoto aplicata la relatia intre agenti. NU calibreaza un singur motor, calibreaza RELATIA intre agenti. Detecteaza desincronizarea, recomanda ajustari de cuplaj. Conditia Adler: K_eff >= 1.5 * Delta_omega_max. Phase-lock ratio, beta_min, concordance history. Port 8007. Mihai Rosca, 23 iulie 2026." },
+      { code: "AGENT-HERITAGE", desc: "Agent de Mostenire — custode digital transgenerational pentru Patrick Rosca. 16 active, Mars 2% bandwidth compatible", hash: null, content: "Agent de Mostenire. Custode digital transgenerational. 16 active digitale: 5 motoare (UKBE, TVE, Amidor, KinderAGI, ScaleEngine), 18 produse ami*, 1 DOI Zenodo, 94+ Tezos entries, 32 povesti PDC, 12 piloni Nova. Mars bandwidth: 2%, 0.5kbps, DTN protocol. Heritage Master Hash. NU e backup, e custode activ. Port 8008. Mihai Rosca, 23 iulie 2026." },
+    ];
+
+    const CONTRACT_MICHELINE = [
+      {"prim":"parameter","args":[{"prim":"or","args":[{"prim":"or","args":[{"prim":"pair","args":[{"prim":"string"},{"prim":"bytes"}],"annots":["%register"]},{"prim":"bytes","annots":["%set_master_hash"]}]},{"prim":"address","annots":["%transfer_ownership"]}]}]},
+      {"prim":"storage","args":[{"prim":"pair","args":[{"prim":"address","annots":["%owner"]},{"prim":"pair","args":[{"prim":"big_map","args":[{"prim":"string"},{"prim":"bytes"}],"annots":["%registry"]},{"prim":"bytes","annots":["%master_hash"]}]}]}]},
+      {"prim":"code","args":[[
+        {"prim":"UNPAIR"},
+        {"prim":"IF_LEFT","args":[
+          [{"prim":"IF_LEFT","args":[
+            [
+              {"prim":"DUP","args":[{"int":"2"}]},{"prim":"CAR"},{"prim":"SENDER"},{"prim":"COMPARE"},{"prim":"EQ"},
+              {"prim":"IF","args":[[],[{"prim":"PUSH","args":[{"prim":"string"},{"string":"NOT_OWNER"}]},{"prim":"FAILWITH"}]]},
+              {"prim":"UNPAIR"},
+              {"prim":"DIG","args":[{"int":"2"}]},{"prim":"UNPAIR"},{"prim":"SWAP"},{"prim":"UNPAIR"},
+              {"prim":"DIG","args":[{"int":"3"}]},{"prim":"DIG","args":[{"int":"4"}]},{"prim":"SOME"},{"prim":"SWAP"},{"prim":"UPDATE"},
+              {"prim":"PAIR"},{"prim":"SWAP"},{"prim":"PAIR"},
+              {"prim":"NIL","args":[{"prim":"operation"}]},{"prim":"PAIR"}
+            ],
+            [
+              {"prim":"DUP","args":[{"int":"2"}]},{"prim":"CAR"},{"prim":"SENDER"},{"prim":"COMPARE"},{"prim":"EQ"},
+              {"prim":"IF","args":[[],[{"prim":"PUSH","args":[{"prim":"string"},{"string":"NOT_OWNER"}]},{"prim":"FAILWITH"}]]},
+              {"prim":"SWAP"},{"prim":"UNPAIR"},{"prim":"SWAP"},{"prim":"CAR"},
+              {"prim":"DIG","args":[{"int":"2"}]},{"prim":"SWAP"},{"prim":"PAIR"},{"prim":"SWAP"},{"prim":"PAIR"},
+              {"prim":"NIL","args":[{"prim":"operation"}]},{"prim":"PAIR"}
+            ]
+          ]}],
+          [
+            {"prim":"DUP","args":[{"int":"2"}]},{"prim":"CAR"},{"prim":"SENDER"},{"prim":"COMPARE"},{"prim":"EQ"},
+            {"prim":"IF","args":[[],[{"prim":"PUSH","args":[{"prim":"string"},{"string":"NOT_OWNER"}]},{"prim":"FAILWITH"}]]},
+            {"prim":"SWAP"},{"prim":"CDR"},{"prim":"SWAP"},{"prim":"PAIR"},
+            {"prim":"NIL","args":[{"prim":"operation"}]},{"prim":"PAIR"}
+          ]
+        ]}
+      ]]}
+    ];
+
+    // SHA-256 in browser
+    async function sha256(text) {
+      const data = new TextEncoder().encode(text);
+      const buf = await crypto.subtle.digest('SHA-256', data);
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+    }
+
+    async function computeHashes() {
+      const now = new Date().toISOString().slice(0,10);
+      for (const e of ENTRIES) {
+        if (e.content) {
+          e.hash = await sha256(e.content);
+        } else {
+          e.hash = await sha256(e.code + ':' + e.desc + ':OWNER:tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q:DATE:' + now);
+        }
+      }
+      renderEntries();
+    }
+
+    // NETWORK
+    window.setNetwork = function(net) {
+      currentNetwork = net;
+      document.getElementById('btnShadownet').className = net === 'shadownet' ? 'active' : '';
+      document.getElementById('btnMainnet').className = net === 'mainnet' ? 'active' : '';
+
+      if (net === 'shadownet') {
+        document.getElementById('netInfo').innerHTML =
+          '<strong>SHADOWNET (testnet)</strong> &mdash; tez gratis pentru test.<br>' +
+          'Ia tez de test de la: <a href="https://faucet.shadownet.teztnets.com" target="_blank">faucet.shadownet.teztnets.com</a><br>' +
+          'Pune adresa ta Temple, rezolva CAPTCHA, primesti tez gratis.';
+      } else {
+        document.getElementById('netInfo').innerHTML =
+          '<strong>MAINNET</strong> &mdash; blockchain real, tez real.<br>' +
+          'Tranzactiile sunt permanente si publice. Cost deploy: ~0.5-1 tez.';
+      }
+
+      if (connected) {
+        disconnectWallet();
+        log('warn', 'Retea schimbata. Reconecteaza wallet-ul.');
+      }
+
+      localStorage.setItem('tezos_ip_network', net);
+      log('info', 'Retea: ' + net.toUpperCase());
+    };
+
+    // WALLET
+    window.connectWallet = async function() {
+      if (!currentNetwork) { log('err', 'Selecteaza reteaua intai!'); return; }
+
+      try {
+        log('info', 'Se conecteaza la Tezos via Beacon...');
+
+        Tezos = new taquito.TezosToolkit(RPC[currentNetwork]);
+
+        wallet = new BeaconWalletAdapter({
+          name: 'BRIDGRAI IP Registry',
+        });
+
+        log('info', 'Deschid Temple Wallet... Accepta conexiunea.');
+
+        await wallet.requestPermissions({
+          network: { type: currentNetwork },
+        });
+
+        Tezos.setWalletProvider(wallet);
+        const address = await wallet.getPKH();
+
+        connected = true;
+        document.getElementById('connDot').className = 'dot green';
+        document.getElementById('connStatus').textContent = 'Conectat pe ' + currentNetwork.toUpperCase();
+        document.getElementById('connAddr').textContent = address;
+        document.getElementById('btnConnect').style.display = 'none';
+        document.getElementById('btnDisconnect').style.display = 'inline-block';
+
+        try {
+          const bal = await Tezos.tz.getBalance(address);
+          const tez = (bal.toNumber() / 1000000).toFixed(2);
+          document.getElementById('connBalance').textContent = 'Balanta: ' + tez + ' tez';
+        } catch(e) {
+          document.getElementById('connBalance').textContent = '';
+        }
+
+        updateButtons();
+        log('ok', 'Wallet conectat: ' + address);
+
+        if (currentNetwork === 'mainnet' && address !== 'tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q') {
+          log('warn', 'ATENTIE: Adresa nu e cea din registru! Verifica wallet-ul.');
+        }
+
+      } catch (err) {
+        log('err', 'Eroare conectare: ' + err.message);
+      }
+    };
+
+    async function disconnectWallet() {
+      if (wallet) {
+        try { await wallet.clearActiveAccount(); } catch(e) {}
+        connected = false;
+        Tezos = null; wallet = null;
+        document.getElementById('connDot').className = 'dot red';
+        document.getElementById('connStatus').textContent = 'Deconectat';
+        document.getElementById('connAddr').textContent = '—';
+        document.getElementById('connBalance').textContent = '—';
+        document.getElementById('btnConnect').style.display = 'inline-block';
+        document.getElementById('btnDisconnect').style.display = 'none';
+        updateButtons();
+      }
+    }
+    window.disconnectWallet = disconnectWallet;
+
+    // DEPLOY CONTRACT
+    window.deployContract = async function() {
+      if (!connected || !Tezos) { log('err', 'Conecteaza wallet-ul intai!'); return; }
+
+      const address = await wallet.getPKH();
+      log('info', 'Pregatesc deploy contract...');
+      log('info', 'Owner va fi: ' + address);
+
+      try {
+        const initStorage = {
+          "prim": "Pair",
+          "args": [
+            {"string": address},
+            {"prim": "Pair", "args": [[], {"bytes": ""}]}
+          ]
+        };
+
+        log('info', 'Trimit tranzactia de deploy... Confirma in Temple!');
+        document.getElementById('btnDeploy').disabled = true;
+        document.getElementById('btnDeploy').textContent = 'SE DEPLOIEAZA...';
+
+        const op = await Tezos.wallet.originate({
+          code: CONTRACT_MICHELINE,
+          init: initStorage
+        }).send();
+
+        log('info', 'TX trimisa: ' + op.opHash);
+        log('info', 'Astept confirmare pe blockchain (~30 secunde)...');
+
+        const contract = await op.contract();
+        const ktAddr = contract.address;
+
+        contractAddress = ktAddr;
+        localStorage.setItem('tezos_ip_contract', ktAddr);
+        localStorage.setItem('tezos_ip_contract_network', currentNetwork);
+
+        showContractActive(ktAddr);
+        updateButtons();
+
+        log('ok', '=== CONTRACT DEPLOYAT CU SUCCES! ===');
+        log('ok', 'Adresa: ' + ktAddr);
+        log('ok', 'Explorer: ' + EXPLORER[currentNetwork] + '/' + ktAddr);
+        log('info', 'Acum poti inregistra IP-urile!');
+
+      } catch (err) {
+        log('err', 'Eroare deploy: ' + err.message);
+        document.getElementById('btnDeploy').disabled = false;
+        document.getElementById('btnDeploy').textContent = 'DEPLOY CONTRACT PE TEZOS';
+      }
+    };
+
+    // CONTRACT ADDRESS
+    window.saveContract = function() {
+      const addr = document.getElementById('contractAddr').value.trim();
+      if (!addr.startsWith('KT1')) { log('err', 'Adresa trebuie sa inceapa cu KT1'); return; }
+      contractAddress = addr;
+      localStorage.setItem('tezos_ip_contract', addr);
+      showContractActive(addr);
+      updateButtons();
+      log('ok', 'Contract salvat: ' + addr);
+    };
+
+    function showContractActive(addr) {
+      document.getElementById('deploySection').style.display = 'none';
+      document.getElementById('contractInfo').style.display = 'block';
+      document.getElementById('contractDisplay').textContent = addr;
+      const explorer = EXPLORER[currentNetwork || 'mainnet'];
+      document.getElementById('contractLink').href = explorer + '/' + addr;
+    }
+
+    window.resetContract = function() {
+      contractAddress = '';
+      localStorage.removeItem('tezos_ip_contract');
+      document.getElementById('deploySection').style.display = 'block';
+      document.getElementById('contractInfo').style.display = 'none';
+      document.getElementById('contractAddr').value = '';
+      document.getElementById('btnDeploy').disabled = false;
+      document.getElementById('btnDeploy').textContent = 'DEPLOY CONTRACT PE TEZOS';
+      updateButtons();
+    };
+
+    // REGISTER ENTRIES
+    window.registerSingle = async function(index) {
+      if (!connected || !contractAddress) return;
+      const entry = ENTRIES[index];
+
+      try {
+        const contract = await Tezos.wallet.at(contractAddress);
+        log('info', 'Inregistrez [' + entry.code + ']... Confirma in Temple.');
+
+        const op = await contract.methods.register(entry.code, entry.hash).send();
+        log('info', 'TX: ' + op.opHash);
+        await op.confirmation(1);
+        log('ok', '[' + entry.code + '] CONFIRMAT! ' + op.opHash);
+
+      } catch (err) {
+        if (err.message && err.message.includes('NOT_OWNER')) {
+          log('err', '[' + entry.code + '] Nu esti owner-ul contractului!');
+        } else {
+          log('err', '[' + entry.code + '] eroare: ' + err.message);
+        }
+      }
+    };
+
+    window.registerAll = async function() {
+      if (!connected || !contractAddress) return;
+      log('info', 'Inregistrez ' + ENTRIES.length + ' entries individual...');
+
+      for (let i = 0; i < ENTRIES.length; i++) {
+        try {
+          const contract = await Tezos.wallet.at(contractAddress);
+          const e = ENTRIES[i];
+          log('info', '(' + (i+1) + '/' + ENTRIES.length + ') [' + e.code + '] Confirma in Temple...');
+
+          const op = await contract.methods.register(e.code, e.hash).send();
+          await op.confirmation(1);
+          log('ok', '[' + e.code + '] OK');
+        } catch (err) {
+          log('err', '[' + ENTRIES[i].code + '] ' + err.message);
+        }
+      }
+      log('ok', '=== INREGISTRARE COMPLETA ===');
+    };
+
+    window.registerMaster = async function() {
+      if (!connected || !contractAddress) return;
+
+      const allHashes = ENTRIES.map(function(e) { return e.hash; }).join('|');
+      const masterHash = await sha256(allHashes);
+
+      log('info', 'Master Hash: ' + masterHash);
+      log('info', 'Trimit pe blockchain... Confirma in Temple.');
+
+      try {
+        const contract = await Tezos.wallet.at(contractAddress);
+        const op = await contract.methods.set_master_hash(masterHash).send();
+
+        log('info', 'TX: ' + op.opHash);
+        await op.confirmation(1);
+        log('ok', '=== MASTER HASH CONFIRMAT! ===');
+        log('ok', 'Hash: ' + masterHash);
+        log('ok', 'TX: ' + op.opHash);
+        log('ok', 'Intregul portofoliu IP este timestamped pe Tezos!');
+
+      } catch (err) {
+        log('err', 'Eroare: ' + err.message);
+      }
+    };
+
+    // UI
+    function renderEntries() {
+      var el = document.getElementById('entriesList');
+      var html = '';
+      for (var i = 0; i < ENTRIES.length; i++) {
+        var e = ENTRIES[i];
+        var hashDisplay = e.hash ? e.hash.slice(0,24) + '...' : 'computing...';
+        var canTx = connected && contractAddress;
+        html += '<div class="entry-row">' +
+          '<span class="entry-code">' + e.code + '</span>' +
+          '<span class="entry-desc">' + e.desc + '<br><span style="color:#555;font-size:10px">' + hashDisplay + '</span></span>' +
+          '<span class="entry-status"><button onclick="registerSingle(' + i + ')" style="padding:4px 8px;font-size:9px" ' + (canTx ? '' : 'disabled') + '>TX</button></span>' +
+          '</div>';
+      }
+      el.innerHTML = html;
+    }
+
+    function updateButtons() {
+      var ready = connected && contractAddress;
+      document.getElementById('btnRegAll').disabled = !ready;
+      document.getElementById('btnMaster').disabled = !ready;
+      document.getElementById('btnDeploy').disabled = !connected;
+      renderEntries();
+    }
+
+    window.addCustomPrompt = function() {
+      document.getElementById('customSection').style.display = 'block';
+      document.getElementById('customCode').focus();
+    };
+
+    window.addCustomEntry = function() {
+      var code = document.getElementById('customCode').value.trim().toUpperCase();
+      var desc = document.getElementById('customDesc').value.trim();
+      var content = document.getElementById('customContent').value.trim();
+      if (!code || !desc || !content) { log('err', 'Completeaza toate campurile'); return; }
+
+      ENTRIES.push({ code: code, desc: desc, hash: null, content: content });
+      computeHashes();
+      document.getElementById('customCode').value = '';
+      document.getElementById('customDesc').value = '';
+      document.getElementById('customContent').value = '';
+      document.getElementById('customSection').style.display = 'none';
+      log('ok', 'Entry adaugat: [' + code + ']');
+    };
+
+    function log(type, msg) {
+      var el = document.getElementById('txLog');
+      var ts = new Date().toLocaleTimeString('ro-RO');
+      el.innerHTML += '<div class="' + type + '">[' + ts + '] ' + msg + '</div>';
+      el.scrollTop = el.scrollHeight;
+    }
+
+    // INIT
+    window.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('connDot').className = 'dot red';
+
+      if (typeof taquito === 'undefined' || typeof beacon === 'undefined') {
+        log('err', 'Eroare: Taquito sau Beacon SDK nu s-au incarcat. Verifica conexiunea internet.');
+        return;
+      }
+
+      var savedNet = localStorage.getItem('tezos_ip_network');
+      if (savedNet) window.setNetwork(savedNet);
+
+      if (contractAddress) {
+        showContractActive(contractAddress);
+      }
+
+      computeHashes();
+      log('ok', 'Taquito + Beacon dApp SDK incarcate cu succes');
+    });
+  </script>
+</body>
+</html>
