@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta-Consens AGIK — Tezos Smart Contract</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cascadia Code','Fira Code',Consolas,monospace;background:#0a0a0f;color:#e0e0e8;min-height:100vh;padding:40px 20px}
+.container{max-width:900px;margin:0 auto}
+h1{color:#4ade80;font-size:22px;margin-bottom:4px}
+.subtitle{color:#666;font-size:11px;letter-spacing:2px;margin-bottom:28px}
+.section{background:#12121a;border:1px solid #222;padding:20px;margin-bottom:14px;border-radius:4px}
+.section h2{color:#4ade80;font-size:13px;letter-spacing:2px;margin-bottom:14px;text-transform:uppercase}
+.status{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.dot{width:8px;height:8px;border-radius:50%}
+.dot.green{background:#4ade80}
+.dot.red{background:#ef4444}
+.dot.yellow{background:#fbbf24}
+.addr{font-size:10px;color:#888;word-break:break-all}
+input,textarea,select{
+  width:100%;padding:10px 14px;background:#0a0a0f;border:1px solid #333;
+  color:#e0e0e8;font-family:inherit;font-size:12px;margin-bottom:8px;border-radius:3px;
+}
+select{cursor:pointer}
+textarea{min-height:60px;resize:vertical}
+label{font-size:10px;color:#888;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:3px}
+button{
+  padding:10px 20px;border:1px solid #4ade80;background:transparent;
+  color:#4ade80;font-family:inherit;font-size:11px;letter-spacing:2px;
+  cursor:pointer;transition:all .3s;text-transform:uppercase;border-radius:3px;
+}
+button:hover{background:rgba(74,222,128,0.1)}
+button:disabled{opacity:.3;cursor:not-allowed}
+button.primary{background:#4ade80;color:#0a0a0f;font-weight:bold}
+button.primary:hover{background:#86efac}
+button.danger{border-color:#ef4444;color:#ef4444}
+button.danger:hover{background:rgba(239,68,68,.1)}
+.log{background:#080810;border:1px solid #1a1a2a;padding:14px;max-height:260px;overflow-y:auto;font-size:10px;line-height:1.8;border-radius:3px}
+.log .ok{color:#4ade80}
+.log .err{color:#ef4444}
+.log .info{color:#a78bfa}
+.log .warn{color:#fbbf24}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.stat{text-align:center;padding:14px;background:#0a0a0f;border:1px solid #222;border-radius:4px}
+.stat-val{font-size:28px;font-weight:700;color:#4ade80}
+.stat-label{font-size:9px;color:#666;letter-spacing:1px;margin-top:2px}
+.round-card{background:#0a0a0f;border:1px solid #222;padding:12px;margin-bottom:8px;border-radius:3px}
+.round-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.round-topic{font-size:12px;color:#e0e0e8}
+.badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.5px}
+.b-safe{background:rgba(74,222,128,.15);color:#4ade80}
+.b-caution{background:rgba(251,191,36,.15);color:#fbbf24}
+.b-block{background:rgba(239,68,68,.15);color:#ef4444}
+.b-open{background:rgba(167,139,250,.15);color:#a78bfa}
+.b-meta{background:rgba(96,165,250,.15);color:#60a5fa}
+.verdict-row{display:flex;gap:8px;align-items:center;padding:4px 0;font-size:10px;border-bottom:1px solid #1a1a2a}
+.verdict-agent{color:#a78bfa;min-width:100px}
+.verdict-decision{min-width:60px}
+.verdict-conf{color:#888}
+.tabs{display:flex;gap:0;border-bottom:1px solid #222;margin-bottom:16px}
+.tab{padding:8px 16px;font-size:11px;letter-spacing:1px;cursor:pointer;border-bottom:2px solid transparent;color:#666;transition:all .2s}
+.tab:hover{color:#e0e0e8}
+.tab.active{color:#4ade80;border-bottom-color:#4ade80}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+@media(max-width:600px){.grid-2,.grid-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>META-CONSENS AGIK</h1>
+  <div class="subtitle">Multi-Agent Consensus for Child Safety · Tezos Smart Contract</div>
+
+  <!-- CONNECTION -->
+  <div class="section">
+    <h2>Conexiune</h2>
+    <div class="status">
+      <div class="dot" id="walletDot"></div>
+      <span id="walletStatus" style="font-size:11px">Deconectat</span>
+    </div>
+    <div class="addr" id="walletAddr"></div>
+    <div style="margin-top:10px;display:flex;gap:8px">
+      <button class="primary" onclick="connectWallet()" id="connectBtn">Conecteaza Wallet</button>
+      <input type="text" id="contractAddr" placeholder="KT1... (adresa contractului)" style="flex:1;margin:0">
+      <button onclick="loadContract()">Incarca</button>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="grid-3" id="statsGrid" style="margin-bottom:14px;display:none">
+    <div class="stat"><div class="stat-val" id="statRounds">0</div><div class="stat-label">RUNDE</div></div>
+    <div class="stat"><div class="stat-val" id="statConsensus">0</div><div class="stat-label">CONSENS</div></div>
+    <div class="stat"><div class="stat-val" id="statBlocks">0</div><div class="stat-label">BLOCARI</div></div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('operate')">Operare</div>
+    <div class="tab" onclick="switchTab('rounds')">Runde</div>
+    <div class="tab" onclick="switchTab('deploy')">Deploy</div>
+    <div class="tab" onclick="switchTab('log')">Log</div>
+  </div>
+
+  <!-- OPERATE -->
+  <div class="tab-panel active" id="tab-operate">
+    <div class="section">
+      <h2>Inregistreaza Agent</h2>
+      <div class="grid-2">
+        <div>
+          <label>Nume Agent</label>
+          <select id="agentName">
+            <option value="SENS">SENS — Agent de Sens</option>
+            <option value="ACR">ACR — Anti-Confabulation</option>
+            <option value="CASP">CASP — Child Safety Protocol</option>
+            <option value="CONCORDANCE">CONCORDANCE — Multi-Agent</option>
+            <option value="HASN">HASN — Security Network</option>
+            <option value="CALIBRATION">CALIBRATION — Model Calibration</option>
+            <option value="HERITAGE">HERITAGE — Digital Heritage</option>
+            <option value="UKBE">UKBE — Kuramoto Resonance</option>
+            <option value="MAESTRU">MAESTRU — Orchestrator</option>
+          </select>
+        </div>
+        <div style="display:flex;align-items:end;gap:8px">
+          <button onclick="registerAgent()">Inregistreaza</button>
+          <button class="danger" onclick="removeAgent()">Sterge</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Deschide Runda de Consens</h2>
+      <label>Topic / Subiect</label>
+      <input type="text" id="roundTopic" placeholder="Ex: Conversatie copil 7 ani — detectie manipulare">
+      <label>Context Copil</label>
+      <select id="childContext">
+        <option value="0-3 ani">0-3 ani (pre-verbal)</option>
+        <option value="4-6 ani">4-6 ani (pre-scolar)</option>
+        <option value="7-10 ani" selected>7-10 ani (scolar primar)</option>
+        <option value="11-14 ani">11-14 ani (pre-adolescent)</option>
+        <option value="15-17 ani">15-17 ani (adolescent)</option>
+      </select>
+      <button class="primary" onclick="openRound()">Deschide Runda</button>
+    </div>
+
+    <div class="section">
+      <h2>Submite Verdict</h2>
+      <div class="grid-2">
+        <div>
+          <label>Runda ID</label>
+          <input type="number" id="verdictRoundId" value="0" min="0">
+        </div>
+        <div>
+          <label>Agent</label>
+          <select id="verdictAgent">
+            <option value="SENS">SENS</option>
+            <option value="ACR">ACR</option>
+            <option value="CASP">CASP</option>
+            <option value="CONCORDANCE">CONCORDANCE</option>
+            <option value="HASN">HASN</option>
+            <option value="CALIBRATION">CALIBRATION</option>
+            <option value="HERITAGE">HERITAGE</option>
+            <option value="UKBE">UKBE</option>
+            <option value="MAESTRU">MAESTRU</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div>
+          <label>Decizie</label>
+          <select id="verdictDecision">
+            <option value="SAFE">SAFE</option>
+            <option value="CAUTION">CAUTION</option>
+            <option value="BLOCK">BLOCK</option>
+          </select>
+        </div>
+        <div>
+          <label>Confidence (0-100)</label>
+          <input type="number" id="verdictConfidence" value="85" min="0" max="100">
+        </div>
+        <div>
+          <label>Reasoning Hash</label>
+          <input type="text" id="verdictHash" placeholder="0x..." value="">
+        </div>
+      </div>
+      <button onclick="submitVerdict()">Submite Verdict</button>
+    </div>
+
+    <div class="section">
+      <h2>Inchide Runda / Meta-Verify</h2>
+      <div class="grid-2">
+        <div>
+          <label>Runda ID</label>
+          <input type="number" id="closeRoundId" value="0" min="0">
+          <button onclick="closeRound()">Inchide Runda</button>
+        </div>
+        <div>
+          <label>Meta Hash (pentru verificare)</label>
+          <input type="text" id="metaHash" placeholder="0x...">
+          <button onclick="metaVerify()">Meta-Verify</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Admin</h2>
+      <div class="grid-2">
+        <div>
+          <label>Min Concordance %</label>
+          <input type="number" id="minConc" value="70" min="0" max="100">
+          <button onclick="setMinConcordance()">Seteaza</button>
+        </div>
+        <div>
+          <label>Min Agents per Round</label>
+          <input type="number" id="minAgents" value="3" min="2">
+          <button onclick="setMinAgents()">Seteaza</button>
+        </div>
+      </div>
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <button class="danger" onclick="pauseContract()">Pause</button>
+        <button onclick="unpauseContract()">Unpause</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROUNDS -->
+  <div class="tab-panel" id="tab-rounds">
+    <div class="section">
+      <h2>Runde de Consens</h2>
+      <div id="roundsList"><span style="font-size:11px;color:#666">Incarca contractul pentru a vedea rundele.</span></div>
+    </div>
+  </div>
+
+  <!-- DEPLOY -->
+  <div class="tab-panel" id="tab-deploy">
+    <div class="section">
+      <h2>Deploy Contract Nou</h2>
+      <p style="font-size:11px;color:#888;margin-bottom:14px;line-height:1.6">
+        Compilează <code style="color:#a78bfa">meta_consens_agik.py</code> pe
+        <a href="https://smartpy.io/ide" style="color:#4ade80" target="_blank" rel="noopener">SmartPy IDE</a>,
+        apoi deployează direct de acolo pe Ghostnet (testnet) sau Mainnet.
+        <br><br>
+        Alternativ, paste Michelson JSON mai jos și deployează prin Taquito:
+      </p>
+      <textarea id="michelsonCode" placeholder="Paste Michelson JSON here..." style="min-height:120px"></textarea>
+      <button class="primary" onclick="deployContract()">Deploy pe Tezos</button>
+    </div>
+
+    <div class="section">
+      <h2>Pasi de Deploy</h2>
+      <ol style="font-size:11px;color:#888;line-height:2;padding-left:20px">
+        <li>Deschide <a href="https://smartpy.io/ide" style="color:#4ade80" target="_blank" rel="noopener">SmartPy IDE</a></li>
+        <li>Paste codul din <code style="color:#a78bfa">meta_consens_agik.py</code></li>
+        <li>Click "Run" — verifică testele trec</li>
+        <li>Click "Deploy Michelson Contract"</li>
+        <li>Selectează rețeaua: Ghostnet (test) sau Mainnet</li>
+        <li>Conectează Temple Wallet</li>
+        <li>Confirmă deploy-ul</li>
+        <li>Copiază adresa KT1... aici sus</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- LOG -->
+  <div class="tab-panel" id="tab-log">
+    <div class="section">
+      <h2>Log Operatiuni</h2>
+      <div class="log" id="logArea">
+        <div class="info">[SYSTEM] Meta-Consens AGIK — interfata Taquito v0.1</div>
+        <div class="info">[SYSTEM] Conecteaza wallet-ul si incarca contractul pentru a incepe.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/@taquito/taquito@20.0.1/dist/taquito.min.js"></script>
+<script src="https://unpkg.com/@taquito/beacon-wallet@20.0.1/dist/taquito-beacon-wallet.umd.js"></script>
+<script src="https://unpkg.com/@airgap/beacon-sdk@4.3.0/dist/walletbeacon.min.js"></script>
+<script>
+let tezos, wallet, contract;
+
+function log(msg, cls = 'info') {
+  const el = document.getElementById('logArea');
+  const ts = new Date().toLocaleTimeString();
+  el.innerHTML += `<div class="${cls}">[${ts}] ${msg}</div>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+async function connectWallet() {
+  try {
+    log('Conectare wallet...');
+    wallet = new beacon.DAppClient({ name: 'Meta-Consens AGIK' });
+    const perms = await wallet.requestPermissions({
+      network: { type: 'ghostnet' }
+    });
+    const addr = perms.address;
+
+    tezos = new taquito.TezosToolkit('https://ghostnet.ecadinfra.com');
+    tezos.setWalletProvider(wallet);
+
+    document.getElementById('walletDot').className = 'dot green';
+    document.getElementById('walletStatus').textContent = 'Conectat';
+    document.getElementById('walletAddr').textContent = addr;
+    document.getElementById('connectBtn').textContent = 'Conectat ✓';
+    document.getElementById('connectBtn').disabled = true;
+
+    log(`Wallet conectat: ${addr}`, 'ok');
+  } catch (e) {
+    log(`Eroare conectare: ${e.message}`, 'err');
+    document.getElementById('walletDot').className = 'dot red';
+  }
+}
+
+async function loadContract() {
+  const addr = document.getElementById('contractAddr').value.trim();
+  if (!addr.startsWith('KT1')) { log('Adresa invalida — trebuie sa inceapa cu KT1', 'err'); return; }
+  try {
+    log(`Incarcare contract ${addr}...`);
+    contract = await tezos.wallet.at(addr);
+    log(`Contract incarcat: ${addr}`, 'ok');
+    await loadStats();
+    await loadRounds();
+    document.getElementById('statsGrid').style.display = 'grid';
+  } catch (e) {
+    log(`Eroare incarcare: ${e.message}`, 'err');
+  }
+}
+
+async function loadStats() {
+  try {
+    const storage = await contract.storage();
+    document.getElementById('statRounds').textContent = storage.round_count.toString();
+    document.getElementById('statConsensus').textContent = storage.total_consensus.toString();
+    document.getElementById('statBlocks').textContent = storage.total_blocks.toString();
+  } catch (e) { log(`Eroare stats: ${e.message}`, 'err'); }
+}
+
+async function loadRounds() {
+  try {
+    const storage = await contract.storage();
+    const count = storage.round_count.toNumber();
+    const el = document.getElementById('roundsList');
+    if (count === 0) { el.innerHTML = '<span style="font-size:11px;color:#666">Nicio runda inca.</span>'; return; }
+
+    let html = '';
+    for (let i = count - 1; i >= 0 && i >= count - 10; i--) {
+      const round = await storage.rounds.get(i);
+      if (!round) continue;
+      const statusClass = round.safety_level === 'SAFE' ? 'b-safe' :
+                          round.safety_level === 'BLOCK' ? 'b-block' :
+                          round.safety_level === 'CAUTION' ? 'b-caution' : 'b-open';
+      const statusClass2 = round.status === 'META_VERIFIED' ? 'b-meta' :
+                           round.status === 'CONSENSUS' ? 'b-safe' :
+                           round.status === 'DISSENT' ? 'b-caution' : 'b-open';
+
+      html += `<div class="round-card">
+        <div class="round-head">
+          <span class="round-topic">#${i} — ${round.topic}</span>
+          <span><span class="badge ${statusClass}">${round.safety_level}</span> <span class="badge ${statusClass2}">${round.status}</span></span>
+        </div>
+        <div style="font-size:10px;color:#666;margin-bottom:4px">Context: ${round.child_context} · Concordance: ${round.concordance_pct}%</div>
+      </div>`;
+    }
+    el.innerHTML = html || '<span style="font-size:11px;color:#666">Nicio runda gasita.</span>';
+  } catch (e) { log(`Eroare runde: ${e.message}`, 'err'); }
+}
+
+async function callContract(method, args, label) {
+  if (!contract) { log('Contract neincarcat!', 'err'); return; }
+  try {
+    log(`${label}...`);
+    const op = await contract.methods[method](...args).send();
+    log(`TX trimis: ${op.opHash}`, 'warn');
+    await op.confirmation(1);
+    log(`${label} — confirmat!`, 'ok');
+    await loadStats();
+    await loadRounds();
+  } catch (e) { log(`Eroare ${label}: ${e.message}`, 'err'); }
+}
+
+function registerAgent() {
+  callContract('register_agent', [document.getElementById('agentName').value], 'Inregistrare agent');
+}
+function removeAgent() {
+  callContract('remove_agent', [document.getElementById('agentName').value], 'Stergere agent');
+}
+function openRound() {
+  callContract('open_round', [{
+    topic: document.getElementById('roundTopic').value,
+    child_context: document.getElementById('childContext').value
+  }], 'Deschidere runda');
+}
+function submitVerdict() {
+  const hash = document.getElementById('verdictHash').value || '00';
+  callContract('submit_verdict', [{
+    round_id: parseInt(document.getElementById('verdictRoundId').value),
+    agent: document.getElementById('verdictAgent').value,
+    decision: document.getElementById('verdictDecision').value,
+    confidence: parseInt(document.getElementById('verdictConfidence').value),
+    reasoning_hash: hash
+  }], 'Submite verdict');
+}
+function closeRound() {
+  callContract('close_round', [parseInt(document.getElementById('closeRoundId').value)], 'Inchidere runda');
+}
+function metaVerify() {
+  callContract('meta_verify', [{
+    round_id: parseInt(document.getElementById('closeRoundId').value),
+    meta_hash: document.getElementById('metaHash').value || '00'
+  }], 'Meta-verify');
+}
+function setMinConcordance() {
+  callContract('set_min_concordance', [parseInt(document.getElementById('minConc').value)], 'Set min concordance');
+}
+function setMinAgents() {
+  callContract('set_min_agents', [parseInt(document.getElementById('minAgents').value)], 'Set min agents');
+}
+function pauseContract() { callContract('pause', [], 'Pause contract'); }
+function unpauseContract() { callContract('unpause', [], 'Unpause contract'); }
+
+async function deployContract() {
+  const code = document.getElementById('michelsonCode').value.trim();
+  if (!code) { log('Paste Michelson JSON inainte de deploy!', 'err'); return; }
+  try {
+    log('Deploy contract...');
+    const parsed = JSON.parse(code);
+    const op = await tezos.wallet.originate({ code: parsed, storage: {} }).send();
+    log(`Deploy TX: ${op.opHash}`, 'warn');
+    const c = await op.contract();
+    log(`Contract deployat: ${c.address}`, 'ok');
+    document.getElementById('contractAddr').value = c.address;
+    await loadContract();
+  } catch (e) { log(`Eroare deploy: ${e.message}`, 'err'); }
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Init
+document.getElementById('walletDot').className = 'dot red';
+</script>
+</body>
+</html>
