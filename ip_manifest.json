@@ -12,7 +12,7 @@
     "latest_tx": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
   },
   "master_hash_v2_2": "",
-  "total_entries": 174,
+  "total_entries": 182,
   "entries": [
     {
       "code": "INVARIANT-FLEET",
@@ -1318,7 +1318,79 @@
       "sha256": "a20d8a6bfb1541cbfd0c396a7492a3c1960ab4f6d59c6d095582f7ace9e37bb2",
       "file_size": 4114,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 175,
+      "code": "PADUREA-STORY-175",
+      "description": "Pădurea de Cod story: Alfabetizare Digitală & Securitate Online_ Păzitorii Lumii Digitale",
+      "source_type": "narrative",
+      "sha256": "c3293a85544e4490b0fa6c2139fc23cc87a37cbf135152f5d98b13e747e82339",
+      "file_size": 350059139,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 176,
+      "code": "PADUREA-STORY-176",
+      "description": "Pădurea de Cod story: Ancorele Adevărului_ Călătoria spre Sfinx",
+      "source_type": "narrative",
+      "sha256": "250e7eb675f8f4acac3a928e5b19fe6af3a3d82db98e90c86bb14865c5eab326",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 177,
+      "code": "PADUREA-STORY-177",
+      "description": "Pădurea de Cod story: Cetatea Secretă a Vărului Vesel",
+      "source_type": "narrative",
+      "sha256": "af8e125cd3955a9e005095271c23d58ca612f5d637368ce07dd93523d1f38c09",
+      "file_size": 350059139,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 178,
+      "code": "PADUREA-STORY-178",
+      "description": "Pădurea de Cod story: Cântecul Uit al Stelelor",
+      "source_type": "narrative",
+      "sha256": "9c734d553678809a10b48e0f68a269e8877024da48fac5693201c8a8e5bef8c8",
+      "file_size": 320127083,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 179,
+      "code": "PADUREA-STORY-179",
+      "description": "Pădurea de Cod story: Fundația (The Foundation)",
+      "source_type": "narrative",
+      "sha256": "c0010c50a7d8854828af4e20e9b7d64d944a373d77e5ebc39aa7962821723baf",
+      "file_size": 320127083,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 180,
+      "code": "PADUREA-STORY-180",
+      "description": "Pădurea de Cod story: Grădina de Date",
+      "source_type": "narrative",
+      "sha256": "804e3b026582acabe118ce0d60a2f3b9aeffd4f7f5fe3e88cb0716f612241926",
+      "file_size": 378331543,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 181,
+      "code": "PADUREA-STORY-181",
+      "description": "Pădurea de Cod story: MICUL GHID AL ARHITECTULUI DE SISTEME SUVERANE",
+      "source_type": "narrative",
+      "sha256": "d8d783477073351754140a81333ec0d3c8e83b6ef5e8272bab0c557ce609994f",
+      "file_size": 350059139,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 182,
+      "code": "PADUREA-STORY-182",
+      "description": "Pădurea de Cod story: Scânteia Secretă",
+      "source_type": "narrative",
+      "sha256": "20c8271aa1a0495e42ffad5c1b14e2475807be24ff8caf079f4c72ff8a0b2c0b",
+      "file_size": 320127083,
+      "license": "CC BY-NC-SA 4.0"
     }
   ],
-  "note": "174 IP assets total. 130 original + 41 Pădurea de Cod stories (CC BY-NC-SA 4.0) + 1 Industry Validation doc + 2 on-chain only. Authoritative: verificare/BLOCKCHAIN_MANIFEST.json."
+  "note": "182 IP assets total. 130 original + 49 Pădurea de Cod stories (CC BY-NC-SA 4.0) + 1 Industry Validation doc + 2 on-chain only. Authoritative: verificare/BLOCKCHAIN_MANIFEST.json."
 }
