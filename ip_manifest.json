@@ -1,10 +1,18 @@
 {
-  "version": "2.0.0",
+  "version": "2.2.0",
   "owner": "Mihai Roșca",
   "qid": "1820209090023",
   "tezos_address": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
   "location": "Spiru Haret, Brăila, România",
-  "generated": "2026-07-22T11:56:37.687681Z",
+  "generated": "2026-09-10T03:30:00Z",
+  "blockchain": {
+    "network": "Tezos Mainnet",
+    "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+    "contract": "KT1Pe2GA11bMpaTL5VH4TY6aZ9xePZ6f5vWX",
+    "latest_tx": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
+  },
+  "master_hash_v2_2": "",
+  "total_entries": 132,
   "entries": [
     {
       "code": "INVARIANT-FLEET",
@@ -31,126 +39,126 @@
       "code": "UKBE-CORE",
       "description": "UKBE Core Engine - REAI resonance (Kuramoto+Kalman)",
       "source_type": "github_repo",
-      "sha256": "c1e801a8800a755bfefecebfbc98c7c76d33f3dffb4c45ff15c77f0d4e46e677",
+      "sha256": "3d8f24b9cbf74010536722f7b04a0b140f5a7355e96c49ad76e94a5d34a79a27",
       "repo": "amidigiart/ukbe-core"
     },
     {
       "code": "TVE-CORE",
       "description": "Truth Vector Engine - manipulation detection",
       "source_type": "github_repo",
-      "sha256": "6fee1803ead53a2dda13bebbdf2bc7ccf359a421f8aa3f0f7e86ae0d09971e2e",
+      "sha256": "b7835c7952920a9085350472f480049ad74e9bced3ee61411400c35163545fb2",
       "repo": "amidigiart/tve-core"
     },
     {
       "code": "AMIDOR-ENGINE",
       "description": "Amidor Engine - dual-model anti-confabulation",
       "source_type": "github_repo",
-      "sha256": "1000549c99ae03678161f0a257a4a78d219a9bb5680a50a5262e00d48b9a19ff",
+      "sha256": "1c5cb3649f8a9fe295e1bb9f6d2db3cd46a84922813a79848e6f3921d4be6c2b",
       "repo": "amidigiart/amidor-engine"
     },
     {
       "code": "KINDERAGI",
       "description": "KinderAGI Core - AI companion for children safety layer",
       "source_type": "github_repo",
-      "sha256": "e5889254942cf64e0a6950a0955b43da24f97f9e1a21ace837c471331a390347",
+      "sha256": "2df71b604fd65a5b42737ae1a7456efe5e29e0b0ace44cee28e6ccc78ed87bb1",
       "repo": "amidigiart/kinderagi-core"
     },
     {
       "code": "TVE-UKBE-FUSION",
       "description": "TVE-UKBE Fusion - combined engine",
       "source_type": "github_repo",
-      "sha256": "e00b0e09daf4f1cdfbb57a951ac891b0b123f40caca6b6c151d33fa2aab838a3",
+      "sha256": "49c74830bad5d2fa9bd263e12ff7866e8ca73a7bac7b7e4ad6a59257d2756357",
       "repo": "amidigiart/tve-ukbe-fusion"
     },
     {
       "code": "P6-ADLER",
       "description": "P6 Adler Ghost Peak - bifurcation paper DOI Zenodo",
       "source_type": "github_repo",
-      "sha256": "c9309ff790c598e5e4df10f9f57f720d176b17ce7e71401c2f8f476b9e5360d5",
+      "sha256": "ca795276c94602b455575029f242dd79b42bd4c24d180b27ccb261f690425af3",
       "repo": "amidigiart/p6-adler-ghost-peak"
     },
     {
       "code": "AMIBELLAI",
       "description": "AmiBellAI - beauty companion AI",
       "source_type": "github_repo",
-      "sha256": "f5de9d8e0269c78b3d6fd138502aa0d428e58ee97a101ad0c49d92081afb24a3",
+      "sha256": "9771cd2adce0cd46e9b60af9e494204ac3a58d0b99d6af59bd6629c818b08419",
       "repo": "amidigiart/amibellai.com"
     },
     {
       "code": "AMITHERAI",
       "description": "AmiTherai - wellness companion AI",
       "source_type": "github_repo",
-      "sha256": "e3be5161dfbf556c182656db1ae62bcc903cdf16b22950163cf3869721738cd5",
+      "sha256": "f921c514a204df967e1a8a4ee0a537b8935b3bbe9ae2763f675bf4d86f4ca35a",
       "repo": "amidigiart/amitherai.com"
     },
     {
       "code": "AMIWEALTHAI",
       "description": "AmiWealthAI - private wealth intelligence",
       "source_type": "github_repo",
-      "sha256": "003be6c3d4b1f8a49af1199c3a4f14d73ccfcba34a1ee0bb4abfb65118203d9f",
+      "sha256": "b7b7b3f9ad6e64aee9a437771aeee696932790f1e4a1eeb12e8fc4ea33bc8ca9",
       "repo": "amidigiart/amiwealthai.com"
     },
     {
       "code": "AMILUXAI",
       "description": "AmiLuxAI - 11 AI companion ecosystem",
       "source_type": "github_repo",
-      "sha256": "21609fef2006e172d9c1bc61b46b7b1c69426591e39c13dd53f7902f76febfa9",
+      "sha256": "820abebc08c1f711a34db65f8ed6ba69548353e0c5632d15f503a710b424c7c4",
       "repo": "amidigiart/amiluxai.com"
     },
     {
       "code": "AMIPECETAI",
       "description": "AmiPecetAI - Truth Vector Engine SaaS",
       "source_type": "github_repo",
-      "sha256": "275ce1a05fdf153afd2a223e67451d5bbcb73e8a33b13542627a621b203c04e2",
+      "sha256": "a6a9f917b81cc26a85f7c8468e3c7054c5ade6c9cf8aac61966e5253ec7c1815",
       "repo": "amidigiart/amipecetai.com"
     },
     {
       "code": "AMIQIAI",
       "description": "AmiQiAI - energy journal ECDSA signatures",
       "source_type": "github_repo",
-      "sha256": "864830b0401095a28444cbb226117f77e334acabbda1f44e561a96b904dddeea",
+      "sha256": "84b555a4dd6c08e02b23f2ef9455f77edb37bc4eeb1a6051118a333f6b252592",
       "repo": "amidigiart/amiqiai.com"
     },
     {
       "code": "AMIAPIAPI",
       "description": "AmiApiAI - API documentation companion",
       "source_type": "github_repo",
-      "sha256": "e6fdbb9ae2f49a9e4bb8eda547fed288fbac380396afcfce592470552592b291",
+      "sha256": "4706e6cbc15d23bb724ef56de8ec50f45568c02a7a9940a2493699773b382f69",
       "repo": "amidigiart/amiapiai.com"
     },
     {
       "code": "AMIGHOSTAI",
       "description": "AmiGhostAI - ghost code & dependency audit",
       "source_type": "github_repo",
-      "sha256": "948c1cff741c55abbd19096e18fa3d1d3a22df8920a6134a5c4ae0a5b226a33e",
+      "sha256": "1fa8d5e1e14f2ed709e9724b2e0c2922fdedd8af2da60b75db8014d688245f41",
       "repo": "amidigiart/amighostai.com"
     },
     {
       "code": "AMIAGENTAI",
       "description": "AmiAgentAI - real estate AI companion",
       "source_type": "github_repo",
-      "sha256": "d9cabc62eeba2f66327053f6dca135ca6a69e00ab66248b15222c94ac2e4f421",
+      "sha256": "5dcf39ebb3d20eb7006f3b094b18bca84e6eaf82e3edde388776038f30317288",
       "repo": "amidigiart/amiagentai.com"
     },
     {
       "code": "AMIBRAINAI",
       "description": "AmiBrainAI - study & learning companion",
       "source_type": "github_repo",
-      "sha256": "46e28bf1be5b8d6c4a183286ac18db179486fbb2ecf6dae6fd4c94d629e9fa81",
+      "sha256": "e59e0fe054756d7275778dd791dc6603c49f6ea34a7cc38562cbee40adfd8634",
       "repo": "amidigiart/amibrainai.com"
     },
     {
       "code": "AMIORACLEAI",
       "description": "AmiOracleAI - business forecast companion",
       "source_type": "github_repo",
-      "sha256": "506728840dc659b57e29f588fcdb95f95d92d57da567daa251acb184543845ad",
+      "sha256": "d19490d5ed4452d06e302fc2aea748591107e691f76a62b9bff1143d1424bff6",
       "repo": "amidigiart/amioracleai.com"
     },
     {
       "code": "ANTETAI",
       "description": "AntetAI - ecosystem hub",
       "source_type": "github_repo",
-      "sha256": "e90bcbffb3f98c1568c84a7feac8719e8ab57fa256de7c5bc13f7d875969f974",
+      "sha256": "738a3641c65e79b9c585d25295ea6d2e46ff6d7188e0f4e67dca977c237f733a",
       "repo": "amidigiart/antetai.com"
     },
     {
@@ -609,7 +617,330 @@
       "source_type": "local_file",
       "sha256": "a5b0ac2041a75e54fa42285c0e22b605338cc91dbe5322a3f6eb035112cccb27",
       "file_size": 334
+    },
+    {
+      "code": "CAAS-COEXISTENCE",
+      "description": "CaaS Coexistence Strategy - Trust Layer for all cognitive engines",
+      "source_type": "concept_text",
+      "sha256": "bd26018d3976c2351b3655ca6c5beab0b45c1180d86ae293b220b6911ff1b6e0"
+    },
+    {
+      "code": "CAAS-STRATEGY-DOC",
+      "description": "CaaS Coexistence Strategy HTML - full document with architecture diagrams",
+      "source_type": "local_file",
+      "sha256": "0c7264b9249190e62ac0fe5a698755ae7234869ec3c7bcdb244a6da4631679ba",
+      "file_size": 35708
+    },
+    {
+      "code": "EU-PROPOSAL",
+      "description": "BRIDGRAI EU Funding Proposal - Horizon Europe EIC Pathfinder, 500K EUR, 36 months",
+      "source_type": "local_file",
+      "sha256": "79515606b1fa88806c15597f593b1aa542964ea69d049ffd90c5b20d2144ae33",
+      "file_size": 26511
+    },
+    {
+      "code": "INVESTOR-PACK",
+      "description": "BRIDGRAI Investor Pack - institutional funding document, valuation, due diligence",
+      "source_type": "local_file",
+      "sha256": "8b2cae2d76ddea55a6929fba3660f2b0082fa490b5882a33d51df1c60e96fa4a",
+      "file_size": 22472
+    },
+    {
+      "code": "DEEP-WATER",
+      "description": "Inside Water Deep Research - neuroscience guide, biological reset, 8 chapters",
+      "source_type": "local_file",
+      "sha256": "db89a07171741dd9410f487f72e24b513c3670254b71025e5d256a1961e1099b",
+      "file_size": 28701
+    },
+    {
+      "code": "AGENT-INTERPLANETAR",
+      "description": "Agent Interplanetar - Pădurea de Cod companion agent (13/13 teste, Guardian Swarm, Resonance Motor, Notary chain)",
+      "source_type": "local_file",
+      "sha256": "3d78cb1d1a0a7ecbe4f02eb77a3b7f322a71e8bcddabc3215abfe9309b3d484d",
+      "file_size": 17237
+    },
+    {
+      "code": "MODUL7-ORIGINEA-HTML",
+      "description": "Modulul 7 Originea - lecție RE manual (rugăciune ca cuplare, buiu, 5 invarianți biografici)",
+      "source_type": "local_file",
+      "sha256": "9674e082115ac5fb7dd1de212ca2ec3f4d2fae0941f5f4d701834b3699d9aa46",
+      "file_size": 18341
+    },
+    {
+      "code": "MODUL7-ORIGINEA-DOCX",
+      "description": "Modulul 7 Originea - Word document oficial",
+      "source_type": "local_file",
+      "sha256": "467cddc82fbafffcc6283957cd913c2d135e65886a440a205c876fb7eab84f01",
+      "file_size": 13969
+    },
+    {
+      "code": "TEZA-DOCTORAT-AI-UMAN",
+      "description": "Teza de Doctorat: Coagenția Om-AI — 209 teste, 5 invarianți, Kuramoto+Kalman",
+      "source_type": "local_file",
+      "sha256": "4f253074370442192f553392f1aeec7a4a70e463be07cd47906eaf0f3ab35f86",
+      "file_size": 62677
+    },
+    {
+      "code": "AGIKINDERGARTEN-SITE",
+      "description": "agikindergarten.com - landing page Pădurea de Cod (12 secțiuni, FRAMEWORK complet)",
+      "source_type": "local_file",
+      "sha256": "88e70f83444fe8c768d77a610fab5b10b495493f9cb72e9b9f5af2f00a1b68af",
+      "file_size": 31113
+    },
+    {
+      "code": "AGIKINDERGARTEN-FRAMEWORK",
+      "description": "AGI Kindergarten Framework Pedagogic - 3 straturi, Decalog Negativ, 10 principii",
+      "source_type": "local_file",
+      "sha256": "18e7781a29268bd3a402ab44adaf7b85983ffba44abd43fe21dc56086263bb30",
+      "file_size": 17674
+    },
+    {
+      "code": "PUNTEA-TRANSGENERATIONALA",
+      "description": "Puntea Transgenerațională - Pentru Patrick, Ottavia Colonna di Stigliano, Buiu→Mihai→Patrick",
+      "source_type": "local_file",
+      "sha256": "68012d47e53e407af12a2daff932efcd393b15037095667a58a77e9a38422225",
+      "file_size": 21533
+    },
+    {
+      "code": "RESEARCH-BRIEF-RE",
+      "description": "Research Brief - Resonance Engineering: A Framework for Human-AGI Coagency (Oslo/Zurich)",
+      "source_type": "local_file",
+      "sha256": "baf330d6d64edfefdecedf08b9465e8f8bcc1b3498a71d90cfbfa3167023f82a",
+      "file_size": 15005
+    },
+    {
+      "code": "PENTRU-PATRICK",
+      "description": "Pentru Patrick — Ce a creat tatăl tău (declarație completă, 5 invarianți biografici, Ottavia, Buiu→Mihai→Patrick)",
+      "source_type": "local_file",
+      "sha256": "914b096c78744986804ee9a3295816bfb27df70bc0a093204a87803342c6b0f1",
+      "file_size": 14440
+    },
+    {
+      "code": "KCE-FOUNDING",
+      "description": "Knowledge Continuity Engineering — Founding Document: new discipline, 5 problems, 7 principles (K1-K7), 5-layer stack, BRIDGRAI as first implementation",
+      "source_type": "local_file",
+      "sha256": "92d989727fda66fe72205b950faa756435be2d90943546e8bfa57726457947d3",
+      "file_size": 12473
+    },
+    {
+      "code": "KCE-PAPER-BASE",
+      "description": "KCE Academic Paper — formal framework: literature gap, P1-P5 problem statements, K1-K7 principles, 5-layer architecture, BRIDGRAI reference implementation, 9 references",
+      "source_type": "local_file",
+      "sha256": "6f77abf391cb90fe13d48076c862594c0050445de2452d9d531c5fdf96a686c9",
+      "file_size": 26632
+    },
+    {
+      "code": "KCE-PAPER-EXTENDED",
+      "description": "KCE Extended Framework — Tier 1/2/3 implementation guide, metadata schema, 4 proposed metrics (PCR/SVR/ACI/DRS), 3 case studies, adoption roadmap",
+      "source_type": "local_file",
+      "sha256": "4b8f1893dc68c3843ef0c48f9911854520837662792fa9dcb8c9f3e94cfa2c48",
+      "file_size": 24200
+    },
+    {
+      "id": 107,
+      "code": "AMICOOPERAI-ENGINE",
+      "description": "AmiCooperAI Engine",
+      "source_type": "engine",
+      "sha256": "ca3bce26345f54ce8f3b90b81ac867bad88de94c09442feba5e84c7ce27520c2",
+      "source": "github.com/amidigiart/amicooperai-engine"
+    },
+    {
+      "id": 108,
+      "code": "AMICOOPERAI-WEBSITE",
+      "description": "AmiCooperAI Website",
+      "source_type": "product",
+      "sha256": "feed98a8717253cd6addce6ea9ae8474d77e8b6a5709f4b4492ab41a75a30a32"
+    },
+    {
+      "id": 109,
+      "code": "CRAWLERATTACHSUBMOTOR",
+      "description": "CrawlerAttachSubmotor",
+      "source_type": "submotor",
+      "sha256": "37aa89f41348c9b6efcc16788697fe994eb72dec10cd212594ca04f9d96d7fd0",
+      "source": "ukbe_core/crawler_attach.py"
+    },
+    {
+      "id": 110,
+      "code": "CRAWLERATTACHSUBMOTOR-TESTS",
+      "description": "CrawlerAttachSubmotor Tests",
+      "source_type": "tests",
+      "sha256": "5c95dc1acd3b764c8f42705faed7395ecb2dc3babbdb305ffa9882b4b9274226"
+    },
+    {
+      "id": 111,
+      "code": "MIHAI-COMPANION-AGENT-#15",
+      "description": "Mihai Companion Agent #15",
+      "source_type": "agent",
+      "sha256": "4d91ca7d06b644e84ffd457cb6c1e1b1e9926d102ed4ef6c2de3aaef1a44a5de",
+      "source": "mihai-companion/service.py"
+    },
+    {
+      "id": 112,
+      "code": "MIHAI-COMPANION-TESTS",
+      "description": "Mihai Companion Tests",
+      "source_type": "tests",
+      "sha256": "eca17110ec613ab21fbef8a09a1b429d618b89705a846fde45963af3625f7d28"
+    },
+    {
+      "id": 113,
+      "code": "BRIDGRAI-GENERAL-FRAMEWORK",
+      "description": "BRIDGRAI General Framework",
+      "source_type": "research",
+      "sha256": "ad603871bd5c97cb7b52b646cd8f180784bbbfa726d5c5a67fed490868c23f47",
+      "source": "verificare/BRIDGRAI_GENERAL_FRAMEWORK.md"
+    },
+    {
+      "id": 114,
+      "code": "DECALAJ-ANALYSIS",
+      "description": "Decalaj Analysis",
+      "source_type": "research",
+      "sha256": "9e08fd031477081b518de90bb02ef0f4b4408af9076b7009963b87a6f5acf1e6",
+      "source": "verificare/DECALAJ_ANALYSIS.md"
+    },
+    {
+      "id": 115,
+      "code": "PORTFOLIO-GUIDE",
+      "description": "Portfolio Guide",
+      "source_type": "research",
+      "sha256": "e7132312b9268b7f643a53f8500bfc01fa34e5587e2d647e28fd9927f6e857d3",
+      "source": "verificare/PORTFOLIO_GUIDE.md"
+    },
+    {
+      "id": 116,
+      "code": "AGI-SCHOOL-ACADEMY",
+      "description": "AGI School Academy",
+      "source_type": "product",
+      "sha256": "8060e804df4100109a633a82cbd7c7cdf0a5581a978959fce0f4118c79d07b38",
+      "source": "github.com/amidigiart/agischool-academy"
+    },
+    {
+      "id": 117,
+      "code": "PĂDUREA-DE-COD-—-CARTEA-COMPLETĂ-(TOC)",
+      "description": "Pădurea de Cod — Cartea Completă (TOC)",
+      "source_type": "book",
+      "sha256": "dc0b0a6c51e5a1bbf81e35060527fd127ea77347e8af0c34e7cf1e7efcadd21e",
+      "source": "verificare/PADUREA_DE_COD_BOOK.md"
+    },
+    {
+      "id": 118,
+      "code": "PĂDUREA-DE-COD-—-IP-HASH-REGISTRY",
+      "description": "Pădurea de Cod — IP Hash Registry",
+      "source_type": "registry",
+      "sha256": "2ff6fb9c3a23adaeec52522bb03faf37f7a2b47d7c9de578120babc32efa76dc",
+      "source": "verificare/PADUREA_DE_COD_HASHES.json"
+    },
+    {
+      "id": 119,
+      "code": "SCALEENGINE-HEAD-TO-HEAD-BENCHMARK",
+      "description": "ScaleEngine Head-to-Head Benchmark",
+      "source_type": "benchmark",
+      "sha256": "c5afb6d25e2f4265866a2f81a7d42d99155c5b3d82e2dce3e334b75412f058b4",
+      "source": "tests/benchmark_head_to_head.py"
+    },
+    {
+      "id": 120,
+      "code": "STILL™-HYBRID-NOTARY-GATEWAY-V1.3.0",
+      "description": "STILL™ Hybrid Notary Gateway v1.3.0",
+      "source_type": "gateway",
+      "sha256": "39212b108f05a226783e8680610f5beb53ad0a10259c4749a837acb3418ee5d2",
+      "source": "ai_studio_code (1).html"
+    },
+    {
+      "id": 121,
+      "code": "AGIK-CHILD-SAFETY-CONSENSUS-DEMO",
+      "description": "AGIK Child Safety Consensus Demo",
+      "source_type": "demo",
+      "sha256": "36cf2cc22e510825305f1b3c2c8cba63c64593766e3528efdfa2849e59cb0cd0",
+      "source": "child-safety.html"
+    },
+    {
+      "id": 122,
+      "code": "BRIDGRAI-DASHBOARD",
+      "description": "BRIDGRAI Dashboard",
+      "source_type": "demo",
+      "sha256": "0277d30ca2c8eb1477be88cf0c70ccbce43a0adfba84e29c18f8bea5cefbe84e",
+      "source": "dashboard.html"
+    },
+    {
+      "id": 123,
+      "code": "RESONANCE-ENGINEERING-—-FOUNDATIONAL-DOC",
+      "description": "Resonance Engineering — Foundational Document",
+      "source_type": "research",
+      "sha256": "d58709ed2466eb090b9dc638fced268c2d213947547978b80eaa5e622ab6e6fe",
+      "source": "resonance-engineering.html"
+    },
+    {
+      "id": 124,
+      "code": "BRIDGRAI-INVESTOR-PACK",
+      "description": "BRIDGRAI Investor Pack",
+      "source_type": "demo",
+      "sha256": "9ac8212079cd62ffc5d40c34a86c58be20a3bdd03044cfdebbf87ae75b641764",
+      "source": "investor-pack.html"
+    },
+    {
+      "id": 125,
+      "code": "BRIDGRAI-AGI-BACKBONE-V1.0",
+      "description": "BRIDGRAI AGI Backbone v1.0",
+      "source_type": "backbone",
+      "sha256": "34244996bdf6707c18d78d44ec6ccb6a9c7db66694876360c92b7cb53a8b3f20",
+      "source": "Backbone Update/backbone/ + Backbone Update/tests/"
+    },
+    {
+      "id": 126,
+      "code": "KNOWLEDGE-CONTINUITY-ENGINEERING-—-FOUND",
+      "description": "Knowledge Continuity Engineering — Founding Document",
+      "source_type": "research",
+      "sha256": "92d989727fda66fe72205b950faa756435be2d90943546e8bfa57726457947d3",
+      "source": "kce-founding-document.md"
+    },
+    {
+      "id": 127,
+      "code": "KCE-ACADEMIC-PAPER-—-BASE-FRAMEWORK",
+      "description": "KCE Academic Paper — Base Framework",
+      "source_type": "research",
+      "sha256": "6f77abf391cb90fe13d48076c862594c0050445de2452d9d531c5fdf96a686c9",
+      "source": "kce-paper.md"
+    },
+    {
+      "id": 128,
+      "code": "KCE-EXTENDED-FRAMEWORK-—-IMPLEMENTATION-",
+      "description": "KCE Extended Framework — Implementation Guide",
+      "source_type": "research",
+      "sha256": "4b8f1893dc68c3843ef0c48f9911854520837662792fa9dcb8c9f3e94cfa2c48",
+      "source": "kce-paper-extended.md"
+    },
+    {
+      "id": 129,
+      "code": "SIGNA-ACADEMIC-PAPER-—-MARKDOWN",
+      "description": "SIGNA Academic Paper — Markdown",
+      "source_type": "research",
+      "sha256": "62cc356a97cd68d7d705d73512453e6c5f76cb2365d51e7d5dfad8dbb1ef0f77",
+      "source": "SIGNA_Framework_Rosca_2026.md"
+    },
+    {
+      "id": 130,
+      "code": "SIGNA-ACADEMIC-PAPER-—-PDF",
+      "description": "SIGNA Academic Paper — PDF",
+      "source_type": "research",
+      "sha256": "2dc3360e55c02152f344dd543203b80f95bf5f5e756c71941576f14e3f574ee4",
+      "source": "SIGNA_Framework_Rosca_2026.pdf"
+    },
+    {
+      "id": 131,
+      "code": "CAMP-PROTOCOL-PAPER-—-MARKDOWN",
+      "description": "CAMP Protocol Paper — Markdown",
+      "source_type": "research",
+      "sha256": "7e281f723a310386f7de044f1d4728e2532316ec87dfbe97d72d23de9a7a6759",
+      "source": "CAMP_Protocol_Rosca_2026.md"
+    },
+    {
+      "id": 132,
+      "code": "CAMP-PROTOCOL-PAPER-—-PDF",
+      "description": "CAMP Protocol Paper — PDF",
+      "source_type": "research",
+      "sha256": "e50810eb87b97bf495fdc638e4fc241cb9add37a46c406ff3fc0bf58628dba34",
+      "source": "CAMP_Protocol_Rosca_2026_FINAL.pdf"
     }
   ],
-  "master_hash": "11e4baaf9ae6f4f6252a050cc922b6e444d9a371f3212b20d9c78756df9e9286"
+  "note": "ip_manifest.json lists 130 individually; 2 assets tracked only on-chain (v1.0 baseline was 106, this file captured 104). Authoritative count: verificare/BLOCKCHAIN_MANIFEST.json = 132."
 }
