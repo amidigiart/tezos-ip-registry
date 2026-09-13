@@ -1315,10 +1315,10 @@
       "code": "INDUSTRY-VALIDATION-SEPT2026",
       "description": "Industry Validation September 2026 — BRIDGRAI alignment with Amodei/Altman/Musk declarations",
       "source_type": "research",
-      "sha256": "95d8eda0c0a825c3b7223a241b44bf8e330b7d09c9450f0b99d4959caef3fd3e",
-      "file_size": 4079,
+      "sha256": "a20d8a6bfb1541cbfd0c396a7492a3c1960ab4f6d59c6d095582f7ace9e37bb2",
+      "file_size": 4114,
       "license": "CC BY-NC-SA 4.0"
     }
   ],
-  "note": "173 IP assets total. 130 original + 41 Pădurea de Cod stories (CC BY-NC-SA 4.0) + 2 on-chain only. Authoritative: verificare/BLOCKCHAIN_MANIFEST.json."
+  "note": "174 IP assets total. 130 original + 41 Pădurea de Cod stories (CC BY-NC-SA 4.0) + 1 Industry Validation doc + 2 on-chain only. Authoritative: verificare/BLOCKCHAIN_MANIFEST.json."
 }
