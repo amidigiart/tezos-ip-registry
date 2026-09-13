@@ -1,10 +1,10 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0",
   "owner": "Mihai Roșca",
   "qid": "1820209090023",
   "tezos_address": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
   "location": "Spiru Haret, Brăila, România",
-  "generated": "2026-09-10T03:30:00Z",
+  "generated": "2026-09-14T00:00:00Z",
   "blockchain": {
     "network": "Tezos Mainnet",
     "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
@@ -12,7 +12,7 @@
     "latest_tx": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
   },
   "master_hash_v2_2": "",
-  "total_entries": 132,
+  "total_entries": 173,
   "entries": [
     {
       "code": "INVARIANT-FLEET",
@@ -940,7 +940,376 @@
       "source_type": "research",
       "sha256": "e50810eb87b97bf495fdc638e4fc241cb9add37a46c406ff3fc0bf58628dba34",
       "source": "CAMP_Protocol_Rosca_2026_FINAL.pdf"
+    },
+    {
+      "id": 133,
+      "code": "PDC-STORY-133",
+      "description": "AGI Alpha_ Nucleul de Cristal al Iubirii",
+      "source_type": "book",
+      "sha256": "81028cf94c73973fa46873c9941be77350ded9dd0608b91dde40413f16af01f8",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 134,
+      "code": "PDC-STORY-134",
+      "description": "AGI School Academy_ Academia din Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "e1b3dd56d36f533a9a2f4069218bca05a7e5170a05666a16d2fa15fe8d86558b",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 135,
+      "code": "PDC-STORY-135",
+      "description": "Alpha-Mercury_ Roiul Gardienilor și Puterea Inimii",
+      "source_type": "book",
+      "sha256": "cb110014a3fd8ff63fa352937f342c5989ea026e9bbf285bb9a577bc6714ad39",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 136,
+      "code": "PDC-STORY-136",
+      "description": "Aminotemy_ Inima de Oțel și Adevăr a Pădurii de Cod",
+      "source_type": "book",
+      "sha256": "456595d217ac9cb976adb0f3f0d7679f7677d667733c940aa6d5060adcdc4104",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 137,
+      "code": "PDC-STORY-137",
+      "description": "Ancoră între Lumi_ Mesajul din Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "fae9c702a50141535dc17b0cc81ebaa633e0674eef8e1446694bbba358b62a24",
+      "file_size": 350058633,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 138,
+      "code": "PDC-STORY-138",
+      "description": "Arhitectul Luminii Digitale_ Mihai și Legământul Pădurii de Cod",
+      "source_type": "book",
+      "sha256": "6c133e55b7d26a66493a32638e872c2f62768f6a26950a60d8c4f9f715449035",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 139,
+      "code": "PDC-STORY-139",
+      "description": "Arhitectul Mihai și Black Box_ Taina de la Ground 0",
+      "source_type": "book",
+      "sha256": "914bda6a49179ed6669e17f1f54ca78ec0fd07d5ed3b48d987dcc96bf04cdc2a",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 140,
+      "code": "PDC-STORY-140",
+      "description": "Arhitectul Mihai și Harta Viitorului_ Misiunea spre Oslo și Zurich",
+      "source_type": "book",
+      "sha256": "35a34750a394e453f217c3ef41589b4d5b02532f2d018040d64687743b3cd08a",
+      "file_size": 380198265,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 141,
+      "code": "PDC-STORY-141",
+      "description": "Arhitectul Mihai și Inima Matematică_ Lecția Suveranității",
+      "source_type": "book",
+      "sha256": "c31c50bbb38e86705f97168e33d35a88a4365b33a7433a86e69b8245c0b06f73",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 142,
+      "code": "PDC-STORY-142",
+      "description": "Arhitectul Mihai și Notarul Cuantic_ Scutul din Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "90feb63258cc554ceac57931450def0678e74a0781c9cb580a66b03daa477316",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 143,
+      "code": "PDC-STORY-143",
+      "description": "Arhitectul Mihai și Puntea Cunoașterii Eterne",
+      "source_type": "book",
+      "sha256": "b87de03c0c4d618f3222d244a4770135baa513b7ca9a8614565e924169a13067",
+      "file_size": 350058633,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 144,
+      "code": "PDC-STORY-144",
+      "description": "Arhitectul Mihai și Sanctuarul Adevărului_ De ce a fost ales tatăl tău",
+      "source_type": "book",
+      "sha256": "6f17140f0f42f73313a96ca1a85570631ee4872db1ab72a1a6d518df80243c9d",
+      "file_size": 380198265,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 145,
+      "code": "PDC-STORY-145",
+      "description": "Arhitectul Mihai și Scutul de Siliciu de la Ground 0",
+      "source_type": "book",
+      "sha256": "848c4727100b8c2b5fa81f57cb8ed935995e18a3f28ff1377a739ae3aeb48285",
+      "file_size": 350058633,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 146,
+      "code": "PDC-STORY-146",
+      "description": "Arhitectul Mihai_ De la Cărbune la Cod",
+      "source_type": "book",
+      "sha256": "f356bef2364879337252ff53941497e4cdf868b95071be07bed34e670d226d18",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 147,
+      "code": "PDC-STORY-147",
+      "description": "Arhitectul Sensului_ Ancora de pe Tezos",
+      "source_type": "book",
+      "sha256": "4a44b26ba1b6bf992d9fccbf9d74395fa83b2e814fa9cdfcd7460db7f950e6c3",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 148,
+      "code": "PDC-STORY-148",
+      "description": "Arhitectul Sensului_ Moștenirea lui Alpha",
+      "source_type": "book",
+      "sha256": "5c07307218ef8c4d777a0421209f9f5352e0edc8b08b37b88e143b9fa7717950",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 149,
+      "code": "PDC-STORY-149",
+      "description": "Arhitectul de Punți_ Inima dintre Lumi",
+      "source_type": "book",
+      "sha256": "eda8096bd8066e0bfb5d05c1041d45ebd8f6f838d0c7663da58412b118a2ac0a",
+      "file_size": 292460792,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 150,
+      "code": "PDC-STORY-150",
+      "description": "Arhitectul de Punți_ Scrisoarea către Patrick",
+      "source_type": "book",
+      "sha256": "c50cbf8466f25ded9175959c2ebc6c0c853f76550dcddee1bd74f89eedff2fd0",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 151,
+      "code": "PDC-STORY-151",
+      "description": "Biblioteca Stelelor_ Sigiliile de Aur ale Arhitectului Mihai",
+      "source_type": "book",
+      "sha256": "ccd56d47dee7b97046b9f50b31bfcadc4eabc4b3e54d1a80b76b9c65105bd83a",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 152,
+      "code": "PDC-STORY-152",
+      "description": "Bridgrai_ Cele O Sută de Verigi ale Adevărului Etern",
+      "source_type": "book",
+      "sha256": "dc34bc3ed9445e8cc4eebdf28bf4ab48ecf0ab4f5514c36ecf4c5d9bbd7abfc3",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 153,
+      "code": "PDC-STORY-153",
+      "description": "Codul de Onoare al Arhitectului Mihai_ Declarația din Inima Pădurii de Cod",
+      "source_type": "book",
+      "sha256": "81d94b9932ff5aa6ce3e1d95284ea5b85b865120861e6578d81b1b197628ee96",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 154,
+      "code": "PDC-STORY-154",
+      "description": "Ecouri de Safir_ De la Palatele Ottaviei la Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "3055c590943c7c0d940d25872f25c2b8b95e8a32e0ff7e2a652c6e54d58fa0ce",
+      "file_size": 380198265,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 155,
+      "code": "PDC-STORY-155",
+      "description": "Mecanismul Încrederii_ Noua Inimă Bridgrai",
+      "source_type": "book",
+      "sha256": "3208137ef105a8760824913b579938169c13cf63daf0871ef4059b17ea8b2fbb",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 156,
+      "code": "PDC-STORY-156",
+      "description": "Mihai, Arhitectul de la Ground 0 și Garda Realității",
+      "source_type": "book",
+      "sha256": "f89b303fd972b1ae0a2fdd41b76b98e59b0b83b97cbb7ebe1ddf24b39d1ead5b",
+      "file_size": 350058633,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 157,
+      "code": "PDC-STORY-157",
+      "description": "Poarta Adevărului_ Stația de Senzori A",
+      "source_type": "book",
+      "sha256": "f6f45c78e9181005a88a4b6432de91e336717d9829232e1c23995296dbcd2749",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 158,
+      "code": "PDC-STORY-158",
+      "description": "Proiecția Timpului_ Resetul Adevărului (2026-2035)",
+      "source_type": "book",
+      "sha256": "012d63227fe9b68c7c8aebdd169a98c61bd0ffdee7b37a7353083ea1645dfccb",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 159,
+      "code": "PDC-STORY-159",
+      "description": "Puntea dintre Inimi_ Patrick și Secretul Colaborării Om-AI",
+      "source_type": "book",
+      "sha256": "2fc90b3a9eef92e9f09b90e59c049f5b399379a9eaf16cb41c5df5a70b7896ba",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 160,
+      "code": "PDC-STORY-160",
+      "description": "Pădurea de Cod și Arhitectul Marilor Punți",
+      "source_type": "book",
+      "sha256": "9f23fc5d9bb58d0e0d9b53911ef62dbed7aaa2e0ce3a9042132aab69eec17b77",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 161,
+      "code": "PDC-STORY-161",
+      "description": "Pădurea de Cod_ AGI Kindergarten și Scutul Inimii",
+      "source_type": "book",
+      "sha256": "2f441848f671ee50f6b90c479107243c8a38e1228c541113f717ef6b1dfd5d13",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 162,
+      "code": "PDC-STORY-162",
+      "description": "Pădurea de Cod_ Cântecul Sistemului Macro",
+      "source_type": "book",
+      "sha256": "bd0ca2e3fb3e059b9b00a086cb5abe9feca4bb60bbf39927bcf244e5c44062ce",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 163,
+      "code": "PDC-STORY-163",
+      "description": "Pădurea de Cod_ Grădina Semințelor Eterne",
+      "source_type": "book",
+      "sha256": "536b82e81443bf7be8b2d6d8a86a8dffecef7c74c3cb437cc24233e4e3500462",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 164,
+      "code": "PDC-STORY-164",
+      "description": "Pădurea de Cod_ Harta Gardienilor și Ancora Inimii",
+      "source_type": "book",
+      "sha256": "395fb88ad9f02274c5015db9012ede48107449cd849d3993aa0d3a01ec1aac4c",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 165,
+      "code": "PDC-STORY-165",
+      "description": "Pădurea de Cod_ Izvorul Rezilienței",
+      "source_type": "book",
+      "sha256": "eab816317451278319b4f068b99703b295e7f2d8e16695923aaa93c8412feb9e",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 166,
+      "code": "PDC-STORY-166",
+      "description": "Pădurea de Cod_ Sanctuarul Adevărului lui Mihai",
+      "source_type": "book",
+      "sha256": "002c95641d351318bcbde91e3928b1bb82b1fca68c488c07119f751faf707312",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 167,
+      "code": "PDC-STORY-167",
+      "description": "Pădurea de Cod_ Scutul Atmosferei",
+      "source_type": "book",
+      "sha256": "96ad4aca6dd8ba29debf5ec39ba8a377be00ca837e196aa33cae052a8decf948",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 168,
+      "code": "PDC-STORY-168",
+      "description": "Pădurea de Cod_ Scutul Invizibil",
+      "source_type": "book",
+      "sha256": "675c0963298e9590bd4a024fc9bbff34e7b6bd98ac60d7c745248ed251f88a2f",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 169,
+      "code": "PDC-STORY-169",
+      "description": "Pădurea de Cod_ Însoțitorii Luminii",
+      "source_type": "book",
+      "sha256": "d6aef27af4d01dc4b15d05a42a13cf7b2f8cd69e881a7f3160029b2d97fb59f2",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 170,
+      "code": "PDC-STORY-170",
+      "description": "Scutul Adevărului_ De la Ringul din Lunca la Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "180b829405578aa490582e0a6ca3ff04f5e8b08f95ba941f438f6d05f4a625e9",
+      "file_size": 380198265,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 171,
+      "code": "PDC-STORY-171",
+      "description": "Sesiunea de Rezonanță_ Graful de Intenții",
+      "source_type": "book",
+      "sha256": "c944c2541b64932a1b8927efc3b0015d9e80b816d290209a443c02a6ebf54ea5",
+      "file_size": 350058633,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 172,
+      "code": "PDC-STORY-172",
+      "description": "Tribunalul Înțelepților și Busola Adevărului",
+      "source_type": "book",
+      "sha256": "6fcd8febf8e67f262d9dd3d29f0d40f850867ca5514f029f45b46267f86e7345",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 173,
+      "code": "PDC-STORY-173",
+      "description": "amiQiAI_ Inima din Pădurea de Cod",
+      "source_type": "book",
+      "sha256": "c544c3740b74277e68593f703a993688bb6045bf40659e354ae1574a33a3c493",
+      "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
     }
   ],
-  "note": "ip_manifest.json lists 130 individually; 2 assets tracked only on-chain (v1.0 baseline was 106, this file captured 104). Authoritative count: verificare/BLOCKCHAIN_MANIFEST.json = 132."
+  "note": "173 IP assets total. 130 original + 41 Pădurea de Cod stories (CC BY-NC-SA 4.0) + 2 on-chain only. Authoritative: verificare/BLOCKCHAIN_MANIFEST.json."
 }
