@@ -12,7 +12,7 @@
     "latest_tx": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
   },
   "master_hash_v2_2": "",
-  "total_entries": 173,
+  "total_entries": 174,
   "entries": [
     {
       "code": "INVARIANT-FLEET",
@@ -1308,6 +1308,15 @@
       "source_type": "book",
       "sha256": "c544c3740b74277e68593f703a993688bb6045bf40659e354ae1574a33a3c493",
       "file_size": 321706617,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 174,
+      "code": "INDUSTRY-VALIDATION-SEPT2026",
+      "description": "Industry Validation September 2026 — BRIDGRAI alignment with Amodei/Altman/Musk declarations",
+      "source_type": "research",
+      "sha256": "95d8eda0c0a825c3b7223a241b44bf8e330b7d09c9450f0b99d4959caef3fd3e",
+      "file_size": 4079,
       "license": "CC BY-NC-SA 4.0"
     }
   ],
