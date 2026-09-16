@@ -619,6 +619,7 @@
     async function computeHashes() {
       const now = new Date().toISOString().slice(0,10);
       for (const e of ENTRIES) {
+        if (e.hash) continue;
         if (e.content) {
           e.hash = await sha256(e.content);
         } else {
