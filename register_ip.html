@@ -428,6 +428,8 @@
       { code: "AMISTAMPAI", desc: "AmiStampAI - Digital Notary for Meaning & Intention, ECDSA P-256 + Tezos blockchain + ZK proofs", hash: null, content: "AmiStampAI. Digital Notary for Meaning and Intention. Three layers: existence (SHA-256), meaning (semantic declaration), intention (purpose declaration). ECDSA P-256 signatures, Tezos blockchain anchoring, ZK proof generation, multi-chain EVM support. PWA, offline-first, i18n EN/RO. Part of ami* ecosystem. Mihai Rosca, 2026." },
       { code: "AMIECOSYSTEMS", desc: "amiecosystems.com - BRIDGRAI IP Portfolio landing page, 6-language i18n, JSON-LD structured data", hash: null },
       { code: "MESERII-UNIFIED", desc: "Meserii Emergente 2026-2035 Unified v8.0 - 77 meserii unice, 370 intrari, 11 surse AI, cross-model friction synthesis", hash: "cede5ea3fa93f1ad44dfff3050574624a89944f23e86f99d4c34ba34656cbea6", content: "Meserii Emergente 2026-2035 Unified Document v8.0. 77 unique professions from 370 entries across 11 independent AI models (Claude, Gemini, DeepSeek, Qwen, ChatGPT, Mistral, Mercury 2, Nemotron, GLM, Grok, Kimi). Cross-model friction methodology. Human-AI Systems Architect confirmed by 10/11 sources. 31 ecosystem-validated professions. CC BY-NC-SA 4.0. Mihai Rosca, September 2026." },
+      { code: "MESERII-UNIFIED-EN-PDF", desc: "Emerging Professions 2026-2035 Unified v8.0 PDF (English) - 77 unique professions, 370 entries, 11 AI sources, cross-model friction methodology", hash: null, content: "Emerging Professions 2026-2035 Unified Document v8.0 PDF. English translation. 77 unique professions from 370 entries across 11 independent AI models. Cross-model friction methodology — novel research method with zero prior art in academic literature. 10 sections, radial profile, statistics, cross-model agreement ranking. CC BY-NC-SA 4.0. Mihai Rosca, September 2026." },
+      { code: "CMF-METHODOLOGY", desc: "Cross-Model Friction Methodology v1.0 - novel research method, prior art verification, 7 closest papers analyzed, zero matches", hash: null, content: "Cross-Model Friction Methodology v1.0. Internal document. Novel research methodology: 11 independent LLMs queried on same question, convergence and divergence analyzed as epistemic signals. Prior art verification 2026-09-16: zero matches for the term or combined methodology in arXiv, Google Scholar, SSRN. 7 closest papers analyzed, none replicate the approach. Genuinely novel. Mihai Rosca, September 2026." },
       // --- V1.1-V2.1: TECHNICAL ENTRIES ---
       { code: "AMICOOPERAI-ENGINE", desc: "AmiCooperAI Engine - human-guided AI brain, local CPU-only inference, DSEI principles, 146 tests", hash: null },
       { code: "AMICOOPERAI-SITE", desc: "AmiCooperAI Website - amicooperai.com landing page, cooperative AI companion", hash: null },
@@ -927,6 +929,7 @@
 
       if (typeof taquito === 'undefined' || typeof beacon === 'undefined') {
         log('err', 'Eroare: Taquito sau Beacon SDK nu s-au incarcat. Verifica conexiunea internet.');
+        computeHashes();
         return;
       }
 
