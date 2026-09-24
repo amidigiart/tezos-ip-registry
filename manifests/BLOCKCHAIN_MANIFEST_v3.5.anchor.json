@@ -1,0 +1,49 @@
+{
+  "manifest": "BLOCKCHAIN_MANIFEST_v3.5.json",
+  "manifest_sha256": "9007663fba272807f4429bcb02ebc582dbff961a60e56bddb6d70352d4f73e76",
+  "total_assets": 374,
+  "network": "Tezos Mainnet",
+  "contract": "KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw",
+  "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+  "anchors_2026_09_24": [
+    {
+      "purpose": "Content-level anchor of 129 Padurea de Cod story PDFs",
+      "entrypoint": "register",
+      "key": "PDC-STORIES-v1",
+      "value": "b4933266c2782d84f0a83c3f48cd3be1bc8646305a34c56ef8ed62c6492d4e4c",
+      "reproduce_from": "STORIES_MANIFEST_v1.json",
+      "tx": "opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj",
+      "level": 15082521,
+      "timestamp_utc": "2026-09-24T08:52:22Z"
+    },
+    {
+      "purpose": "Re-anchor of the register_ip.html ENTRIES list (358 entries) with date 2026-09-24; superseded as contract master by the v3.5 anchor below",
+      "entrypoint": "set_master_hash",
+      "value": "38ae381fc4b6dbe3973e06d9f2f20f6e264e5a5a42168d0a76be43646b666e16",
+      "reproduce_from": "REGISTER_IP_ENTRIES_2026-09-24.json",
+      "tx": "oojYnoZTD2TVsjedtmERUuKKhw2F7bwk19K9b1LtdG24juonENb",
+      "level": 15082602,
+      "timestamp_utc": "2026-09-24T09:00:28Z"
+    },
+    {
+      "purpose": "Manifest v3.5 (374 assets) — current contract master_hash",
+      "entrypoint": "set_master_hash",
+      "value": "9007663fba272807f4429bcb02ebc582dbff961a60e56bddb6d70352d4f73e76",
+      "reproduce_from": "SHA-256 of the exact bytes of BLOCKCHAIN_MANIFEST_v3.5.json",
+      "tx": "opQfg9kRWvn3RWtyYJQutDA1T3QxTn7D3y6nSNoR2io71wfVhKc",
+      "level": 15082637,
+      "timestamp_utc": "2026-09-24T09:03:58Z"
+    }
+  ],
+  "previous_master": {
+    "version": "3.4",
+    "value": "56f301a7fa6c8d44ee3f56be5cd29d0d54b29a5f90f4836aaab86bf6646c87ce",
+    "tx": "opM7sVpgcYzYqGuAKb49PHJTJ276ftL3swuf9MSRJEcXYGZYMm9",
+    "reproduce_from": "REGISTER_IP_ENTRIES_2026-09-21.json"
+  },
+  "verify": [
+    "sha256(BLOCKCHAIN_MANIFEST_v3.5.json) == master_hash in contract storage (tzkt.io/KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw/storage)",
+    "registry key PDC-STORIES-v1 == master recomputed from STORIES_MANIFEST_v1.json",
+    "each TX above resolves on tzkt.io with status 'applied'"
+  ]
+}
