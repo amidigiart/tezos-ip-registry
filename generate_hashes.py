@@ -1,6 +1,6 @@
 """
 Generare SHA-256 hash-uri pentru înregistrare pe Tezos blockchain.
-Titular: Mihai Roșca · QID 1820209090023 · tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q
+Titular: Mihai Roșca · ORCID 0009-0001-1422-6209 · tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q
 """
 
 import hashlib
@@ -9,7 +9,9 @@ import os
 from datetime import datetime
 
 OWNER = "Mihai Roșca"
-QID = "1820209090023"
+QID = "0009-0001-1422-6209"  # ORCID
+IDENTITY_COMMITMENT = "fb21bc6187ef0601a2e702e8f99baa5b86ce42096ddfc9f38ae98879f0c7309f"
+IDENTITY_COMMITMENT_SCHEME = 'sha256("VCI-COMMIT-v1" || salt[32B] || national_id)'
 TEZOS_ADDR = "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q"
 LOCATION = "Spiru Haret, Brăila, România"
 
@@ -289,6 +291,7 @@ def generate_manifest():
         "version": "2.0.0",
         "owner": OWNER,
         "qid": QID,
+        "identity_commitment": {"scheme": IDENTITY_COMMITMENT_SCHEME, "value": IDENTITY_COMMITMENT},
         "tezos_address": TEZOS_ADDR,
         "location": LOCATION,
         "generated": datetime.utcnow().isoformat() + "Z",

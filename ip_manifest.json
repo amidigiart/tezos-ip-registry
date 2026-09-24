@@ -1,7 +1,11 @@
 {
   "version": "2.3.0",
   "owner": "Mihai Roșca",
-  "qid": "1820209090023",
+  "qid": "0009-0001-1422-6209",
+  "identity_commitment": {
+    "scheme": "sha256(\"VCI-COMMIT-v1\" || salt[32B] || national_id)",
+    "value": "fb21bc6187ef0601a2e702e8f99baa5b86ce42096ddfc9f38ae98879f0c7309f"
+  },
   "tezos_address": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
   "location": "Spiru Haret, Brăila, România",
   "generated": "2026-09-14T00:00:00Z",
