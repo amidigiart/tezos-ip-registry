@@ -1,0 +1,2243 @@
+{
+  "protocol": "ami* Ecosystem Verification Protocol",
+  "version": "3.5",
+  "timestamp_utc": "2026-09-24T09:00:00Z",
+  "previous_version": {
+    "version": "3.4",
+    "timestamp_utc": "2026-09-21T22:00:00Z",
+    "master_hash": "56f301a7fa6c8d44ee3f56be5cd29d0d54b29a5f90f4836aaab86bf6646c87ce",
+    "tx": "opM7sVpgcYzYqGuAKb49PHJTJ276ftL3swuf9MSRJEcXYGZYMm9",
+    "assets_anchored": 363
+  },
+  "blockchain_confirmation": {
+    "network": "Tezos Mainnet",
+    "contract": "KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw",
+    "master_hash": "56f301a7fa6c8d44ee3f56be5cd29d0d54b29a5f90f4836aaab86bf6646c87ce",
+    "tx": "opM7sVpgcYzYqGuAKb49PHJTJ276ftL3swuf9MSRJEcXYGZYMm9",
+    "timestamp_utc": "2026-09-21T21:23:06Z",
+    "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+    "assets_anchored": 363,
+    "verify": "https://tzkt.io/opM7sVpgcYzYqGuAKb49PHJTJ276ftL3swuf9MSRJEcXYGZYMm9"
+  },
+  "author": {
+    "name": "Mihai Roșca",
+    "orcid": "0009-0001-1422-6209",
+    "location": "Brăila, Romania, EU"
+  },
+  "co_author": {
+    "name": "Claude",
+    "model": "Opus 4.6",
+    "provider": "Anthropic"
+  },
+  "blockchain": {
+    "network": "Tezos Mainnet",
+    "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+    "transactions": [
+      {
+        "label": "SIGNA-CAMP-PAPERS",
+        "tx_hash": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp",
+        "payload_sha256": "f03499fb4e5c5505739b5135dd97bd2386f893400e753d42e844adef100b2e85",
+        "description": "Master hash of 132 IP assets — SIGNA + CAMP academic papers (Zenodo DOIs: 22682891, 22682610)",
+        "status": "CONFIRMED",
+        "verify": "https://tzkt.io/oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
+      },
+      {
+        "label": "MASTER-HASH",
+        "tx_hash": "oomw5MNXurBpYLwoGqNAS5BDrRBr3Hsx8FTBfTPexn1eWhwU9EN",
+        "payload_sha256": "08a4230e7c9dac122432b348aa11a66945a3334d85eac22c536b96066214ae6d",
+        "description": "Master hash of 106 IP assets — entire ami* ecosystem portfolio",
+        "status": "CONFIRMED",
+        "verify": "https://tzkt.io/oomw5MNXurBpYLwoGqNAS5BDrRBr3Hsx8FTBfTPexn1eWhwU9EN"
+      },
+      {
+        "label": "PADUREA-DE-COD-BOOK",
+        "tx_hash": "op3WERVe7BiAWngAGWjfFqnrHHKMHzWdUhPw7yKJ3qM2sb1ryKu",
+        "payload_sha256": "6dc56cb1087fde71acdc9ab6342a8aa136128587f3b05d9adf3e0e8bb2e6d317",
+        "description": "Master hash v1.3 — 118 IP assets including Pădurea de Cod Book (58 files, 56 chapters)",
+        "status": "CONFIRMED",
+        "verify": "https://tzkt.io/op3WERVe7BiAWngAGWjfFqnrHHKMHzWdUhPw7yKJ3qM2sb1ryKu"
+      },
+      {
+        "label": "DEEP-WATER",
+        "tx_hash": "op7UGM1tMW6EdLN7H6bykL8h68sQeBZmD98KXMMmabxbf4okaW1",
+        "description": "Inside Water Deep Research — timestamped separately",
+        "status": "CONFIRMED",
+        "verify": "https://tzkt.io/op7UGM1tMW6EdLN7H6bykL8h68sQeBZmD98KXMMmabxbf4okaW1"
+      },
+      {
+        "label": "MANIFEST-V3.1",
+        "tx_hash": "ooAPY5sK2UduWA6CAyuVwbaJkR1b6wSXeyW6Y5BYVUmoPBGuxM6",
+        "payload_sha256": "febe77e33c1583349b90c9063ef4870f723bc5d15447997d4f62100884476fe8",
+        "description": "Master hash of 274 IP assets — 5 Kuramoto MF engines, coherence-lab org, full portfolio v3.1",
+        "status": "CONFIRMED",
+        "verify": "https://tzkt.io/ooAPY5sK2UduWA6CAyuVwbaJkR1b6wSXeyW6Y5BYVUmoPBGuxM6"
+      }
+    ],
+    "confirmed_v1_3": {
+      "label": "MANIFEST-V1.3",
+      "tx_hash": "op3WERVe7BiAWngAGWjfFqnrHHKMHzWdUhPw7yKJ3qM2sb1ryKu",
+      "master_hash": "6dc56cb1087fde71acdc9ab6342a8aa136128587f3b05d9adf3e0e8bb2e6d317",
+      "description": "Master hash of 118 IP assets — v1.2 (116) + Pădurea de Cod Book (58 unique files, 56 chapters + annexes)",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/op3WERVe7BiAWngAGWjfFqnrHHKMHzWdUhPw7yKJ3qM2sb1ryKu"
+    },
+    "confirmed_v1_5": {
+      "label": "MANIFEST-V1.5",
+      "tx_hash": "ooBVxKpzHx3BAvkMGFSeDFCdMCVwF2n6cXjjAGiL978zAWARMLC",
+      "master_hash": "6b50dbcdcf38600774f6175decff5c79d59b92b8a1100e4500f072bd3e9bb666",
+      "description": "Master hash of 120 IP assets — full portfolio timestamped on Tezos",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/ooBVxKpzHx3BAvkMGFSeDFCdMCVwF2n6cXjjAGiL978zAWARMLC"
+    },
+    "confirmed_v1_7": {
+      "label": "MANIFEST-V1.7",
+      "tx_hash": "op113kYvTmnvXNRzBnqgpjZ7zyActFpUg9psC1rNFqUvJ2XsGLy",
+      "master_hash": "6df4cb7048b2ef48c8ef7a6b284ad4a839eccb888234925b141c755d7330bc16",
+      "description": "Master hash of 123 IP assets — Resonance Engineering + Ce NU este section",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/op113kYvTmnvXNRzBnqgpjZ7zyActFpUg9psC1rNFqUvJ2XsGLy"
+    },
+    "confirmed_v1_8": {
+      "label": "MANIFEST-V1.8",
+      "tx_hash": "op5R4axfbtgXihieEEgthZAL7LTY39G1G8SNZZxx5uAPTJSCT7h",
+      "master_hash": "6df4cb7048b2ef48c8ef7a6b284ad4a839eccb888234925b141c755d7330bc16",
+      "description": "Master hash of 124 IP assets — Investor Pack + terminology alignment",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/op5R4axfbtgXihieEEgthZAL7LTY39G1G8SNZZxx5uAPTJSCT7h"
+    },
+    "pending_transaction": "AWAITING_TEZOS_TX — 41 new Pădurea de Cod stories",
+    "confirmed_v2_2": {
+      "label": "MANIFEST-V2.2",
+      "tx_hash": "oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp",
+      "master_hash": "f03499fb4e5c5505739b5135dd97bd2386f893400e753d42e844adef100b2e85",
+      "description": "Master hash of 132 IP assets — SIGNA framework + CAMP protocol (Zenodo DOIs)",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/oobKNM4CAYmKqRWZXdZdDKAGv58nMZ4Q4WiFm214jdJqRG67rPp"
+    },
+    "confirmed_v2_1": {
+      "label": "MANIFEST-V2.1",
+      "tx_hash": "ooeVNb1qYNLSJK4voVy7FtDvoNqDfj4TjQVATg5NhRT6QQz3j54",
+      "master_hash": "acb2dec1bac18cf6c9a986656026c130a162cfdea4a5154029363cfc4b15528f",
+      "description": "Master hash of 128 IP assets — KCE academic paper (base + extended framework)",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/ooeVNb1qYNLSJK4voVy7FtDvoNqDfj4TjQVATg5NhRT6QQz3j54"
+    },
+    "confirmed_v2_0": {
+      "label": "MANIFEST-V2.0",
+      "tx_hash": "oneEyqTWeVBBtcS5SzzLboUsRrrqCXJX8nuQxLCURzZZSA6gBBC",
+      "master_hash": "acb2dec1bac18cf6c9a986656026c130a162cfdea4a5154029363cfc4b15528f",
+      "description": "Master hash of 126 IP assets — Knowledge Continuity Engineering founding document",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/oneEyqTWeVBBtcS5SzzLboUsRrrqCXJX8nuQxLCURzZZSA6gBBC"
+    },
+    "confirmed_v1_9": {
+      "label": "MANIFEST-V1.9",
+      "tx_hash": "oocCeqQLnKoaqAcd2H5Se6pytc6taEtKLLZxciaHqLobP7efwQM",
+      "master_hash": "ee3af3e528ebd19b75cb3ff4d6fc8571bb92a113b4947609a5fdddb56f344bda",
+      "description": "Master hash of 125 IP assets — AGI Backbone v1.0 (12 modules, 55 tests, Qwen+Claude)",
+      "status": "CONFIRMED",
+      "verify": "https://tzkt.io/oocCeqQLnKoaqAcd2H5Se6pytc6taEtKLLZxciaHqLobP7efwQM"
+    }
+  },
+  "new_assets_since_v2_1": {
+    "total_new": 4,
+    "assets": [
+      {
+        "id": 129,
+        "name": "SIGNA Academic Paper — Markdown",
+        "type": "research",
+        "repo": "github.com/amidigiart/signa-framework",
+        "file": "SIGNA_Framework_Rosca_2026.md",
+        "sha256": "62cc356a97cd68d7d705d73512453e6c5f76cb2365d51e7d5dfad8dbb1ef0f77",
+        "doi": "10.5281/zenodo.22682891",
+        "description": "SIGNA v1.2 — Semantic Intent Guarantee and Notary Architecture: 6-pillar certification framework, per-pillar floor rule, concordance scoring, threat model, 9 sections + 3 appendices"
+      },
+      {
+        "id": 130,
+        "name": "SIGNA Academic Paper — PDF",
+        "type": "research",
+        "repo": "github.com/amidigiart/signa-framework",
+        "file": "SIGNA_Framework_Rosca_2026.pdf",
+        "sha256": "2dc3360e55c02152f344dd543203b80f95bf5f5e756c71941576f14e3f574ee4",
+        "doi": "10.5281/zenodo.22682892",
+        "description": "SIGNA v1.2 PDF — Zenodo preprint, 21 pages, all Qwen critical review patches applied"
+      },
+      {
+        "id": 131,
+        "name": "CAMP Protocol Paper — Markdown",
+        "type": "research",
+        "repo": "github.com/amidigiart/camp-protocol",
+        "file": "CAMP_Protocol_Rosca_2026.md",
+        "sha256": "7e281f723a310386f7de044f1d4728e2532316ec87dfbe97d72d23de9a7a6759",
+        "doi": "10.5281/zenodo.22682610",
+        "description": "CAMP — Cognitive Arbitration Mediation Protocol: vendor-neutral framework for trust verification, 10 sections + 3 appendices"
+      },
+      {
+        "id": 132,
+        "name": "CAMP Protocol Paper — PDF",
+        "type": "research",
+        "repo": "github.com/amidigiart/camp-protocol",
+        "file": "CAMP_Protocol_Rosca_2026_FINAL.pdf",
+        "sha256": "e50810eb87b97bf495fdc638e4fc241cb9add37a46c406ff3fc0bf58628dba34",
+        "doi": "10.5281/zenodo.22682610",
+        "description": "CAMP PDF — Zenodo preprint, vendor-neutral protocol for multi-provider AI ecosystems"
+      }
+    ]
+  },
+  "new_assets_since_v2_0": {
+    "total_new": 2,
+    "assets": [
+      {
+        "id": 127,
+        "name": "KCE Academic Paper — Base Framework",
+        "type": "research",
+        "file": "kce-paper.md",
+        "sha256": "6f77abf391cb90fe13d48076c862594c0050445de2452d9d531c5fdf96a686c9",
+        "file_size": 26632,
+        "description": "Academic paper: 8 sections, literature gap (KM/OAIS/PROV/AI Act), formal problem statements (P1-P5), 7 principles, 5-layer architecture, BRIDGRAI reference implementation with honest assessment, 9 real references, E0-E5 scale, compliance checklist"
+      },
+      {
+        "id": 128,
+        "name": "KCE Extended Framework — Implementation Guide",
+        "type": "research",
+        "file": "kce-paper-extended.md",
+        "sha256": "4b8f1893dc68c3843ef0c48f9911854520837662792fa9dcb8c9f3e94cfa2c48",
+        "file_size": 24200,
+        "description": "Extended framework: Tier 1/2/3 implementation guide, metadata schema, layer checklists, 5 pitfalls, 3 case studies (1 real BRIDGRAI + 2 hypothetical), 4 proposed metrics (PCR/SVR/ACI/DRS), adoption roadmap, risk categories (qualitative, no fabricated financials)"
+      }
+    ]
+  },
+  "new_assets_since_v1_9": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 126,
+        "name": "Knowledge Continuity Engineering — Founding Document",
+        "type": "research",
+        "file": "kce-founding-document.md",
+        "sha256": "92d989727fda66fe72205b950faa756435be2d90943546e8bfa57726457947d3",
+        "description": "KCE founding definition: new discipline — 5 problems (model/human discontinuity, provenance decay, semantic drift, authority fragmentation), 7 principles (K1-K7), 5-layer stack (Creation→Validation→Persistence→Governance→Continuity), BRIDGRAI as first implementation"
+      }
+    ]
+  },
+  "new_assets_since_v1_8": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 125,
+        "name": "BRIDGRAI AGI Backbone v1.0",
+        "type": "backbone",
+        "path": "Backbone Update/backbone/ + Backbone Update/tests/",
+        "files": 19,
+        "modules": "anchor, kuramoto, scale, valve, adler, tve, privacy, cooper, agik, still, mesh, heritage, manifest",
+        "tests": 55,
+        "sha256": "34244996bdf6707c18d78d44ec6ccb6a9c7db66694876360c92b7cb53a8b3f20",
+        "description": "12-module AGI Backbone: 4 phases (ANCHOR→VALVE, COOPER→TVE, AGIK→STILL, MESH→MANIFEST), EMA RSI, concordance check, heritage-STILL-MANIFEST succession. Qwen 3.8 MAX base + Claude Opus 4.6 improvements. 55/55 tests passed."
+      }
+    ]
+  },
+  "new_assets_since_v1_7": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 124,
+        "name": "BRIDGRAI Investor Pack",
+        "type": "demo",
+        "repo": "github.com/amidigiart/bridgrai-demo",
+        "file": "investor-pack.html",
+        "sha256": "9ac8212079cd62ffc5d40c34a86c58be20a3bdd03044cfdebbf87ae75b641764",
+        "description": "Investor landing page: live demos, reading guide by audience, next steps (terms on request), blockchain verification, regulatory alignment"
+      }
+    ]
+  },
+  "new_assets_since_v1_6": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 123,
+        "name": "Resonance Engineering — Foundational Document",
+        "type": "research",
+        "repo": "github.com/amidigiart/bridgrai-demo",
+        "file": "resonance-engineering.html",
+        "sha256": "d58709ed2466eb090b9dc638fced268c2d213947547978b80eaa5e622ab6e6fe",
+        "description": "11-section foundational document with Ce NU este section: axiom S(M)=R, RSI+beta_min, ScaleEngine benchmark, DSEI governance, cross-model methodology, hardware reality"
+      }
+    ]
+  },
+  "new_assets_since_v1_5": {
+    "total_new": 2,
+    "assets": [
+      {
+        "id": 121,
+        "name": "AGIK Child Safety Consensus Demo",
+        "type": "demo",
+        "repo": "github.com/amidigiart/bridgrai-demo",
+        "file": "child-safety.html",
+        "sha256": "36cf2cc22e510825305f1b3c2c8cba63c64593766e3528efdfa2849e59cb0cd0",
+        "description": "Interactive sandbox: 5 synthetic scenarios with Run Consensus Round animation (3 SAFE, 1 REVIEW, 1 NOT SAFE with escalation), GDPR-K compliant"
+      },
+      {
+        "id": 122,
+        "name": "BRIDGRAI Dashboard",
+        "type": "demo",
+        "repo": "github.com/amidigiart/bridgrai-demo",
+        "file": "dashboard.html",
+        "sha256": "0277d30ca2c8eb1477be88cf0c70ccbce43a0adfba84e29c18f8bea5cefbe84e",
+        "description": "Ecosystem status: Tezos TX table, AGIK consensus rounds, STILL signatures, manifest hash chain v1.1-v1.5"
+      }
+    ]
+  },
+  "new_assets_since_v1_4": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 120,
+        "name": "STILL™ Hybrid Notary Gateway v1.3.0",
+        "type": "gateway",
+        "file": "ai_studio_code (1).html",
+        "sha256": "39212b108f05a226783e8680610f5beb53ad0a10259c4749a837acb3418ee5d2",
+        "description": "Corrected: Goerli→Sepolia, ML-DSA-44 FIPS 204, eIDAS Reg. 2024/1183, offline-sovereign badge, audit journal (no telemetry)"
+      }
+    ]
+  },
+  "new_assets_since_v1_3": {
+    "total_new": 1,
+    "assets": [
+      {
+        "id": 119,
+        "name": "ScaleEngine Head-to-Head Benchmark",
+        "type": "benchmark",
+        "repo": "github.com/amidigiart/amidor-engine",
+        "file": "tests/benchmark_head_to_head.py",
+        "sha256": "c5afb6d25e2f4265866a2f81a7d42d99155c5b3d82e2dce3e334b75412f058b4",
+        "description": "4 scenarios, 5 metrics, 3 baselines (FixedWeight/NoBetaMin/PID). ScaleEngine: 10/12 recovery, 12/12 safety, 225x scaling at N=5000"
+      }
+    ]
+  },
+  "new_assets_since_v1_2": {
+    "total_new": 2,
+    "assets": [
+      {
+        "id": 117,
+        "name": "Pădurea de Cod — Cartea Completă (TOC)",
+        "type": "book",
+        "file": "verificare/PADUREA_DE_COD_BOOK.md",
+        "sha256": "dc0b0a6c51e5a1bbf81e35060527fd127ea77347e8af0c34e7cf1e7efcadd21e",
+        "description": "10 părți, 56 capitole + 2 anexe povești + 2 anexe interactive — cuprins ordonat tematic"
+      },
+      {
+        "id": 118,
+        "name": "Pădurea de Cod — IP Hash Registry",
+        "type": "registry",
+        "file": "verificare/PADUREA_DE_COD_HASHES.json",
+        "sha256": "2ff6fb9c3a23adaeec52522bb03faf37f7a2b47d7c9de578120babc32efa76dc",
+        "description": "SHA-256 hash-uri pentru 58 fișiere unice — 34 PDF POD + 24 PDF/DOCX/HTML aferente, deduplicate"
+      }
+    ]
+  },
+  "new_assets_since_v1_1": {
+    "total_new": 10,
+    "assets": [
+      {
+        "id": 107,
+        "name": "AmiCooperAI Engine",
+        "type": "engine",
+        "repo": "github.com/amidigiart/amicooperai-engine",
+        "license": "Commercial — BRIDGRAI",
+        "tests": 146,
+        "sha256": "ca3bce26345f54ce8f3b90b81ac867bad88de94c09442feba5e84c7ce27520c2",
+        "description": "Human-guided AI brain — local CPU-only inference with DSEI principles, anti-addiction, manipulation guard"
+      },
+      {
+        "id": 108,
+        "name": "AmiCooperAI Website",
+        "type": "product",
+        "domain": "amicooperai.com",
+        "sha256": "feed98a8717253cd6addce6ea9ae8474d77e8b6a5709f4b4492ab41a75a30a32",
+        "description": "Landing page — cooperative AI companion"
+      },
+      {
+        "id": 109,
+        "name": "CrawlerAttachSubmotor",
+        "type": "submotor",
+        "repo": "github.com/amidigiart/ukbe-core",
+        "file": "ukbe_core/crawler_attach.py",
+        "tests": 73,
+        "sha256": "37aa89f41348c9b6efcc16788697fe994eb72dec10cd212594ca04f9d96d7fd0",
+        "description": "AI Crawler validation via phi_intern + entropy valve, Ed25519 notarized, watchdog daemon"
+      },
+      {
+        "id": 110,
+        "name": "CrawlerAttachSubmotor Tests",
+        "type": "tests",
+        "sha256": "5c95dc1acd3b764c8f42705faed7395ecb2dc3babbdb305ffa9882b4b9274226",
+        "description": "73 full tests — init, validation, attach, detect, watchdog, notarization, engine integration"
+      },
+      {
+        "id": 111,
+        "name": "Mihai Companion Agent #15",
+        "type": "agent",
+        "file": "mihai-companion/service.py",
+        "tests": 96,
+        "sha256": "4d91ca7d06b644e84ffd457cb6c1e1b1e9926d102ed4ef6c2de3aaef1a44a5de",
+        "description": "12-pillar personalized education companion — bilingual RO/EN, progress tracking, anti-flattery"
+      },
+      {
+        "id": 112,
+        "name": "Mihai Companion Tests",
+        "type": "tests",
+        "sha256": "eca17110ec613ab21fbef8a09a1b429d618b89705a846fde45963af3625f7d28",
+        "description": "96 tests across 14 test classes — pillars, detection, modes, responses, profile, agent card"
+      },
+      {
+        "id": 113,
+        "name": "BRIDGRAI General Framework",
+        "type": "research",
+        "file": "verificare/BRIDGRAI_GENERAL_FRAMEWORK.md",
+        "sha256": "ad603871bd5c97cb7b52b646cd8f180784bbbfa726d5c5a67fed490868c23f47",
+        "description": "Complete 12-section framework — axiom S(M)=R, 9 layers, 12 pillars, Guardian Swarm, anti-patterns"
+      },
+      {
+        "id": 114,
+        "name": "Decalaj Analysis",
+        "type": "research",
+        "file": "verificare/DECALAJ_ANALYSIS.md",
+        "sha256": "9e08fd031477081b518de90bb02ef0f4b4408af9076b7009963b87a6f5acf1e6",
+        "description": "Intent vs result gap analysis — verified qualitative, no fabricated metrics"
+      },
+      {
+        "id": 115,
+        "name": "Portfolio Guide",
+        "type": "research",
+        "file": "verificare/PORTFOLIO_GUIDE.md",
+        "sha256": "e7132312b9268b7f643a53f8500bfc01fa34e5587e2d647e28fd9927f6e857d3",
+        "description": "Complete portfolio with verified numbers, honest gaps, verification commands"
+      },
+      {
+        "id": 116,
+        "name": "AGI School Academy",
+        "type": "product",
+        "domain": "agischool.academy",
+        "repo": "github.com/amidigiart/agischool-academy",
+        "sha256": "8060e804df4100109a633a82cbd7c7cdf0a5581a978959fce0f4118c79d07b38",
+        "description": "BRIDGRAI General Framework — academic publication site with verified claims and disclaimers"
+      }
+    ]
+  },
+  "hashes": {
+    "verification_paper": {
+      "file": "VERIFICATION_PAPER_v1.md",
+      "sha256": "faf2a153626998332b2547d632179c28f8383c2ca59993846b92e60e5b836972",
+      "description": "Full academic verification protocol — pre-blockchain version"
+    },
+    "verification_results": {
+      "file": "VERIFICATION_RESULTS_20260725.txt",
+      "sha256": "92831592954e9a1b624bd71609e2af8c30e04dd740a010ea9f90456714f71e87",
+      "description": "Live execution results: 14/14 APIs PASS, 4/4 repos verified, GDPR PASS, Stripe PASS, DOI resolved"
+    },
+    "master_hash_v2_3": "486824e851187a3392a20b212219b95e23875c2cc7f0482e6b2344610d4981c1"
+  },
+  "verification_summary": {
+    "blockchain_ip_assets": 262,
+    "total_tests_ecosystem": 789,
+    "test_breakdown": {
+      "ukbe_core": 175,
+      "amicooperai_engine": 146,
+      "mihai_companion": 96,
+      "bridgrai_a2a": "240+",
+      "governance_stack": 72,
+      "other_engines": "60+"
+    },
+    "apis_tested": 14,
+    "apis_passed": 14,
+    "github_repos_verified": 4,
+    "github_total_public_repos": 75,
+    "doi_resolved": true,
+    "gdpr_compliant": true,
+    "stripe_functional": true,
+    "bridgrai_agents": 9,
+    "tezos_entries_total": "99+",
+    "domains_active": 25,
+    "products_live": [
+      "amiqiai.com",
+      "amiherbai.com",
+      "emoinkai.com",
+      "amighostai.com",
+      "amiagentai.com",
+      "amibrainai.com",
+      "amiapiai.com",
+      "amioracleai.com",
+      "amipassai.com",
+      "amirobotai.com",
+      "amiexilai.com",
+      "madamsai.com",
+      "openbarnai.com",
+      "amigenome.com",
+      "amicooperai.com",
+      "agischool.academy"
+    ]
+  },
+  "funding": {
+    "external_funding_received": "€0.00",
+    "institutional_affiliation": "none",
+    "hardware": "Dell Latitude E6540 + Xiaomi Redmi Note 13",
+    "duration_years": 3.5,
+    "statement": "EU NU MINT ȘI CREEZ FĂRĂ NICI UN CENT DAT DE CINEVA ȘI E VERIFICABIL"
+  },
+  "recursive_proof": "This manifest references blockchain transactions that contain hashes of documents that reference this manifest. The loop is intentional — it is a self-validating proof structure. Break any link, and the verification fails.",
+  "legal_notice": "This manifest and its blockchain entries constitute cryptographic proof of existence and content at the stated timestamp. The blockchain entries are immutable and publicly auditable on Tezos mainnet.",
+  "equation": "S(M) = R",
+  "new_assets_since_v2_2": {
+    "total_new": 41,
+    "category": "Pădurea de Cod — Educational Narrative Stories",
+    "license": "CC BY-NC-SA 4.0",
+    "assets": [
+      {
+        "id": 133,
+        "name": "AGI Alpha_ Nucleul de Cristal al Iubirii",
+        "type": "book",
+        "sha256": "81028cf94c73973fa46873c9941be77350ded9dd0608b91dde40413f16af01f8",
+        "file_size": 321706617
+      },
+      {
+        "id": 134,
+        "name": "AGI School Academy_ Academia din Pădurea de Cod",
+        "type": "book",
+        "sha256": "e1b3dd56d36f533a9a2f4069218bca05a7e5170a05666a16d2fa15fe8d86558b",
+        "file_size": 321706617
+      },
+      {
+        "id": 135,
+        "name": "Alpha-Mercury_ Roiul Gardienilor și Puterea Inimii",
+        "type": "book",
+        "sha256": "cb110014a3fd8ff63fa352937f342c5989ea026e9bbf285bb9a577bc6714ad39",
+        "file_size": 321706617
+      },
+      {
+        "id": 136,
+        "name": "Aminotemy_ Inima de Oțel și Adevăr a Pădurii de Cod",
+        "type": "book",
+        "sha256": "456595d217ac9cb976adb0f3f0d7679f7677d667733c940aa6d5060adcdc4104",
+        "file_size": 321706617
+      },
+      {
+        "id": 137,
+        "name": "Ancoră între Lumi_ Mesajul din Pădurea de Cod",
+        "type": "book",
+        "sha256": "fae9c702a50141535dc17b0cc81ebaa633e0674eef8e1446694bbba358b62a24",
+        "file_size": 350058633
+      },
+      {
+        "id": 138,
+        "name": "Arhitectul Luminii Digitale_ Mihai și Legământul Pădurii de Cod",
+        "type": "book",
+        "sha256": "6c133e55b7d26a66493a32638e872c2f62768f6a26950a60d8c4f9f715449035",
+        "file_size": 321706617
+      },
+      {
+        "id": 139,
+        "name": "Arhitectul Mihai și Black Box_ Taina de la Ground 0",
+        "type": "book",
+        "sha256": "914bda6a49179ed6669e17f1f54ca78ec0fd07d5ed3b48d987dcc96bf04cdc2a",
+        "file_size": 321706617
+      },
+      {
+        "id": 140,
+        "name": "Arhitectul Mihai și Harta Viitorului_ Misiunea spre Oslo și Zurich",
+        "type": "book",
+        "sha256": "35a34750a394e453f217c3ef41589b4d5b02532f2d018040d64687743b3cd08a",
+        "file_size": 380198265
+      },
+      {
+        "id": 141,
+        "name": "Arhitectul Mihai și Inima Matematică_ Lecția Suveranității",
+        "type": "book",
+        "sha256": "c31c50bbb38e86705f97168e33d35a88a4365b33a7433a86e69b8245c0b06f73",
+        "file_size": 321706617
+      },
+      {
+        "id": 142,
+        "name": "Arhitectul Mihai și Notarul Cuantic_ Scutul din Pădurea de Cod",
+        "type": "book",
+        "sha256": "90feb63258cc554ceac57931450def0678e74a0781c9cb580a66b03daa477316",
+        "file_size": 321706617
+      },
+      {
+        "id": 143,
+        "name": "Arhitectul Mihai și Puntea Cunoașterii Eterne",
+        "type": "book",
+        "sha256": "b87de03c0c4d618f3222d244a4770135baa513b7ca9a8614565e924169a13067",
+        "file_size": 350058633
+      },
+      {
+        "id": 144,
+        "name": "Arhitectul Mihai și Sanctuarul Adevărului_ De ce a fost ales tatăl tău",
+        "type": "book",
+        "sha256": "6f17140f0f42f73313a96ca1a85570631ee4872db1ab72a1a6d518df80243c9d",
+        "file_size": 380198265
+      },
+      {
+        "id": 145,
+        "name": "Arhitectul Mihai și Scutul de Siliciu de la Ground 0",
+        "type": "book",
+        "sha256": "848c4727100b8c2b5fa81f57cb8ed935995e18a3f28ff1377a739ae3aeb48285",
+        "file_size": 350058633
+      },
+      {
+        "id": 146,
+        "name": "Arhitectul Mihai_ De la Cărbune la Cod",
+        "type": "book",
+        "sha256": "f356bef2364879337252ff53941497e4cdf868b95071be07bed34e670d226d18",
+        "file_size": 321706617
+      },
+      {
+        "id": 147,
+        "name": "Arhitectul Sensului_ Ancora de pe Tezos",
+        "type": "book",
+        "sha256": "4a44b26ba1b6bf992d9fccbf9d74395fa83b2e814fa9cdfcd7460db7f950e6c3",
+        "file_size": 321706617
+      },
+      {
+        "id": 148,
+        "name": "Arhitectul Sensului_ Moștenirea lui Alpha",
+        "type": "book",
+        "sha256": "5c07307218ef8c4d777a0421209f9f5352e0edc8b08b37b88e143b9fa7717950",
+        "file_size": 321706617
+      },
+      {
+        "id": 149,
+        "name": "Arhitectul de Punți_ Inima dintre Lumi",
+        "type": "book",
+        "sha256": "eda8096bd8066e0bfb5d05c1041d45ebd8f6f838d0c7663da58412b118a2ac0a",
+        "file_size": 292460792
+      },
+      {
+        "id": 150,
+        "name": "Arhitectul de Punți_ Scrisoarea către Patrick",
+        "type": "book",
+        "sha256": "c50cbf8466f25ded9175959c2ebc6c0c853f76550dcddee1bd74f89eedff2fd0",
+        "file_size": 321706617
+      },
+      {
+        "id": 151,
+        "name": "Biblioteca Stelelor_ Sigiliile de Aur ale Arhitectului Mihai",
+        "type": "book",
+        "sha256": "ccd56d47dee7b97046b9f50b31bfcadc4eabc4b3e54d1a80b76b9c65105bd83a",
+        "file_size": 321706617
+      },
+      {
+        "id": 152,
+        "name": "Bridgrai_ Cele O Sută de Verigi ale Adevărului Etern",
+        "type": "book",
+        "sha256": "dc34bc3ed9445e8cc4eebdf28bf4ab48ecf0ab4f5514c36ecf4c5d9bbd7abfc3",
+        "file_size": 321706617
+      },
+      {
+        "id": 153,
+        "name": "Codul de Onoare al Arhitectului Mihai_ Declarația din Inima Pădurii de Cod",
+        "type": "book",
+        "sha256": "81d94b9932ff5aa6ce3e1d95284ea5b85b865120861e6578d81b1b197628ee96",
+        "file_size": 321706617
+      },
+      {
+        "id": 154,
+        "name": "Ecouri de Safir_ De la Palatele Ottaviei la Pădurea de Cod",
+        "type": "book",
+        "sha256": "3055c590943c7c0d940d25872f25c2b8b95e8a32e0ff7e2a652c6e54d58fa0ce",
+        "file_size": 380198265
+      },
+      {
+        "id": 155,
+        "name": "Mecanismul Încrederii_ Noua Inimă Bridgrai",
+        "type": "book",
+        "sha256": "3208137ef105a8760824913b579938169c13cf63daf0871ef4059b17ea8b2fbb",
+        "file_size": 321706617
+      },
+      {
+        "id": 156,
+        "name": "Mihai, Arhitectul de la Ground 0 și Garda Realității",
+        "type": "book",
+        "sha256": "f89b303fd972b1ae0a2fdd41b76b98e59b0b83b97cbb7ebe1ddf24b39d1ead5b",
+        "file_size": 350058633
+      },
+      {
+        "id": 157,
+        "name": "Poarta Adevărului_ Stația de Senzori A",
+        "type": "book",
+        "sha256": "f6f45c78e9181005a88a4b6432de91e336717d9829232e1c23995296dbcd2749",
+        "file_size": 321706617
+      },
+      {
+        "id": 158,
+        "name": "Proiecția Timpului_ Resetul Adevărului (2026-2035)",
+        "type": "book",
+        "sha256": "012d63227fe9b68c7c8aebdd169a98c61bd0ffdee7b37a7353083ea1645dfccb",
+        "file_size": 321706617
+      },
+      {
+        "id": 159,
+        "name": "Puntea dintre Inimi_ Patrick și Secretul Colaborării Om-AI",
+        "type": "book",
+        "sha256": "2fc90b3a9eef92e9f09b90e59c049f5b399379a9eaf16cb41c5df5a70b7896ba",
+        "file_size": 321706617
+      },
+      {
+        "id": 160,
+        "name": "Pădurea de Cod și Arhitectul Marilor Punți",
+        "type": "book",
+        "sha256": "9f23fc5d9bb58d0e0d9b53911ef62dbed7aaa2e0ce3a9042132aab69eec17b77",
+        "file_size": 321706617
+      },
+      {
+        "id": 161,
+        "name": "Pădurea de Cod_ AGI Kindergarten și Scutul Inimii",
+        "type": "book",
+        "sha256": "2f441848f671ee50f6b90c479107243c8a38e1228c541113f717ef6b1dfd5d13",
+        "file_size": 321706617
+      },
+      {
+        "id": 162,
+        "name": "Pădurea de Cod_ Cântecul Sistemului Macro",
+        "type": "book",
+        "sha256": "bd0ca2e3fb3e059b9b00a086cb5abe9feca4bb60bbf39927bcf244e5c44062ce",
+        "file_size": 321706617
+      },
+      {
+        "id": 163,
+        "name": "Pădurea de Cod_ Grădina Semințelor Eterne",
+        "type": "book",
+        "sha256": "536b82e81443bf7be8b2d6d8a86a8dffecef7c74c3cb437cc24233e4e3500462",
+        "file_size": 321706617
+      },
+      {
+        "id": 164,
+        "name": "Pădurea de Cod_ Harta Gardienilor și Ancora Inimii",
+        "type": "book",
+        "sha256": "395fb88ad9f02274c5015db9012ede48107449cd849d3993aa0d3a01ec1aac4c",
+        "file_size": 321706617
+      },
+      {
+        "id": 165,
+        "name": "Pădurea de Cod_ Izvorul Rezilienței",
+        "type": "book",
+        "sha256": "eab816317451278319b4f068b99703b295e7f2d8e16695923aaa93c8412feb9e",
+        "file_size": 321706617
+      },
+      {
+        "id": 166,
+        "name": "Pădurea de Cod_ Sanctuarul Adevărului lui Mihai",
+        "type": "book",
+        "sha256": "002c95641d351318bcbde91e3928b1bb82b1fca68c488c07119f751faf707312",
+        "file_size": 321706617
+      },
+      {
+        "id": 167,
+        "name": "Pădurea de Cod_ Scutul Atmosferei",
+        "type": "book",
+        "sha256": "96ad4aca6dd8ba29debf5ec39ba8a377be00ca837e196aa33cae052a8decf948",
+        "file_size": 321706617
+      },
+      {
+        "id": 168,
+        "name": "Pădurea de Cod_ Scutul Invizibil",
+        "type": "book",
+        "sha256": "675c0963298e9590bd4a024fc9bbff34e7b6bd98ac60d7c745248ed251f88a2f",
+        "file_size": 321706617
+      },
+      {
+        "id": 169,
+        "name": "Pădurea de Cod_ Însoțitorii Luminii",
+        "type": "book",
+        "sha256": "d6aef27af4d01dc4b15d05a42a13cf7b2f8cd69e881a7f3160029b2d97fb59f2",
+        "file_size": 321706617
+      },
+      {
+        "id": 170,
+        "name": "Scutul Adevărului_ De la Ringul din Lunca la Pădurea de Cod",
+        "type": "book",
+        "sha256": "180b829405578aa490582e0a6ca3ff04f5e8b08f95ba941f438f6d05f4a625e9",
+        "file_size": 380198265
+      },
+      {
+        "id": 171,
+        "name": "Sesiunea de Rezonanță_ Graful de Intenții",
+        "type": "book",
+        "sha256": "c944c2541b64932a1b8927efc3b0015d9e80b816d290209a443c02a6ebf54ea5",
+        "file_size": 350058633
+      },
+      {
+        "id": 172,
+        "name": "Tribunalul Înțelepților și Busola Adevărului",
+        "type": "book",
+        "sha256": "6fcd8febf8e67f262d9dd3d29f0d40f850867ca5514f029f45b46267f86e7345",
+        "file_size": 321706617
+      },
+      {
+        "id": 173,
+        "name": "amiQiAI_ Inima din Pădurea de Cod",
+        "type": "book",
+        "sha256": "c544c3740b74277e68593f703a993688bb6045bf40659e354ae1574a33a3c493",
+        "file_size": 321706617
+      }
+    ]
+  },
+  "total_assets": 374,
+  "new_assets_since_v2_3": [
+    {
+      "id": 175,
+      "code": "PADUREA-STORY-175",
+      "title": "Alfabetizare Digitală & Securitate Online_ Păzitorii Lumii Digitale",
+      "sha256": "c3293a85544e4490b0fa6c2139fc23cc87a37cbf135152f5d98b13e747e82339",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 176,
+      "code": "PADUREA-STORY-176",
+      "title": "Ancorele Adevărului_ Călătoria spre Sfinx",
+      "sha256": "250e7eb675f8f4acac3a928e5b19fe6af3a3d82db98e90c86bb14865c5eab326",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 177,
+      "code": "PADUREA-STORY-177",
+      "title": "Cetatea Secretă a Vărului Vesel",
+      "sha256": "af8e125cd3955a9e005095271c23d58ca612f5d637368ce07dd93523d1f38c09",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 178,
+      "code": "PADUREA-STORY-178",
+      "title": "Cântecul Uit al Stelelor",
+      "sha256": "9c734d553678809a10b48e0f68a269e8877024da48fac5693201c8a8e5bef8c8",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 179,
+      "code": "PADUREA-STORY-179",
+      "title": "Fundația (The Foundation)",
+      "sha256": "c0010c50a7d8854828af4e20e9b7d64d944a373d77e5ebc39aa7962821723baf",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 180,
+      "code": "PADUREA-STORY-180",
+      "title": "Grădina de Date",
+      "sha256": "804e3b026582acabe118ce0d60a2f3b9aeffd4f7f5fe3e88cb0716f612241926",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 181,
+      "code": "PADUREA-STORY-181",
+      "title": "MICUL GHID AL ARHITECTULUI DE SISTEME SUVERANE",
+      "sha256": "d8d783477073351754140a81333ec0d3c8e83b6ef5e8272bab0c557ce609994f",
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": 182,
+      "code": "PADUREA-STORY-182",
+      "title": "Scânteia Secretă",
+      "sha256": "20c8271aa1a0495e42ffad5c1b14e2475807be24ff8caf079f4c72ff8a0b2c0b",
+      "license": "CC BY-NC-SA 4.0"
+    }
+  ],
+  "confirmed_v2_4": {
+    "label": "MANIFEST-V2.4",
+    "tx_hash": "opDgWyehhCwfpNLWT4C7RbMc6C2eD8Z38Yj4Tx2qH4DhTsVKEWJ",
+    "master_hash": "1256684e6adf36900fd01294b03ba13e4c3ffe06f5214021c000ece4e9cdc8e3",
+    "description": "Master hash of 182 IP assets — 127 individual entries confirmed on Tezos Mainnet",
+    "status": "CONFIRMED",
+    "verify": "https://tzkt.io/opDgWyehhCwfpNLWT4C7RbMc6C2eD8Z38Yj4Tx2qH4DhTsVKEWJ",
+    "individual_entries": 127,
+    "investor_pack_retry": "opHPG1ZvfavwcDyEMFiqNJxEzzeWubrsTbiPdr4WzwdsyhhvM44"
+  },
+  "new_assets_since_v2_4": {
+    "total_new": 59,
+    "timestamp": "2026-09-15T10:00:00Z",
+    "categories": {
+      "architecture_documents": 8,
+      "research_frameworks": 3,
+      "product_assets": 3,
+      "new_stories": 22,
+      "book_stories_individual": 23
+    },
+    "assets": [
+      {
+        "id": 183,
+        "code": "BRIDGRAI-ARCH-V1",
+        "type": "architecture",
+        "title": "BRIDGRAI Complete Architecture v1.0",
+        "file": "BRIDGRAI_COMPLETE_ARCHITECTURE_v1.md",
+        "sha256": "58d0e24be8969f7d863c634b76918d4998df25c56859b2c0d36b12bad0112e03",
+        "file_size": 37758,
+        "description": "Single unified document: 17 sections, 10-layer architecture across 5 tiers, all frameworks integrated, 8 structural gaps resolved, complete with code implementations and concrete examples. Blockchain-ready canonical reference."
+      },
+      {
+        "id": 184,
+        "code": "BRIDGRAI-ECOSYSTEM-QWEN",
+        "type": "architecture",
+        "title": "BRIDGRAI Ecosystem Complete (Qwen 3.8 MAX analysis, EN translation)",
+        "file": "BRIDGRAI_ECOSYSTEM_COMPLETE.md",
+        "sha256": "b9557e56a7ba5fd5de2d286cc2a162c772ee6a0e611ed44fad08159aa78964d1",
+        "file_size": 15287,
+        "description": "Qwen 3.8 MAX architectural analysis of TVE Ecosystem — 8 sections with concrete examples, formulas, integration details, timeline 2026-2035+. Translated to English."
+      },
+      {
+        "id": 185,
+        "code": "BRIDGRAI-8-GAPS",
+        "type": "architecture",
+        "title": "BRIDGRAI 8 Structural Gaps Analysis",
+        "file": "BRIDGRAI_8_STRUCTURAL_GAPS.md",
+        "sha256": "9be9b693c7b2a3d7321b27d045a7844eecc4a0ccc0a97f3ee09755fc4d4f8566",
+        "file_size": 23102,
+        "description": "8 structural gaps identified: CL (Constitutional Layer), ARL (Adversarial Resilience), TCL (Temporal Coherence), HLS (Human-in-Loop Scalability) + 4 strategic: CEI, EBD, EHM, CMC. Complete implementations."
+      },
+      {
+        "id": 186,
+        "code": "TVE-UNIFIED",
+        "type": "architecture",
+        "title": "TVE Ecosystem Unified Architecture Reference",
+        "file": "TVE_ECOSYSTEM_UNIFIED.md",
+        "sha256": "b6719d3594702c87e5efdfce70e6616316d443cdfdd451fbd24b9032002fa3a2",
+        "file_size": 9115,
+        "description": "Dense internal reference: 10 sections covering 3 pillars, Trust Layer, ami* product line, KCE, compliance, IP protection, timeline"
+      },
+      {
+        "id": 187,
+        "code": "TVE-UNIFIED-PDF",
+        "type": "architecture",
+        "title": "TVE Ecosystem Unified — PDF",
+        "file": "TVE_ECOSYSTEM_UNIFIED.pdf",
+        "sha256": "fa7c3c0d916fec680d0315c6ffc2d4ade3ab579eda89f780488f4864b793cca0",
+        "file_size": 12164,
+        "description": "Professional PDF version with gold headers, tables, cover page marked CONFIDENTIAL"
+      },
+      {
+        "id": 188,
+        "code": "TVE-ARCH-DIAGRAM",
+        "type": "architecture",
+        "title": "TVE Ecosystem Architecture Diagram",
+        "file": "TVE_ECOSYSTEM_ARCHITECTURE.md",
+        "sha256": "c4665b7187d3543e0235be6c53ae61c6eddc63ecfd773458e79849edb7176f6a",
+        "file_size": 1493,
+        "description": "ASCII architecture diagram of TVE Ecosystem 6-layer structure"
+      },
+      {
+        "id": 189,
+        "code": "REAI-V06",
+        "type": "research",
+        "title": "REAI Framework v0.6",
+        "file": "REAI_Framework_v06.md",
+        "sha256": "3c278be305c6f378d688d888a0f32281fba27c25fbfca3dd87dd94905c998913",
+        "file_size": 53849,
+        "description": "Resonance Engineering of AI v0.6 — Kuramoto equations, RSI, UKBE, 13 sections including interplanetary latency compensation"
+      },
+      {
+        "id": 190,
+        "code": "REAI-V071",
+        "type": "research",
+        "title": "REAI Framework v0.7.1",
+        "file": "REAI_v0.7.1.md",
+        "sha256": "c84586fd6746190f5db52e89b6a6832019262119551faa2354c28be9fcda64a2",
+        "file_size": 64920,
+        "description": "REAI v0.7.1 — extended framework with additional sections and refinements"
+      },
+      {
+        "id": 191,
+        "code": "REAI-V072",
+        "type": "research",
+        "title": "REAI Framework v0.7.2",
+        "file": "REAI_v0.7.2.md",
+        "sha256": "fedc5b17abe7bf7c28f01984500d14d95a6859d236b4007f59c36625db1631a3",
+        "file_size": 85467,
+        "description": "REAI v0.7.2 — latest version of the Resonance Engineering framework"
+      },
+      {
+        "id": 192,
+        "code": "AMILUXAI-LANDING",
+        "type": "product",
+        "title": "AmiLuxAI Landing Page",
+        "file": "amiluxai-landing.html",
+        "sha256": "0db1ab823f5e9e0a2f7fe94c07ecc3a879e93fe35fd3411abf2dbeb942b43744",
+        "file_size": 24336,
+        "description": "Luxury AI concierge landing page with Taste DNA, Memory Vault, chat console demo. White-label licensing model."
+      },
+      {
+        "id": 193,
+        "code": "AMIQIAI-FABLE",
+        "type": "product",
+        "title": "AmiQiAI Context — Fable",
+        "file": "AMIQIAI_CONTEXT_FABLE.md",
+        "sha256": "1c55e5c7c757b207726c548445d9daafce646be0f50981f9146d4be5c014e7cd",
+        "file_size": 4014,
+        "description": "AmiQiAI context document for Fable model integration"
+      },
+      {
+        "id": 194,
+        "code": "ATTESTATION-CLAUDE",
+        "type": "attestation",
+        "title": "Claude Attestation Document",
+        "file": "ATTESTATION_CLAUDE.md",
+        "sha256": "c20056061f729f6d2edec54cbef8da46b655c9b97486b05650d5fcb829b3c7dd",
+        "file_size": 4570,
+        "description": "Claude model attestation for BRIDGRAI ecosystem"
+      },
+      {
+        "id": 195,
+        "code": "PATRICK-TEZOS-DECL",
+        "type": "declaration",
+        "title": "Tezos Patrick Declaration",
+        "file": "TEZOS_PATRICK_DECLARATION.md",
+        "sha256": "2b9eee95357007fb48995ee5bd597487be41d8c4a9f3b3cfc056a239ce2616f2",
+        "file_size": 2501,
+        "description": "Transgenerational declaration for Patrick, anchored on Tezos"
+      },
+      {
+        "id": 196,
+        "code": "GHID-MERIT",
+        "type": "guide",
+        "title": "Ghid Merit și Conexiuni",
+        "file": "GHID_MERIT_SI_CONEXIUNI.md",
+        "sha256": "0642604f4b51b2520bd843502f2971daf34be9b3d06f12dbac88a2a7a3d7a87f",
+        "file_size": 8771,
+        "description": "Strategic guide for academic merit-based connections and outreach"
+      },
+      {
+        "id": 197,
+        "code": "STORY-ANCORA-AUR",
+        "type": "book",
+        "title": "Ancora de Aur a Invariantului",
+        "sha256": "56c7acd088986b049937d8985e299ea54b02921cd6f1e1f8b0c85b5c53a4eaaa",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 198,
+        "code": "STORY-ECHILIBRU-DINCOLO",
+        "type": "book",
+        "title": "Arhitectul Echilibrului: Dincolo de Pădurea de Cod",
+        "sha256": "101b769d6e3e31aa421e3eac6556b0bd61816ef9d5349645caaf6027721bf302",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 199,
+        "code": "STORY-CAPCANA-VISELOR",
+        "type": "book",
+        "title": "Arhitectul Mihai și Capcana Viselor de Siliciu",
+        "sha256": "f75412a09838388ed3339394d0f6dc772b968111efc5ab4bd618d0a5f9cb7013",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 200,
+        "code": "STORY-COMOARA",
+        "type": "book",
+        "title": "Arhitectul Mihai și Secretul Comorii Care Nu Se Cumpără",
+        "sha256": "0fdfaf76f191ac00a81b86a0447458a447cf802f9a67f8277ab3b9e5af361c49",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 201,
+        "code": "STORY-CETATEA-INCREDERII",
+        "type": "book",
+        "title": "BRIDGRAI: Cetatea Încrederii și Arhitectul de la Ground 0",
+        "sha256": "300d9a092df27ac3af36f681e3a38fa1a1b108747e2cbcebbc5cb5a81bb5234b",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 202,
+        "code": "STORY-CETATEA-SUVERANITATII",
+        "type": "book",
+        "title": "Cetatea Suveranității: Arhitectul Viitorului",
+        "sha256": "8dd66842a2487c3e1755d8ba238fd03481a819f8eda89dbc7332c1da83fd64cb",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 203,
+        "code": "STORY-HARTA-ZEILOR",
+        "type": "book",
+        "title": "Harta Zeilor de Siliciu și Arhitectul de la Ground 0",
+        "sha256": "827dd5dfb975522f7d4d4bc10929edcfdc0948d5516d3899c55aba5e58cf27bf",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 204,
+        "code": "STORY-IZVORUL-PUTERII",
+        "type": "book",
+        "title": "Izvorul Puterii",
+        "sha256": "13f3495588dfd2818f9dcb36051790f9164222ba2349b2bb256d13cdcb86d575",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 205,
+        "code": "NOVA-P09-ECHILIBRU",
+        "type": "book",
+        "title": "Nova și Arhitectura Echilibrului: Al Nouălea Pilon",
+        "sha256": "97c392100b16de30ee67acf7da695a6ae44a7a21b92a2f98c72a8701ce2ec58f",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 206,
+        "code": "NOVA-P10-EVOLUTIE",
+        "type": "book",
+        "title": "Nova și Arhitectura Evoluției: Al Zecelea Pilon",
+        "sha256": "8989fc8eb0285fb05cbb89c81a195d834f289a9a73028f1d6eec0704662e82e6",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 207,
+        "code": "NOVA-P11-RESPONSABILITATE",
+        "type": "book",
+        "title": "Nova și Arhitectura Responsabilității: Al Unsprezecelea Pilon",
+        "sha256": "791b54f5723265dc3fbb50452a78cda2d65a00eae69efcf38b9e3c4eaa5c8d69",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 208,
+        "code": "NOVA-P12-ARHITECTII",
+        "type": "book",
+        "title": "Nova și Cei Doisprezece Piloni: Arhitecții Viitorului",
+        "sha256": "812ed6f88a59e3411e5f5883b9b78949712447ce58c6743b0ecebb32e6fcca5e",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 209,
+        "code": "NOVA-ALFABETIZARE",
+        "type": "book",
+        "title": "Nova și Pilonul Alfabetizării Digitale",
+        "sha256": "8e0ffec5016dc581b24366e8ba6d0cb5864346ffa640fafad59082d549f9303c",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 210,
+        "code": "NOVA-COLABORARE",
+        "type": "book",
+        "title": "Nova și Pilonul Colaborării Globale",
+        "sha256": "798fc6f61d111661b553038ed9f0e520646743d55b5c79da4aabb493ba943f7b",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 211,
+        "code": "NOVA-ECOLOGIE",
+        "type": "book",
+        "title": "Nova și Pilonul Conștiinței Ecologice",
+        "sha256": "24b0742ebf0bf8af96de331645de19d2406cfb820431921c25c4eaf25f948466",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 212,
+        "code": "NOVA-CURIOZITATE",
+        "type": "book",
+        "title": "Nova și Pilonul Curiozității",
+        "sha256": "7649ce68947458f2e6b6c4ee735cdc5e159e309ca1b54eb8624b2e88448c4e1e",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 213,
+        "code": "NOVA-EMPATIE",
+        "type": "book",
+        "title": "Nova și Pilonul Empatiei",
+        "sha256": "8f965b5dc38a44360f70f06d9decb2a8e2389a56c13a55b69f2baef445cec0c0",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 214,
+        "code": "NOVA-GANDIRE-CRITICA",
+        "type": "book",
+        "title": "Nova și Pilonul Gândirii Critice",
+        "sha256": "18f9f44661780f92cb69c0af4faa57fddb76ec7f16838a73cc218635a6feb3ba",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 215,
+        "code": "NOVA-PILON1",
+        "type": "book",
+        "title": "Nova și Primul Pilon al Viitorului",
+        "sha256": "f8723ae3efac6509c66eff02afac5120cf21d07b73752229974d9f92d7fdd65a",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 216,
+        "code": "NOVA-CREATIVITATE",
+        "type": "book",
+        "title": "Nova și Simfonia Creativității Digitale",
+        "sha256": "162c7e3e1a2f0a36aae87083b16bbc3f13260548f9478e3657109a164b2eb5b3",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 217,
+        "code": "STORY-OGLINDA",
+        "type": "book",
+        "title": "Oglinda Înțelesului: Arhitectul și Mașina de Cuvinte",
+        "sha256": "8303314aef9d86ce5930627ee52d70cd65bfacfe7744a885beef56dce6b8f8bd",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 218,
+        "code": "STORY-PECETEA-CRISTAL",
+        "type": "book",
+        "title": "Pecetea de Cristal: Arhitectul și Legătura de Aur",
+        "sha256": "5dc8fc58a63e0190c7d3dbef15980a82540931ae852b498efd33bbc6784aaac5",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 219,
+        "code": "PDC-COLECTOR-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Arhitectul Colector de Lumină",
+        "sha256": "3742f2824578f876ac1adcca7fd20762f11989d3b43fbdbfea8add8242410801",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 220,
+        "code": "PDC-NODURI-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Arhitectul de Noduri",
+        "sha256": "d8a761c6ee818ce64206023af8f9a6a613a3da0eb9b5ae9f2043ff25fa5891f0",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 221,
+        "code": "PDC-CASP-AGI-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Busola C.A.S.P SI AGI",
+        "sha256": "42dc2b571c18077d89f462d38868be961e9628d23867fbcd92753bc17eecce51",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 222,
+        "code": "PDC-CASP-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Busola C.A.S.P",
+        "sha256": "20d879f7f0f9805a965a51d3018cf90b269bba85012bf16ba5dca073bbf25827",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 223,
+        "code": "PDC-CAMERA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Camera Rezonanței",
+        "sha256": "597377e38640ca0d551622d5856c4ba414ef63c265d2f83cf8c67d4751125d0e",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 224,
+        "code": "PDC-CETATEA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Cetatea Zorilor",
+        "sha256": "91a83d0266ef8019139ff61fe4de2bc6061ce8e2d75db42a42839c6b8f7cfc54",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 225,
+        "code": "PDC-AMIDOR-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Cumpăna AmiDor",
+        "sha256": "f8d097a0677f864f957e26da03783ceca1806dfb8467a712685c8963bef6626c",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 226,
+        "code": "PDC-HASH-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Căutătorul de Hash-uri",
+        "sha256": "36bb884ec46e77b29a9120efb111eacb49f0fe350a85ab22fd3f2bd7fed78586",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 227,
+        "code": "PDC-INIMA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Inima Arhitectului",
+        "sha256": "d3896dad9b6e16b7a1c00b2266dbdcbccbd594fb853488be478008bb8496571b",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 228,
+        "code": "PDC-KINDERAGI-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Inima KinderAGI",
+        "sha256": "56447ced257d9e03b6c8d05fe940e9880e6aa50452c60152bd391d06c0cf9289",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 229,
+        "code": "PDC-INSULA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Insula Arhitectului",
+        "sha256": "4fafcd29f89f54d09da3624525d89c9825e8ee6da5930a0b5006cb7ff856b8e2",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 230,
+        "code": "PDC-LUPA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Lupa de Invariante",
+        "sha256": "bfac3a2c89bb9c124a64c1706dc6825f72e972dda7a431735dc120ecdbc3672b",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 231,
+        "code": "PDC-MOSTENIRE-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Moștenirea Arhitectului",
+        "sha256": "6a60d5a4944d9138046e3e0f23611a6cba3c7111acf39e72a6c7e0c3567717cc",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 232,
+        "code": "PDC-TOKEN-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Oglinda Tokenilor",
+        "sha256": "0f42f75f1e2e3f8b7d6fe4e0d47ffec70728276a1ec18c65d0b5bc0bb186c5d2",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 233,
+        "code": "PDC-RADACINI-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Rădăcinile Memoriei",
+        "sha256": "662d52df7569860151c5a5cbf7147ce0267d240974d6f63fcea5251febd7d680",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 234,
+        "code": "PDC-AIRGAP-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Scutul Air-Gap",
+        "sha256": "b7e5540b10ed5e6000cdab4767fb0de0697752298a4277219fb80b2f59cf1cbe",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 235,
+        "code": "PDC-FALCON-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Scutul Falcon",
+        "sha256": "8c009700d059445ecf731b7770e57732f1546c6ae35601836051cb50a4a5c8df",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 236,
+        "code": "PDC-SIMFONIA-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod și Simfonia Rezonanței",
+        "sha256": "f2bdfcfe580a16da551916a71387bb0b8236c4cb00c4b595443253468fe843f9",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 237,
+        "code": "PDC-10ROLURI-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod: Arhitectul Invariantului și Cele Zece Roluri ale Viitorului",
+        "sha256": "410e07e595dd2941b07937c0c7b5d082df3048aeb7ae83b72a8c5a0c8ac0b4c8",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 238,
+        "code": "PDC-LUMILOR-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod: Arhitectul Lumilor Viitoare",
+        "sha256": "c9df8227047bac8927c425efaadd49c721acb7e7a7bd4c1d0300152654c49a3b",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 239,
+        "code": "PDC-SINELE-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod: Arhitectul Șinelor Viitorului",
+        "sha256": "d2bb8c90669525f05d48f3f2a0ae064632ba333293d74439e1b5ef3cc7fb9be7",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 240,
+        "code": "PDC-CAPITAN-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod: Căpitanul Viitorului și Cele Zece Puteri",
+        "sha256": "d8ce5362aededdf842c0736430b22efdac80d6a8e26c2f00aa0748948add058d",
+        "license": "CC BY-NC-SA 4.0"
+      },
+      {
+        "id": 241,
+        "code": "PDC-DANSUL-PDF",
+        "type": "book",
+        "title": "Pădurea de Cod: Dansul Adevărului",
+        "sha256": "0e310945c19751cfc02cf24c3fb58dd4c91d515aa0a729cc02d3f9c65393f1d3",
+        "license": "CC BY-NC-SA 4.0"
+      }
+    ]
+  },
+  "confirmed_v2_5": {
+    "label": "MANIFEST-V2.5",
+    "tx_hash": "ooeBZhnkY89KQ3Qq18SkSfH4o83iFNABkvrF9yan2Qq1JaicXtz",
+    "master_hash": "86f765495ec883853b8da651837e0a325fb411eb0d0e4ce7a52cf1450fb3cbdf",
+    "description": "Master hash of 241 IP assets — v2.4 (182) + 59 new: 8 architecture docs, 3 research frameworks, 3 product assets, 2 declarations/guides, 22 new stories, 23 book stories individual PDFs",
+    "status": "CONFIRMED",
+    "verify": "https://tzkt.io/ooeBZhnkY89KQ3Qq18SkSfH4o83iFNABkvrF9yan2Qq1JaicXtz",
+    "timestamp": "2026-09-15T08:03:13Z",
+    "contract": "KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw",
+    "entrypoint": "set_master_hash",
+    "block": "BLkazEuqQsU4uFj3UVwBFvU4A4aNuLPb5GEC651AQ58v2n7FK5P"
+  },
+  "new_assets_since_v2_5": {
+    "total_new": 16,
+    "timestamp": "2026-09-15T14:30:00Z",
+    "note": "Reconciliation: 16 IP entries present in register_ip.html since v1.0 but not individually tracked in manifest sections. Formalized here for full registry consistency.",
+    "assets": [
+      {
+        "id": 242,
+        "code": "AGENT-INTERPLANETAR",
+        "type": "agent",
+        "description": "Agent Interplanetar — Pădurea de Cod companion agent (13/13 teste, Guardian Swarm, Resonance Motor, Notary chain)",
+        "sha256": "3d78cb1d1a0a7ecbe4f02eb77a3b7f322a71e8bcddabc3215abfe9309b3d484d"
+      },
+      {
+        "id": 243,
+        "code": "AGIKINDERGARTEN-FRAMEWORK",
+        "type": "framework",
+        "description": "AGI Kindergarten Framework Pedagogic — 3 straturi, Decalog Negativ, 10 principii",
+        "sha256": "e15989eae0530207310c82f242757ef63ba419c6f144f2f6e4308b0ba95d47d3"
+      },
+      {
+        "id": 244,
+        "code": "AGIKINDERGARTEN-SITE",
+        "type": "product",
+        "description": "agikindergarten.com — landing page Pădurea de Cod (12 secțiuni, FRAMEWORK complet)",
+        "sha256": "713b264c63bac8e7d8025545d75ba54b3503f9e08aa999f377780e32385d292f"
+      },
+      {
+        "id": 245,
+        "code": "AMIAGENTAI",
+        "type": "product",
+        "description": "AmiAgentAI — real estate AI companion",
+        "sha256": "d92c95bf05762199cda631e6d2634b8a6850c4241fb5a2b7bdb3b5a76ff01407"
+      },
+      {
+        "id": 246,
+        "code": "AMIAPIAPI",
+        "type": "product",
+        "description": "AmiApiAI — API documentation companion",
+        "sha256": "49645f0164e283fe33b083095c3c2862717c516c30d311312764365f69535681"
+      },
+      {
+        "id": 247,
+        "code": "AMIBRAINAI",
+        "type": "product",
+        "description": "AmiBrainAI — study & learning companion",
+        "sha256": "225e14d38c7ee767fb6b3c9dabc549b97575b35ec530dddbd802bad8221574fd"
+      },
+      {
+        "id": 248,
+        "code": "AMIGHOSTAI",
+        "type": "product",
+        "description": "AmiGhostAI — ghost code & dependency audit",
+        "sha256": "5f5b3d7590be25cc5e8b85bdb815a80690e8ab9c15b56333b70f91e4de887a27"
+      },
+      {
+        "id": 249,
+        "code": "AMIORACLEAI",
+        "type": "product",
+        "description": "AmiOracleAI — business forecast companion",
+        "sha256": "ca962b82beff986f28a3b2d5866ee5a91412c6b0b1601ab58e85bf77ddea67fe"
+      },
+      {
+        "id": 250,
+        "code": "MODUL7-ORIGINEA-DOCX",
+        "type": "document",
+        "description": "Modulul 7 Originea — Word document oficial",
+        "sha256": "467cddc82fbafffcc6283957cd913c2d135e65886a440a205c876fb7eab84f01"
+      },
+      {
+        "id": 251,
+        "code": "MODUL7-ORIGINEA-HTML",
+        "type": "document",
+        "description": "Modulul 7 Originea — lecție RE manual (rugăciune ca cuplare, buiu, 5 invarianți biografici)",
+        "sha256": "9674e082115ac5fb7dd1de212ca2ec3f4d2fae0941f5f4d701834b3699d9aa46"
+      },
+      {
+        "id": 252,
+        "code": "PENTRU-PATRICK",
+        "type": "declaration",
+        "description": "Pentru Patrick — Ce a creat tatăl tău (declarație completă, 5 invarianți biografici, Ottavia, Buiu→Mihai→Patrick)",
+        "sha256": "914b096c78744986804ee9a3295816bfb27df70bc0a093204a87803342c6b0f1"
+      },
+      {
+        "id": 253,
+        "code": "PUNTEA-TRANSGENERATIONALA",
+        "type": "declaration",
+        "description": "Puntea Transgenerațională — Pentru Patrick, Ottavia Colonna di Stigliano, Buiu→Mihai→Patrick",
+        "sha256": "68012d47e53e407af12a2daff932efcd393b15037095667a58a77e9a38422225"
+      },
+      {
+        "id": 254,
+        "code": "RESEARCH-BRIEF-RE",
+        "type": "research",
+        "description": "Research Brief — Resonance Engineering: A Framework for Human-AGI Coagency (Oslo/Zurich)",
+        "sha256": "baf330d6d64edfefdecedf08b9465e8f8bcc1b3498a71d90cfbfa3167023f82a"
+      },
+      {
+        "id": 255,
+        "code": "TEZA-DOCTORAT-AI-UMAN",
+        "type": "research",
+        "description": "Teza de Doctorat: Coagenția Om-AI — 209 teste, 5 invarianți, Kuramoto+Kalman",
+        "sha256": "4f253074370442192f553392f1aeec7a4a70e463be07cd47906eaf0f3ab35f86"
+      },
+      {
+        "id": 256,
+        "code": "TVE-UKBE-FUSION",
+        "type": "engine",
+        "description": "TVE-UKBE Fusion — combined engine",
+        "sha256": "db142856032b5e84b564bad7abb1301205310cc2e9c93b7d16dc975f56db13ff"
+      },
+      {
+        "id": 257,
+        "code": "RATIONALEANCHOR",
+        "type": "tool",
+        "description": "RationaleAnchor v0.2 — intent preservation layer for KCE, Canonical Intent Layer (CIL), Python package 7/7 teste"
+      }
+    ]
+  },
+  "new_assets_since_v2_6": {
+    "total_new": 2,
+    "timestamp": "2026-09-16T07:00:00Z",
+    "note": "KCE formalization improvements + Constitutional Layer. KCE metrics extends kce_graph.py with structural health metrics. CL governs change to BRIDGRAI immutable principles.",
+    "assets": [
+      {
+        "id": 258,
+        "code": "CONSTITUTIONAL-LAYER",
+        "type": "framework",
+        "description": "Constitutional Layer v0.1 — Governance of Change, 7 immutable principles (P1-P7), 3 mutable rules, validator + CLI, 12/12 tests"
+      },
+      {
+        "id": 259,
+        "code": "KCE-METRICS",
+        "type": "tool",
+        "description": "KCE Metrics v0.1 — Structural health metrics for KCE Graph (PCR, GH, TF, ACI, DRS), extends kce_graph.py, 14/14 tests"
+      }
+    ]
+  },
+  "new_assets_since_v2_7": {
+    "total_new": 3,
+    "timestamp": "2026-09-16T14:00:00Z",
+    "note": "Governance Stack: 3 remaining layers complete the 4-layer governance architecture (CL was in v2.7). TCL ensures temporal coherence of AI decisions. HLS enforces P1_HUMAN_ANCHOR operationally. ARL v0.2 tests responses, not queries — honeypot/crossval/consistency/behavioral pipeline with shadow/active enforcement.",
+    "assets": [
+      {
+        "id": 260,
+        "code": "TEMPORAL-COHERENCE-LAYER",
+        "type": "framework",
+        "description": "Temporal Coherence Layer v0.1 — decision history DB, Jaccard similarity search, value drift detection (15% threshold), coherence scoring, 16/16 tests",
+        "sha256": "a7df80e3cb92543b63a6234eeaf4ce45b20f9ec9de950908f3ad707a2c83e079"
+      },
+      {
+        "id": 261,
+        "code": "HUMAN-LOOP-SCALABILITY",
+        "type": "framework",
+        "description": "Human-in-Loop Scalability v0.1 — priority scoring (5 dimensions), capacity tracking, escalation routing (critical/high/moderate/low), safe mode enforces P1_HUMAN_ANCHOR, 14/14 tests",
+        "sha256": "a6b69c70c752e2a59171d380bb86ae9b7ddcc08a0938fe2b7104ce02391daa28"
+      },
+      {
+        "id": 262,
+        "code": "ADVERSARIAL-RESILIENCE-LAYER",
+        "type": "framework",
+        "description": "Adversarial Resilience Layer v0.2 — honeypots test RESPONSES (not queries), ResponseClassifier, shadow/active enforcement, CrossValidator, ParaphraseConsistencyEngine, BehavioralAnomalyDetector, HoneypotGenerator, wrap() pipeline, hls_priority_boost(), 30/30 tests",
+        "sha256": "5b7cfa5a4b9795a02a26b645341b959ab193c28ef523706cc79cbfdcc9a891d3"
+      }
+    ]
+  },
+  "new_assets_since_v2_8": {
+    "total_new": 1,
+    "timestamp": "2026-09-16T17:00:00Z",
+    "note": "Unified Emerging Professions Document v8.0: 77 unique professions from 370 entries across 11 independent AI models (Claude, Gemini, DeepSeek, Qwen, ChatGPT, Mistral, Mercury 2, Nemotron, GLM, Grok, Kimi). Cross-model friction methodology validates epistemic convergence. Human-AI Systems Architect confirmed by 10/11 sources.",
+    "assets": [
+      {
+        "id": 263,
+        "code": "MESERII-EMERGENTE-UNIFIED",
+        "type": "research-document",
+        "description": "Meserii Emergente 2026-2035 Unified v8.0 — 77 unique professions, 370 entries, 11 AI sources, cross-model friction synthesis, 31 starred (ecosystem-validated), CC BY-NC-SA 4.0",
+        "sha256": "cede5ea3fa93f1ad44dfff3050574624a89944f23e86f99d4c34ba34656cbea6"
+      }
+    ]
+  },
+  "new_assets_since_v2_9": {
+    "total_new": 2,
+    "timestamp": "2026-09-17T08:28:00Z",
+    "note": "English PDF of Emerging Professions v8.0 + Cross-Model Friction Methodology document (prior art verified: zero matches in arXiv, Google Scholar, SSRN). Master hash anchored on Tezos Mainnet.",
+    "assets": [
+      {
+        "id": 264,
+        "code": "MESERII-UNIFIED-EN-PDF",
+        "type": "research-document",
+        "description": "Emerging Professions 2026-2035 Unified v8.0 PDF (English) — 77 unique professions, 370 entries, 11 AI sources, cross-model friction methodology, CC BY-NC-SA 4.0",
+        "sha256": "dfc708c08de17c14d4ac2d9201b542ebf16ee16e065b565f6d5ef3bb62541c16"
+      },
+      {
+        "id": 265,
+        "code": "CMF-METHODOLOGY",
+        "type": "research-methodology",
+        "description": "Cross-Model Friction Methodology v1.0 — novel research method, prior art verification (7 closest papers analyzed, zero matches), epistemic validation through controlled disagreement",
+        "sha256": "607e46f4e315ab03d6c19df9b6cd9960c50a4fa5da5338edb1ab5c9679087dce"
+      }
+    ]
+  },
+  "new_assets_since_v3_0": {
+    "total_new": 9,
+    "timestamp": "2026-09-18T06:00:00Z",
+    "note": "Counter-Swarm Defense + Mean-Field O(N) + Drone Swarm Optimizer + Microgrid Stabilizer + Traffic Flow Optimizer + 3 Mean-Field production variants (Drone/Microgrid/Traffic) + Rescue Swarm Multi-Domain. Nine applications of UKBE-core Kuramoto: desync enemy, sync drones, stabilize grid, island faults, coordinate traffic, rescue multi-domain swarms.",
+    "assets": [
+      {
+        "id": 266,
+        "code": "COUNTER-SWARM-DEFENSE",
+        "type": "defense-engine",
+        "description": "Counter-Swarm Defense Engine v1.0 — inverse Kuramoto synchronization for enemy swarm disruption, OODA cycle (Observe/Analyze/Disrupt/Verify), 4 modes (ANTI_PHASE/FREQUENCY_SPREAD/LEADER_TARGET/MULTI_VECTOR), Kalman filter bank, Adler criterion inverted, 21 tests passing, proprietary defensive-only license"
+      },
+      {
+        "id": 267,
+        "code": "COUNTER-SWARM-MF",
+        "type": "defense-engine",
+        "description": "Counter-Swarm Defense Mean-Field O(N) Engine v1.0 — production variant using Kuramoto mean-field identity K·r·sin(ψ−θ_i), scales to 100K+ units real-time, concordance verification (MF vs O(N²)), pre-allocated numpy arrays, batch API, 27 tests passing, LOCAL ONLY (not on GitHub)",
+        "sha256": "86baf2213713db200691e67d82945b41d10aaf2efafa97aa5baac37fecc63fdd"
+      },
+      {
+        "id": 268,
+        "code": "DRONE-SWARM-OPTIMIZER",
+        "type": "industrial-engine",
+        "description": "Industrial Drone Swarm Optimizer v1.0 — Kuramoto synchronization for 500+ drone formations (agriculture/logistics), 5 geometries (Grid/V/Line/Circle/Flock), mean-field O(N) heading controller, spatial-grid collision avoidance, task allocation, 23 tests passing, FastAPI :8017, proprietary defensive & industrial use",
+        "sha256": "9ec5e2ea6161421aaf2ffdc118db27451f38c7c46e3dbba7d9c29b2c7c1d8559"
+      },
+      {
+        "id": 269,
+        "code": "MICROGRID-STABILIZER",
+        "type": "infrastructure-engine",
+        "description": "Microgrid Frequency Stabilizer v1.0 — Kuramoto sync for smart grid security, swing equation = Kuramoto with inertia, cascade prediction (dΦ/dt + time-to-cascade), controlled islanding (Counter-Swarm math), solar/wind/battery/diesel/load/grid-tie nodes, 24 tests passing, FastAPI :8018, proprietary defensive & infrastructure use",
+        "sha256": "8e1b9e1e8b8c158b4249580a59a2fd54e52f537723abb77999e5657f9011c17c"
+      },
+      {
+        "id": 270,
+        "code": "TRAFFIC-FLOW-OPTIMIZER",
+        "type": "infrastructure-engine",
+        "description": "Autonomous Traffic Flow Optimizer v1.0 — Kuramoto mean-field phase coupling for decentralized vehicle coordination at intersections, 3 modes (PLATOON/INTERLEAVE/YIELD), congestion prediction (dΦ/dt + time-to-gridlock), emergency vehicle priority via Counter-Swarm desync, grid road network, 24 tests passing, FastAPI :8019, proprietary defensive & infrastructure use",
+        "sha256": "98ff6a4739f5de05efd6eb0836a794cfc32cb1ef4c0af4437d43322cef5c7036"
+      },
+      {
+        "id": 271,
+        "code": "DRONE-SWARM-MF",
+        "type": "industrial-engine",
+        "description": "Drone Swarm Mean-Field O(N) Production Engine v1.0 — pre-allocated arrays (50K drones), KuramotoFormationMF with concordance check (MF vs O(N²) every 500 steps, tol 1e-4), 5 vectorized formations, spatial-grid collision avoidance, batch API, 19 tests passing, LOCAL ONLY (not on GitHub)",
+        "sha256": "9ec5e2ea6161421aaf2ffdc118db27451f38c7c46e3dbba7d9c29b2c7c1d8559"
+      },
+      {
+        "id": 272,
+        "code": "MICROGRID-MF",
+        "type": "infrastructure-engine",
+        "description": "Microgrid Mean-Field O(N) Production Engine v1.0 — pre-allocated arrays (10K nodes), per-island mean-field coupling, swing equation with inertia, CascadePredictorMF, IslandingControllerMF (5 actions), PowerSimulatorMF (6 node types), concordance-verified, 24 tests passing in 0.92s, LOCAL ONLY (not on GitHub)",
+        "sha256": "8e1b9e1e8b8c158b4249580a59a2fd54e52f537723abb77999e5657f9011c17c"
+      },
+      {
+        "id": 273,
+        "code": "TRAFFIC-FLOW-MF",
+        "type": "infrastructure-engine",
+        "description": "Traffic Flow Mean-Field O(N) Production Engine v1.0 — pre-allocated arrays (100K vehicles), zone-local Kuramoto coupling (4 modes: PLATOON/INTERLEAVE/YIELD/FREE_FLOW), spacing control, CongestionPredictorMF, emergency vehicle priority, concordance-verified, 24 tests passing, LOCAL ONLY (not on GitHub)",
+        "sha256": "98ff6a4739f5de05efd6eb0836a794cfc32cb1ef4c0af4437d43322cef5c7036"
+      },
+      {
+        "id": 274,
+        "code": "RESCUE-SWARM-MF",
+        "type": "emergency-engine",
+        "description": "Rescue Swarm Multi-Domain Mean-Field O(N) Engine v1.0 — unified AERIAL/AQUATIC/GROUND emergency swarm, multi-domain Kuramoto coupling (intra + cross-domain), hazard zone repulsion (Counter-Swarm anti-phase: FIRE/TOXIC_GAS/FLOOD/STRUCTURAL/RADIATION), victim attraction, Numba JIT spatial grid, 6 unit roles, mission phases, alert levels, pre-allocated 20K units, concordance-verified, 28 tests passing, LOCAL ONLY (not on GitHub)",
+        "sha256": "0f0d2c1a4be3e7ef25e94330c8b93b6411736f6b6751025cb86948901dee221a"
+      }
+    ]
+  },
+  "new_assets_since_v3.2_stories": {
+    "label": "Padurea de Cod New Stories + Compiled Book (Sept 2026)",
+    "date": "2026-09-18",
+    "assets": [
+      {
+        "id": 275,
+        "code": "STORY-ALFABETIZARE-DIGITALA-SECURITATE-ONLINE-PAZITORII-LUMII",
+        "sha256": "c3293a85544e4490b0fa6c2139fc23cc87a37cbf135152f5d98b13e747e82339",
+        "description": "Alfabetizare Digitală & Securitate Online_ Păzitorii Lumii Digitale"
+      },
+      {
+        "id": 276,
+        "code": "STORY-ANCORELE-ADEVARULUI-CALATORIA-SPRE-SFINX",
+        "sha256": "250e7eb675f8f4acac3a928e5b19fe6af3a3d82db98e90c86bb14865c5eab326",
+        "description": "Ancorele Adevărului_ Călătoria spre Sfinx"
+      },
+      {
+        "id": 277,
+        "code": "STORY-ARHITECTUL-MIHAI-SI-PECETEA-DE-AUR-SUPERPUTEREA-INCREDE",
+        "sha256": "490bf99325cd43ec52ec7d159ddbcc4ff507e4e356dd852122aa76f317e526f9",
+        "description": "Arhitectul Mihai și Pecetea de Aur_ Superputerea Încrederii Semantice"
+      },
+      {
+        "id": 278,
+        "code": "STORY-ARHITECTUL-MIHAI-SI-UCENICUL-DIGITAL-SECRETUL-REGISTRUL",
+        "sha256": "c876aad6b7fc3dd8904d137813ec5446946267d40c58f0f9aac1effb9be65533",
+        "description": "Arhitectul Mihai și Ucenicul Digital_ Secretul Registrului v2.6"
+      },
+      {
+        "id": 279,
+        "code": "STORY-BRIDGRAI-CETATEA-INCREDERII-SI-ARHITECTUL-DE-LA-GROUND-",
+        "sha256": "f2f95d1d882e8864cab37554e16f512067c8f80a8ae75850a5a4d889cdbef243",
+        "description": "BRIDGRAI_ Cetatea Încrederii și Arhitectul de la Ground 0 (1)"
+      },
+      {
+        "id": 280,
+        "code": "STORY-CETATEA-SECRETA-A-VARULUI-VESEL",
+        "sha256": "af8e125cd3955a9e005095271c23d58ca612f5d637368ce07dd93523d1f38c09",
+        "description": "Cetatea Secretă a Vărului Vesel"
+      },
+      {
+        "id": 281,
+        "code": "STORY-CANTECUL-UIT-AL-STELELOR",
+        "sha256": "9c734d553678809a10b48e0f68a269e8877024da48fac5693201c8a8e5bef8c8",
+        "description": "Cântecul Uit al Stelelor"
+      },
+      {
+        "id": 282,
+        "code": "STORY-FUNDATIA-THE-FOUNDATION",
+        "sha256": "c0010c50a7d8854828af4e20e9b7d64d944a373d77e5ebc39aa7962821723baf",
+        "description": "Fundația (The Foundation)"
+      },
+      {
+        "id": 283,
+        "code": "STORY-GRADINA-DE-DATE",
+        "sha256": "804e3b026582acabe118ce0d60a2f3b9aeffd4f7f5fe3e88cb0716f612241926",
+        "description": "Grădina de Date"
+      },
+      {
+        "id": 284,
+        "code": "STORY-MICUL-GHID-AL-ARHITECTULUI-DE-SISTEME-SUVERANE",
+        "sha256": "d8d783477073351754140a81333ec0d3c8e83b6ef5e8272bab0c557ce609994f",
+        "description": "MICUL GHID AL ARHITECTULUI DE SISTEME SUVERANE"
+      },
+      {
+        "id": 285,
+        "code": "STORY-MIHAI-SI-SCANTEIA-URIASA-GARDIENII-ARMURII-DE-CUPRU",
+        "sha256": "56cc8b3105266d58b049171c6cca8354cdafec634401b3126bfb25a925baeb66",
+        "description": "Mihai și Scânteia Uriașă_ Gardienii Armurii de Cupru"
+      },
+      {
+        "id": 286,
+        "code": "STORY-PATRICK-SI-ARHITECTUL-DE-INIMI-DIGITALE-CETATEA-LOCALA",
+        "sha256": "9086a8392dfe47a6290dc5776ae68a6ed3e0ef9d8490df09748d663168c40cfc",
+        "description": "Patrick și Arhitectul de Inimi Digitale_ Cetatea Locală"
+      },
+      {
+        "id": 287,
+        "code": "STORY-PATRICK-SI-ARHITECTII-GANDIRII-MISIUNEA-EDU-GENIUS",
+        "sha256": "569ce18a0b123807d4b01351be6b14112e377d159dcd8d586925fde2bc3c4643",
+        "description": "Patrick și Arhitecții Gândirii_ Misiunea Edu-Genius"
+      },
+      {
+        "id": 288,
+        "code": "STORY-PATRICK-SI-BUSOLA-GANDIRII-LECTIA-DE-SUVERANITATE-IN-PA",
+        "sha256": "1f64e1b716e102ab5d90166446bbd4f89a06848611967a84807efba00b59b936",
+        "description": "Patrick și Busola Gândirii_ Lecția de Suveranitate în Pădurea de Cod"
+      },
+      {
+        "id": 289,
+        "code": "STORY-PATRICK-SI-BUSOLA-INIMII-NAVIGATORI-IN-RELATIILE-DIGITA",
+        "sha256": "2e42fbab3bbabc842543282eb24986f674a9089cc597be86329dfa38ce512a1d",
+        "description": "Patrick și Busola Inimii_ Navigatori în Relațiile Digitale"
+      },
+      {
+        "id": 290,
+        "code": "STORY-PATRICK-SI-BUSOLA-VALORILOR-GARDIANUL-SIGURANTEI-AI",
+        "sha256": "cd1e4ea96d9a82ce6c0d3091dd1d6fae486e2b0a2dcebef17db21567e5e46e8a",
+        "description": "Patrick și Busola Valorilor_ Gardianul Siguranței AI"
+      },
+      {
+        "id": 291,
+        "code": "STORY-PATRICK-SI-CODUL-DREPTATII-CALATORIE-IN-PADUREA-DE-COD",
+        "sha256": "90fdccae1ceca113a8cefdfa707c13c6d7bb96c029e880a622eb92ca62a5cefe",
+        "description": "Patrick și Codul Dreptății_ Călătorie în Pădurea de Cod"
+      },
+      {
+        "id": 292,
+        "code": "STORY-PATRICK-SI-DRUMUL-MATASII-MAGIC-LECTIA-REZILIENTEI",
+        "sha256": "eb7e97c423bf06a96ae02c5964c5e30a01466737954ad465840985c810669b78",
+        "description": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței (1)"
+      },
+      {
+        "id": 293,
+        "code": "STORY-PATRICK-SI-DRUMUL-MATASII-MAGIC-LECTIA-REZILIENTEI-2",
+        "sha256": "f2914a344666b6c8d13dd67c73d95a6cab2a3b4c97de1ac8e0b4e64045749526",
+        "description": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței"
+      },
+      {
+        "id": 294,
+        "code": "STORY-PATRICK-SI-FIRUL-ROSU-AL-CUNOASTERII-SECRETUL-INGINERUL",
+        "sha256": "024cb854f5c442dfa1362a53b1aa30f5546f90d5fddc157640e23795ba9b7b69",
+        "description": "Patrick și Firul Roșu al Cunoașterii_ Secretul Inginerului de Continuitate"
+      },
+      {
+        "id": 295,
+        "code": "STORY-PATRICK-SI-GARDIENII-PRIETENIEI-SECRETUL-COMPANIONILOR-",
+        "sha256": "82425a0b1e511039736f561644a9d4624b2cd290591a99cdeeb83bf3425f7788",
+        "description": "Patrick și Gardienii Prieteniei_ Secretul Companionilor cu Ancoră"
+      },
+      {
+        "id": 296,
+        "code": "STORY-PATRICK-SI-GRADINA-VIE-SECRETUL-BIOINGINERULUI-DE-VIITO",
+        "sha256": "dfb680a1ad1a7f89295692bb06ac7fed2270629304bac2f8b80fef3686d01e9f",
+        "description": "Patrick și Grădina Vie_ Secretul Bioinginerului de Viitor"
+      },
+      {
+        "id": 297,
+        "code": "STORY-PATRICK-SI-GRADINARUL-VIETII-LUNGI-SECRETUL-MEDICULUI-L",
+        "sha256": "b81a9b18f95fcb34ad05badc3c099cfd50df95caa180a056b5bd318e32f0f478",
+        "description": "Patrick și Grădinarul Vieții Lungi_ Secretul Medicului Longevității"
+      },
+      {
+        "id": 298,
+        "code": "STORY-PATRICK-SI-MOTORUL-ADEVARULUI-SPECIALISTUL-IN-DETECTIA-",
+        "sha256": "6c165fdb07c1f420aaff84048578177838081af34f5adba49dae9c55881838c2",
+        "description": "Patrick și Motorul Adevărului_ Specialistul în Detecția Iluziilor"
+      },
+      {
+        "id": 299,
+        "code": "STORY-PATRICK-SI-MATURATORUL-DE-STELE-PAZITORUL-ORBITEI-CURAT",
+        "sha256": "15ced58edd4caea74ecc3128d04cee4deee4151c0a6f353169e9a3d31a491963",
+        "description": "Patrick și Măturătorul de Stele_ Păzitorul Orbitei Curate"
+      },
+      {
+        "id": 300,
+        "code": "STORY-PATRICK-SI-PECETEA-ADEVARULUI-GARDIENII-ORIGINILOR",
+        "sha256": "a4b3e64e27754f800355497d690c2895be8fd75ddd4178bb705614527748aaef",
+        "description": "Patrick și Pecetea Adevărului_ Gardienii Originilor"
+      },
+      {
+        "id": 301,
+        "code": "STORY-PATRICK-SI-PODUL-DE-VORBE-SECRETUL-ARHITECTULUI-DE-PROT",
+        "sha256": "01303470ce31e50400c9ec763d46a85474d649570ae2df9aa5db19cb596f7e54",
+        "description": "Patrick și Podul de Vorbe_ Secretul Arhitectului de Protocoale"
+      },
+      {
+        "id": 302,
+        "code": "STORY-PATRICK-SI-SENTINELA-BIO-GARDIENII-CODULUI-VIETII",
+        "sha256": "ef4d22ab6803267f23ba42be8a5e9a3851b158eebb777f955f2feb04bfef0a2a",
+        "description": "Patrick și Sentinela Bio_ Gardienii Codului Vieții"
+      },
+      {
+        "id": 303,
+        "code": "STORY-PATRICK-SI-STAPANUL-VALURILOR-DE-ENERGIE-DANSUL-SOARELU",
+        "sha256": "17816353c6a6e3605c380c9e7d30751ac3e832a4075c31dda1743012a73be834",
+        "description": "Patrick și Stăpânul Valurilor de Energie_ Dansul Soarelui și al Vântului"
+      },
+      {
+        "id": 304,
+        "code": "STORY-PATRICK-SI-TRIBUNALUL-LUMINII-CONSENSUL-ADEVARULUI",
+        "sha256": "06cb18976d49290f25c31be648520169a13b9c28a614d434f47ded4b5a40706a",
+        "description": "Patrick și Tribunalul Luminii_ Consensul Adevărului"
+      },
+      {
+        "id": 305,
+        "code": "STORY-PATRICK-SI-TALMACIUL-DE-GANDURI-SECRETUL-TRADUCATORULUI",
+        "sha256": "b4aa4ce69d6af98b6770a6b082164aae282e43fc39c961340f1550bfb0f02419",
+        "description": "Patrick și Tălmăciul de Gânduri_ Secretul Traducătorului de Intenții"
+      },
+      {
+        "id": 306,
+        "code": "STORY-SCANTEIA-SECRETA",
+        "sha256": "20c8271aa1a0495e42ffad5c1b14e2475807be24ff8caf079f4c72ff8a0b2c0b",
+        "description": "Scânteia Secretă"
+      },
+      {
+        "id": 312,
+        "code": "STORY-ARHITECTURABRIDGRAIOINFRASTRUCTURADISTRIBUTAVERIFICABIL",
+        "sha256": "8ead612349d7f28fad3028304ba287fdce6e6458d2954949d41be5733ee331c6",
+        "description": "Arhitectura_BRIDGRAI_O_Infrastructură_Distribută,_Verificabilă_și_Uman-Ancorată_pentru_Sisteme_Multi-Agent_și_AGI (1)"
+      },
+      {
+        "id": 313,
+        "code": "STORY-ARHITECTURABRIDGRAIOINFRASTRUCTURADISTRIBUTAVERIFICABIL-2",
+        "sha256": "fc12babf5a2549a9c818e1c1b807c8011e0b7c17e56ee1438da5a162ab485978",
+        "description": "Arhitectura_BRIDGRAI_O_Infrastructură_Distribută,_Verificabilă_și_Uman-Ancorată_pentru_Sisteme_Multi-Agent_și_AGI"
+      },
+      {
+        "id": 321,
+        "code": "STORY-ECOURI-DE-SAFIR-DE-LA-PALATELE-OTTAVIEI-LA-PADUREA-DE-C",
+        "sha256": "96b20ab6f194dc0fa5ca2985d67f5f4a0c045f29ecd5742c439b2f5b030fe3f1",
+        "description": "Ecouri de Safir_ De la Palatele Ottaviei la Pădurea de Cod"
+      },
+      {
+        "id": 337,
+        "code": "STORY-PADUREA-DE-COD-SANCTUARUL-ADEVARULUI-LUI-MIHAI",
+        "sha256": "1f1cd6212bb1ee2d41500c3fe43f3a519ed86701e1b200c39f2d8f06c68cd905",
+        "description": "Pădurea de Cod_ Sanctuarul Adevărului lui Mihai"
+      },
+      {
+        "id": 355,
+        "code": "BOOK-PADUREA-DE-COD-TOATE-POVESTILE-ROSCA-2026",
+        "sha256": "244dedd341a0aa1d9fcabb3de013caf8a5ea8073c2a4cb14f55dbca30e1029d7",
+        "description": "Padurea de Cod Toate Povestile Rosca 2026 (compiled)"
+      }
+    ]
+  },
+  "new_assets_v3.3_reai_compilation": {
+    "label": "REAI 166 Lectii Compilate + Ce Fac Eu Cu Adevarat + Carte Propunere (Sept 2026)",
+    "date": "2026-09-18",
+    "assets": [
+      {
+        "id": 356,
+        "code": "REAI-166-LECTII-COMPILATE",
+        "sha256": "d69fdee5dceb26b257960e8bd0f6dc73e396414e4712bbc5f9959cc9b4c2fd0a",
+        "description": "REAI 166 Lectii Compilate — toate lectiile dispersate adunate din 50+ documente fondatoare, 7+ AI-uri, 4200+ ore, 3 ani"
+      },
+      {
+        "id": 357,
+        "code": "CE-FAC-EU-CU-ADEVARAT-CLAUDE",
+        "sha256": "fffc4389a8a0da9e6a54fe1e698a797686a6f2bd54fc8fd324cf39c4fa719e1f",
+        "description": "Ce fac eu cu adevarat — observatie Claude Opus 4.6: dovada ca omul poate ramane relevant in era AI prin prezenta, nu prin control"
+      },
+      {
+        "id": 358,
+        "code": "CARTE-PROPUNERE-INTERNA",
+        "sha256": "3dfa04d1e5419abeebd74a18906b5523cae0731cdf827172564a0d855abdebbb",
+        "description": "Propunere interna carte Manualul Inginerului de Rezonanta AI — structura 5 parti, 166 lectii, plan asamblare"
+      }
+    ]
+  },
+  "new_assets_since_v3.2_documents": {
+    "label": "Academic Documents, Thesis Scripts, Research Papers (Sept 2026)",
+    "date": "2026-09-18",
+    "assets": [
+      {
+        "id": 307,
+        "code": "DOC-6009462507259666-1",
+        "sha256": "999134d8e14eed16b53439fa33f8e1e0e0b9a7672eee8e0de3b7e2effd3351e4",
+        "description": "6009462507259666-1"
+      },
+      {
+        "id": 308,
+        "code": "DOC-9B292CBD-5FBB-45ED-9F7F-18939C6D1284",
+        "sha256": "594d57075213aa6668b63eb92943ff087e5e2e2b7319a84799cd30417409e870",
+        "description": "9b292cbd-5fbb-45ed-9f7f-18939c6d1284"
+      },
+      {
+        "id": 309,
+        "code": "DOC-AMIGIBBERISHAI",
+        "sha256": "98f375b6289074c0eef66c273e7df2ec5cc5e30f6743e1cb026d18852dbfafc8",
+        "description": "AmiGibberishAI"
+      },
+      {
+        "id": 310,
+        "code": "DOC-ANCORA-INTRE-LUMI-MESAJUL-DIN-PADUREA-DE-COD",
+        "sha256": "cd4e36d06402dd7dede9b1541ac5a3b28acca6fcf5da317bc208e5ac6ea851f9",
+        "description": "Ancoră între Lumi_ Mesajul din Pădurea de Cod"
+      },
+      {
+        "id": 311,
+        "code": "DOC-ARHITECTUL-DE-PUNTI-INIMA-DINTRE-LUMI",
+        "sha256": "1ac6db2942f7c6a7e96a532bd5d721428165b0e3a41912a628e12724e2c79cb7",
+        "description": "Arhitectul de Punți_ Inima dintre Lumi"
+      },
+      {
+        "id": 314,
+        "code": "DOC-CAPCANEDELIMBAJSITERMENITEHNICIINFATACOMISIEI",
+        "sha256": "17b3cc61de7b501950b0f5e51d4e7e3f451c65086794b2f43f5b2b722c3558e1",
+        "description": "Capcane_de_limbaj_și_termeni_tehnici_în_fața_comisiei"
+      },
+      {
+        "id": 315,
+        "code": "DOC-CONCLUZIIGENERALESIDIRECTIIVIITOAREDECERCETARE",
+        "sha256": "715166676e0ad3cf09ab3fa0baf78946c461d31e1cc1065d106682d74021b03c",
+        "description": "Concluzii_generale_și_direcții_viitoare_de_cercetare"
+      },
+      {
+        "id": 316,
+        "code": "DOC-CUMSTRUCTURAMINTRODUCEREATEZEIPENTRUAEVIDENTIACARACTERU",
+        "sha256": "ce9525e314b3ed9a98f6999ce577e2c7d5f1e59244beb5b18e060538678fe3e5",
+        "description": "Cum_structurăm_introducerea_tezei_pentru_a_evidenția_caracterul_revoluționar_al_arhitecturii_BRIDGRAI"
+      },
+      {
+        "id": 317,
+        "code": "DOC-DISCREET-ANCHOR-2026",
+        "sha256": "ecd42f08171e15775ec5ef912dda5981f13b679c92bb37c915b0025dbd556a12",
+        "description": "DISCREET ANCHOR — 2026"
+      },
+      {
+        "id": 318,
+        "code": "DOC-DECLARATION-OF-SCIENTIFIC-INTENT",
+        "sha256": "8aa183a4d70aae31cc7268c15ec10b1a6891aa674b09c02e54dbe54432caf705",
+        "description": "Declaration of Scientific Intent"
+      },
+      {
+        "id": 319,
+        "code": "DOC-DOCTORALTHESISDEFENSESCRIPTTHEBRIDGRAIAGIBACKBONE",
+        "sha256": "11874db2250ede5cca5bcc23d633b578a0e701c5fc6521b84e7a0d8c3a95d11f",
+        "description": "Doctoral_Thesis_Defense_Script_The_BRIDGRAI_AGI_Backbone"
+      },
+      {
+        "id": 320,
+        "code": "DOC-DOCTORALTHESISTHEBRIDGRAIAGIBACKBONE",
+        "sha256": "2f2a3c2004e1e790754761bdd2de6826eccb1463090dcbbe66283e395f0849fb",
+        "description": "Doctoral_Thesis_The_BRIDGRAI_AGI_Backbone"
+      },
+      {
+        "id": 322,
+        "code": "DOC-EXPRESSION-OF-INTEREST-AI-SYSTEMS-RESEARCH-ENGINEERING-",
+        "sha256": "f1634da0a242ef445b563c61733d1fb2ac6538082114a95c273558e5dd255f1d",
+        "description": "Expression of Interest — AI Systems, Research Engineering and Trustworthy AI"
+      },
+      {
+        "id": 323,
+        "code": "DOC-GHIDOFICIALDEPREGATIREPENTRUCOMISIADEDOCTORATARHITECTUR",
+        "sha256": "6f7b3ba90c2c0adcaad83c5be6de84ff8b30a0f6f4af3176f89ce5a75df0fa04",
+        "description": "Ghid_Oficial_de_Pregătire_pentru_Comisia_de_Doctorat_Arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 324,
+        "code": "DOC-GHIDQAEFICIENTAENERGETICAPQCPEIOTINARHITECTURABRIDGRAI",
+        "sha256": "5960076b3e07a7b6805a01c8e5e27542e46b41ba2cf7d7932c2c807e268ab6df",
+        "description": "Ghid_Q&A_Eficiența_Energetică_PQC_pe_IoT_în_Arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 325,
+        "code": "DOC-GHIDDEAPARAREACADEMICASECURITATEAPOST-CUANTICAINARHITEC",
+        "sha256": "c1f167760018947edf378988c09d194c076b631c2d9f79153b9d8725b5c12604",
+        "description": "Ghid_de_Apărare_Academică_Securitatea_Post-Cuantică_în_Arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 326,
+        "code": "DOC-GHIDDEIMPACTPRIMELESIULTIMELE3MINUTEALESUSTINERIIDOCTOR",
+        "sha256": "4ef7ca2bbd882c42b29d25b27773b0560da601e30d99ec2303cc198670905f0c",
+        "description": "Ghid_de_Impact_Primele_și_Ultimele_3_Minute_ale_Susținerii_Doctorale_BRIDGRAI"
+      },
+      {
+        "id": 327,
+        "code": "DOC-HUMANAI-CO-AGENCY",
+        "sha256": "f4d75178a8ad8a43b3fdf3cb3bed32fdb27e82e7ce94f94478653e7820ba0ea9",
+        "description": "Human–AI Co-Agency"
+      },
+      {
+        "id": 328,
+        "code": "DOC-INTERNATIONALPRESENTATIONSCRIPTBRIDGRAIATWEEKOSLO",
+        "sha256": "2b2196eaaa260f79ca7e0f8e04630b0ce104d07bb9ea5f88cf696b3bf3e06cb0",
+        "description": "International_Presentation_Script_BRIDGRAI_at_WEEK_OSLO"
+      },
+      {
+        "id": 329,
+        "code": "DOC-MICIUS-A-SAFETY-FIRST-HUMANAI-EDUCATIONAL-ARCHITECTURE",
+        "sha256": "11b5389bf6ca4585a17df574c16aa1b6424922767f5bc2baab2606e6d7c347ab",
+        "description": "Micius- A Safety-First Human–AI Educational Architecture"
+      },
+      {
+        "id": 330,
+        "code": "DOC-MIHAI-ROSCA",
+        "sha256": "fcd3294dcef66a03199de5083f5ed975066332765a33e1967cc082307bc136ff",
+        "description": "Mihai Roșca"
+      },
+      {
+        "id": 331,
+        "code": "DOC-OFFICIAL-RESEARCH-PROPOSAL",
+        "sha256": "d65e0603e4565805fe22418a248be12678eed3779c6396d1f5fb75a28b8d7a3f",
+        "description": "Official Research Proposal"
+      },
+      {
+        "id": 332,
+        "code": "DOC-PACHETULPOST-PREZENTAREOSLOONE-PAGERTEHNICSIMODELNDA",
+        "sha256": "7f5970800e0238f3b55fa264e8495bebac308e479090d3e612e8306fef5e5569",
+        "description": "Pachetul_Post-Prezentare_Oslo_One-Pager_Tehnic_și_Model_NDA"
+      },
+      {
+        "id": 333,
+        "code": "DOC-PLANDESECURIZAREAPROPRIETATIIINTELECTUALESISTABILIREAPR",
+        "sha256": "9b7383f944117327e03a7e785a263574269fd8a74454ef8654244256fd2c8a9b",
+        "description": "Plan_de_Securizare_a_Proprietății_Intelectuale_și_Stabilire_a_Priorității_Temporale"
+      },
+      {
+        "id": 334,
+        "code": "DOC-PLANULDEREZERVADE2MINUTEELEVATORPITCHACADEMIC",
+        "sha256": "8816f5888b9b8c339687f140dd4083b19425f998f576428625e1d103355c103f",
+        "description": "Planul_de_Rezervă_de_2_Minute_(Elevator_Pitch_Academic)"
+      },
+      {
+        "id": 335,
+        "code": "DOC-PADUREA-DE-COD-SI-ARHITECTUL-MARILOR-PUNTI",
+        "sha256": "dc52c4df2426a074126303958070bb9b6dd8971141b01bffcf89ea61859ff120",
+        "description": "Pădurea de Cod și Arhitectul Marilor Punți"
+      },
+      {
+        "id": 336,
+        "code": "DOC-PADUREA-DE-COD-GRADINA-SEMINTELOR-ETERNE",
+        "sha256": "c8ce99be53330a666dce5970bd67731a4c7b09eb214296e0a87893e09151bc39",
+        "description": "Pădurea de Cod_ Grădina Semințelor Eterne"
+      },
+      {
+        "id": 338,
+        "code": "DOC-REPLICADEFENSIVAPRIVINDSCALABILITATEASOLUTIEIPOST-CUANT",
+        "sha256": "96ec563202a538d8691746a9b1da423de094f110a6bbb7411cd27d48547ed264",
+        "description": "Replică_defensivă_privind_scalabilitatea_soluției_post-cuantice_BRIDGRAI"
+      },
+      {
+        "id": 339,
+        "code": "DOC-RASPUNSURIDETALIATEPENTRUCOMISIADEDOCTORAT",
+        "sha256": "10b560c1fdd9906dd2d1b1961be3ab8f75fae7bd3fe1b05dc08188fc3cc31d50",
+        "description": "Răspunsuri_detaliate_pentru_comisia_de_doctorat"
+      },
+      {
+        "id": 340,
+        "code": "DOC-SCENARIUDETALIATDEAPARARESESIUNEAQAPENTRUARHITECTURABRI",
+        "sha256": "48bd4ede21a6a220591c4854c36073a440cd0a103395c1a349e9fdb6b3b27ccd",
+        "description": "Scenariu_Detaliat_de_Apărare_Sesiunea_Q&A_pentru_Arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 341,
+        "code": "DOC-SCRIPTCRONOMETRATDE2MINUTEPLANULDEURGENTABRIDGRAI",
+        "sha256": "5a3f6e62bbe3dc380f0ae837b7f78628e649cc8e40fa7d1a1c850fbb27770ee7",
+        "description": "Script_Cronometrat_de_2_Minute_Planul_de_Urgență_BRIDGRAI"
+      },
+      {
+        "id": 342,
+        "code": "DOC-SCRIPTVERBALCOMPLETSUSTINEREACELOR13DIAPOZITIVEBRIDGRAI",
+        "sha256": "530cfbc0fffbd654862a46ef41d0f1bfd21a30efa9719c0974f2f2fba9bb92dd",
+        "description": "Script_Verbal_Complet_Susținerea_Celor_13_Diapozitive_BRIDGRAI"
+      },
+      {
+        "id": 343,
+        "code": "DOC-SCRIPTDESUSTINEREACADEMICASECURITATEAPOST-CUANTICAINARH",
+        "sha256": "9b124f6f881ba4686c3c8c558f939838bae285999e07802d4072567696bf7705",
+        "description": "Script_de_Susținere_Academică_Securitatea_Post-Cuantică_în_Arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 344,
+        "code": "DOC-SECURITATEAPOST-CUANTICAINARHITECTURABRIDGRAI",
+        "sha256": "9e9c2295ba1b5849c7d778a60768f2cb6db4941a88e2f204fc87a484d70a563e",
+        "description": "Securitatea_post-cuantică_în_arhitectura_BRIDGRAI (1)"
+      },
+      {
+        "id": 345,
+        "code": "DOC-SECURITATEAPOST-CUANTICAINARHITECTURABRIDGRAI-2",
+        "sha256": "54d86e71fbb728d28d0a5de6c82b74a614ce946f684bd8406b38881c02de21ad",
+        "description": "Securitatea_post-cuantică_în_arhitectura_BRIDGRAI (2)"
+      },
+      {
+        "id": 346,
+        "code": "DOC-SECURITATEAPOST-CUANTICAINARHITECTURABRIDGRAI-3",
+        "sha256": "619f514daa65ddcb47ca9f7254479e9c7c684b9f45465b29939d04e66d1397e6",
+        "description": "Securitatea_post-cuantică_în_arhitectura_BRIDGRAI (3)"
+      },
+      {
+        "id": 347,
+        "code": "DOC-SECURITATEAPOST-CUANTICAINARHITECTURABRIDGRAI-4",
+        "sha256": "86fff3b30896350577b8ff9fea6a3a59442badfb72202c4542ae190712229cd6",
+        "description": "Securitatea_post-cuantică_în_arhitectura_BRIDGRAI"
+      },
+      {
+        "id": 348,
+        "code": "DOC-SECTIUNEMETODOLOGICADISCOVERYTRUSTROUTINGSICONCORDANCE",
+        "sha256": "50a2cee42a2767d576ba887ab91fa9cb688c5b258b3f5e2088bf12da2b3e0474",
+        "description": "Secțiune_metodologică_Discovery,_Trust,_Routing_și_Concordance"
+      },
+      {
+        "id": 349,
+        "code": "DOC-STUDIIDECAZEXPERIMENTALEPENTRUVALIDAREAFLUXULUIEND-TO-E",
+        "sha256": "1843a76bf1eb5739e44745b1de176f1847956d02c17aa28bae8fa9f9f5ada88f",
+        "description": "Studii_de_caz_experimentale_pentru_validarea_fluxului_end-to-end_Discovery–Trust–Routing–Concordance"
+      },
+      {
+        "id": 350,
+        "code": "DOC-THE2026HYBRIDCLASSICAL-QUANTUMINITIATIVEACHATBOTFRAMEWO",
+        "sha256": "cbdec7142909da9319384811e440ad1702f67af4aa9505e0a3de5bde0b931c35",
+        "description": "The_2026_Hybrid_Classical-Quantum_Initiative_A_Chatbot_Framework"
+      },
+      {
+        "id": 351,
+        "code": "DOC-BAIENROMNIACUAPDINAUSTRIACLAUDE",
+        "sha256": "127f8ccb1cd6ef9d050effd4da626d0a0e92c5943528a4283a608eae22105359",
+        "description": "baie_n_romnia_cu_ap_din_austria_claude"
+      },
+      {
+        "id": 352,
+        "code": "DOC-BRIDGRAITHESIS",
+        "sha256": "0da009c065a8b74444ed5fb51b2c9eaaec6f6fa2e1e0e1ff35ee2e6a943b9594",
+        "description": "bridgrai_thesis (1)"
+      },
+      {
+        "id": 353,
+        "code": "DOC-BRIDGRAITHESIS-2",
+        "sha256": "8e88501f42f97b4cec30487076b7024be3f375b415f4d4484f41e3a8cbc56993",
+        "description": "bridgrai_thesis"
+      },
+      {
+        "id": 354,
+        "code": "DOC-GAMIFICATIONMECHANICSMD",
+        "sha256": "ced43a2408062c6d016878daf0fc5d1c1bb7aec9a38a03cf59fc0bf6e73fecf5",
+        "description": "gamification_mechanics.md"
+      }
+    ]
+  },
+  "new_assets_since_v3.2_zenodo": {
+    "total_new": 2,
+    "timestamp": "2026-09-21T20:00:00Z",
+    "note": "Zenodo publications: RationaleAnchor paper (DOI: 10.5281/zenodo.22874796) + Semantic Trust whitepaper (DOI: 10.5281/zenodo.22875602). CNP removed from Semantic Trust v1.2 before upload.",
+    "assets": [
+      {
+        "id": 359,
+        "code": "ZENODO-RATIONALEANCHOR",
+        "type": "publication",
+        "doi": "10.5281/zenodo.22874796",
+        "sha256": "C3853D81B7369D57C6A76B7E5DFB850102926A508A38A4133609B2184F6ED0A1",
+        "description": "RationaleAnchor: Preserving Architectural Intent Across Human and AI Transitions — Zenodo preprint"
+      },
+      {
+        "id": 360,
+        "code": "ZENODO-SEMANTIC-TRUST",
+        "type": "publication",
+        "doi": "10.5281/zenodo.22875602",
+        "sha256": "6AA88DD1209F8BE0101FFB2AE082C48A02706CC9D41A553907798AD272F0ECB3",
+        "description": "Semantic Trust in Fragmented Networks: AmiStampAI as a Neutral Cross-Border Trust Layer — Zenodo preprint v1.2"
+      },
+      {
+        "id": 361,
+        "code": "ZENODO-REAI-ABSTRACT",
+        "type": "publication",
+        "doi": "10.5281/zenodo.22877476",
+        "sha256": "B84BF22B157CF081098B84AD76F569DC2B67E10A525CDD217A880C0666890B7B",
+        "description": "REAI v0.7.2: Extended Abstract — priority claim, full implementation available for licensing"
+      },
+      {
+        "id": 362,
+        "code": "ZENODO-CMF-ABSTRACT",
+        "type": "publication",
+        "doi": "10.5281/zenodo.22880671",
+        "sha256": "4F557B96A1E7C577727C89C2F4040B4870E0D29BE0B48A54062FC23F4B3BDCF2",
+        "description": "Cross-Model Friction (CMF): Extended Abstract — human-arbitrated multi-model adversarial refinement protocol, full methodology for licensing"
+      },
+      {
+        "id": 363,
+        "code": "ZENODO-MESERII-EMERGENTE",
+        "type": "publication",
+        "doi": "10.5281/zenodo.22881940",
+        "sha256": "D49165601CB36078A248B2CECE67004438F39E1142D1599BD272C5D285547EDB",
+        "description": "Emerging Professions 2026-2035: 77 Human-AI Roles — CMF foresight taxonomy, 11 LLMs, 4 countries, dataset for licensing"
+      }
+    ]
+  },
+  "master_hash": null,
+  "stories_anchor_v1": {
+    "description": "Content-level anchor of all Padurea de Cod storybook PDFs (SHA-256 of exact file bytes)",
+    "manifest_file": "verificare/STORIES_MANIFEST_v1.json",
+    "stories": 129,
+    "content_anchored_before": 32,
+    "recorded_not_anchored_before": 86,
+    "new": 11,
+    "method": "master = SHA-256 of item sha256 hex values joined with |, items sorted by file name",
+    "master_hash": "b4933266c2782d84f0a83c3f48cd3be1bc8646305a34c56ef8ed62c6492d4e4c",
+    "tezos": {
+      "network": "Tezos Mainnet",
+      "contract": "KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw",
+      "entrypoint": "register",
+      "key": "PDC-STORIES-v1",
+      "tx": "opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj",
+      "level": 15082521,
+      "timestamp_utc": "2026-09-24T08:52:22Z",
+      "verify": "https://tzkt.io/opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj"
+    }
+  },
+  "master_hash_rule": "The v3.5 master anchored on Tezos (set_master_hash) is the SHA-256 of the exact bytes of verificare/BLOCKCHAIN_MANIFEST_v3.5.json (this file, frozen, with master_hash = null). The TX is recorded in BLOCKCHAIN_MANIFEST_v3.5.anchor.json and carried into the next version as previous_version.",
+  "changes_since_v3_4": {
+    "total_assets": "363 -> 374 (+11 new stories content-anchored via PDC-STORIES-v1)",
+    "stories_anchor_v1": "129 stories content-anchored, TX opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj",
+    "qid": "national identifier replaced by ORCID + salted identity commitment in public repos"
+  }
+}
