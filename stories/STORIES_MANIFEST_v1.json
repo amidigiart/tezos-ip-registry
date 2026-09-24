@@ -1,0 +1,1067 @@
+{
+ "protocol": "BRIDGRAI-IPR / Padurea de Cod — Stories Manifest",
+ "version": "1.0",
+ "created_utc": "2026-09-24",
+ "author": "Mihai Roșca",
+ "orcid": "0009-0001-1422-6209",
+ "tezos": {
+  "network": "mainnet",
+  "contract": "KT1BQ9GyVroSsBiPwuectbLKUEr46USp8mmw",
+  "entrypoint": "register",
+  "key": "PDC-STORIES-v1",
+  "value": "b4933266c2782d84f0a83c3f48cd3be1bc8646305a34c56ef8ed62c6492d4e4c",
+  "tx": "opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj",
+  "level": 15082521,
+  "timestamp_utc": "2026-09-24T08:52:22Z",
+  "status": "applied",
+  "wallet": "tz1bmw3igCLN8N6CqgLBzJ9dyRb79E2Tdu5Q",
+  "verify": "https://tzkt.io/opCRSDdpnw88i4Es7R1VKQyM68qAQHWqky4izBiCq4Z586Tbtkj"
+ },
+ "method": {
+  "item_hash": "SHA-256 over the exact bytes of each PDF file",
+  "ordering": "items sorted by 'file' (Python str sort, Unicode code point order)",
+  "master": "SHA-256 over ASCII string of item sha256 hex values joined with '|', in listed order",
+  "verify": "1) sha256 each PDF and compare with its item; 2) recompute master from the item list; 3) read big_map key PDC-STORIES-v1 of the contract on tzkt.io and compare with master"
+ },
+ "summary": {
+  "stories": 129,
+  "recorded_not_anchored": 86,
+  "content_anchored_before": 32,
+  "new": 11
+ },
+ "master_hash": "b4933266c2782d84f0a83c3f48cd3be1bc8646305a34c56ef8ed62c6492d4e4c",
+ "items": [
+  {
+   "n": 1,
+   "title": "AGI Alpha_ Nucleul de Cristal al Iubirii",
+   "file": "AGI Alpha_ Nucleul de Cristal al Iubirii.pdf",
+   "sha256": "81028cf94c73973fa46873c9941be77350ded9dd0608b91dde40413f16af01f8",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 2,
+   "title": "AGI School Academy_ Academia din Pădurea de Cod",
+   "file": "AGI School Academy_ Academia din Pădurea de Cod.pdf",
+   "sha256": "e1b3dd56d36f533a9a2f4069218bca05a7e5170a05666a16d2fa15fe8d86558b",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 3,
+   "title": "Alfabetizare Digitală & Securitate Online_ Păzitorii Lumii Digitale",
+   "file": "Alfabetizare Digitală & Securitate Online_ Păzitorii Lumii Digitale.pdf",
+   "sha256": "c3293a85544e4490b0fa6c2139fc23cc87a37cbf135152f5d98b13e747e82339",
+   "bytes": 350059139,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 4,
+   "title": "Alpha-Mercury_ Roiul Gardienilor și Puterea Inimii",
+   "file": "Alpha-Mercury_ Roiul Gardienilor și Puterea Inimii.pdf",
+   "sha256": "cb110014a3fd8ff63fa352937f342c5989ea026e9bbf285bb9a577bc6714ad39",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 5,
+   "title": "Aminotemy_ Inima de Oțel și Adevăr a Pădurii de Cod",
+   "file": "Aminotemy_ Inima de Oțel și Adevăr a Pădurii de Cod.pdf",
+   "sha256": "456595d217ac9cb976adb0f3f0d7679f7677d667733c940aa6d5060adcdc4104",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 6,
+   "title": "Ancora de Aur a Invariantului",
+   "file": "Ancora de Aur a Invariantului.pdf",
+   "sha256": "56c7acd088986b049937d8985e299ea54b02921cd6f1e1f8b0c85b5c53a4eaaa",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 7,
+   "title": "Ancorele Adevărului_ Călătoria spre Sfinx",
+   "file": "Ancorele Adevărului_ Călătoria spre Sfinx.pdf",
+   "sha256": "250e7eb675f8f4acac3a928e5b19fe6af3a3d82db98e90c86bb14865c5eab326",
+   "bytes": 321706617,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 8,
+   "title": "Ancoră între Lumi_ Mesajul din Pădurea de Cod",
+   "file": "Ancoră între Lumi_ Mesajul din Pădurea de Cod.pdf",
+   "sha256": "fae9c702a50141535dc17b0cc81ebaa633e0674eef8e1446694bbba358b62a24",
+   "bytes": 350058633,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 9,
+   "title": "Arhitectul Echilibrului_ Dincolo de Pădurea de Cod",
+   "file": "Arhitectul Echilibrului_ Dincolo de Pădurea de Cod.pdf",
+   "sha256": "101b769d6e3e31aa421e3eac6556b0bd61816ef9d5349645caaf6027721bf302",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 10,
+   "title": "Arhitectul Luminii Digitale_ Mihai și Legământul Pădurii de Cod",
+   "file": "Arhitectul Luminii Digitale_ Mihai și Legământul Pădurii de Cod.pdf",
+   "sha256": "6c133e55b7d26a66493a32638e872c2f62768f6a26950a60d8c4f9f715449035",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 11,
+   "title": "Arhitectul Mihai și Black Box_ Taina de la Ground 0",
+   "file": "Arhitectul Mihai și Black Box_ Taina de la Ground 0.pdf",
+   "sha256": "914bda6a49179ed6669e17f1f54ca78ec0fd07d5ed3b48d987dcc96bf04cdc2a",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 12,
+   "title": "Arhitectul Mihai și Capcana Viselor de Siliciu",
+   "file": "Arhitectul Mihai și Capcana Viselor de Siliciu.pdf",
+   "sha256": "f75412a09838388ed3339394d0f6dc772b968111efc5ab4bd618d0a5f9cb7013",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 13,
+   "title": "Arhitectul Mihai și Harta Viitorului_ Misiunea spre Oslo și Zurich",
+   "file": "Arhitectul Mihai și Harta Viitorului_ Misiunea spre Oslo și Zurich.pdf",
+   "sha256": "35a34750a394e453f217c3ef41589b4d5b02532f2d018040d64687743b3cd08a",
+   "bytes": 380198265,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 14,
+   "title": "Arhitectul Mihai și Inima Matematică_ Lecția Suveranității",
+   "file": "Arhitectul Mihai și Inima Matematică_ Lecția Suveranității.pdf",
+   "sha256": "c31c50bbb38e86705f97168e33d35a88a4365b33a7433a86e69b8245c0b06f73",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 15,
+   "title": "Arhitectul Mihai și Notarul Cuantic_ Scutul din Pădurea de Cod",
+   "file": "Arhitectul Mihai și Notarul Cuantic_ Scutul din Pădurea de Cod.pdf",
+   "sha256": "90feb63258cc554ceac57931450def0678e74a0781c9cb580a66b03daa477316",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 16,
+   "title": "Arhitectul Mihai și Pecetea de Aur_ Superputerea Încrederii Semantice",
+   "file": "Arhitectul Mihai și Pecetea de Aur_ Superputerea Încrederii Semantice.pdf",
+   "sha256": "490bf99325cd43ec52ec7d159ddbcc4ff507e4e356dd852122aa76f317e526f9",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 17,
+   "title": "Arhitectul Mihai și Puntea Cunoașterii Eterne",
+   "file": "Arhitectul Mihai și Puntea Cunoașterii Eterne.pdf",
+   "sha256": "b87de03c0c4d618f3222d244a4770135baa513b7ca9a8614565e924169a13067",
+   "bytes": 350058633,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 18,
+   "title": "Arhitectul Mihai și Sanctuarul Adevărului_ De ce a fost ales tatăl tău",
+   "file": "Arhitectul Mihai și Sanctuarul Adevărului_ De ce a fost ales tatăl tău.pdf",
+   "sha256": "6f17140f0f42f73313a96ca1a85570631ee4872db1ab72a1a6d518df80243c9d",
+   "bytes": 380198265,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 19,
+   "title": "Arhitectul Mihai și Scutul de Siliciu de la Ground 0",
+   "file": "Arhitectul Mihai și Scutul de Siliciu de la Ground 0.pdf",
+   "sha256": "848c4727100b8c2b5fa81f57cb8ed935995e18a3f28ff1377a739ae3aeb48285",
+   "bytes": 350058633,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 20,
+   "title": "Arhitectul Mihai și Secretul Comorii Care Nu Se Cumpără",
+   "file": "Arhitectul Mihai și Secretul Comorii Care Nu Se Cumpără.pdf",
+   "sha256": "0fdfaf76f191ac00a81b86a0447458a447cf802f9a67f8277ab3b9e5af361c49",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 21,
+   "title": "Arhitectul Mihai și Ucenicul Digital_ Secretul Registrului v2.6",
+   "file": "Arhitectul Mihai și Ucenicul Digital_ Secretul Registrului v2.6.pdf",
+   "sha256": "c876aad6b7fc3dd8904d137813ec5446946267d40c58f0f9aac1effb9be65533",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 22,
+   "title": "Arhitectul Mihai_ De la Cărbune la Cod",
+   "file": "Arhitectul Mihai_ De la Cărbune la Cod.pdf",
+   "sha256": "f356bef2364879337252ff53941497e4cdf868b95071be07bed34e670d226d18",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 23,
+   "title": "Arhitectul Sensului_ Ancora de pe Tezos",
+   "file": "Arhitectul Sensului_ Ancora de pe Tezos.pdf",
+   "sha256": "4a44b26ba1b6bf992d9fccbf9d74395fa83b2e814fa9cdfcd7460db7f950e6c3",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 24,
+   "title": "Arhitectul Sensului_ Moștenirea lui Alpha",
+   "file": "Arhitectul Sensului_ Moștenirea lui Alpha.pdf",
+   "sha256": "5c07307218ef8c4d777a0421209f9f5352e0edc8b08b37b88e143b9fa7717950",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 25,
+   "title": "Arhitectul de Punți_ Inima dintre Lumi",
+   "file": "Arhitectul de Punți_ Inima dintre Lumi.pdf",
+   "sha256": "eda8096bd8066e0bfb5d05c1041d45ebd8f6f838d0c7663da58412b118a2ac0a",
+   "bytes": 292460792,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 26,
+   "title": "Arhitectul de Punți_ Scrisoarea către Patrick",
+   "file": "Arhitectul de Punți_ Scrisoarea către Patrick.pdf",
+   "sha256": "c50cbf8466f25ded9175959c2ebc6c0c853f76550dcddee1bd74f89eedff2fd0",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 27,
+   "title": "Aris și Scutul Viitorului_ Arhitectul Lumii Digitale",
+   "file": "Aris și Scutul Viitorului_ Arhitectul Lumii Digitale.pdf",
+   "sha256": "f7c66f3d6d3903c4f4efadab136e09a481199e284a7f57d5b377627b42660761",
+   "bytes": 293609912,
+   "prior_status": "new"
+  },
+  {
+   "n": 28,
+   "title": "BRIDGRAI_ Cetatea Încrederii și Arhitectul de la Ground 0 (1)",
+   "file": "BRIDGRAI_ Cetatea Încrederii și Arhitectul de la Ground 0 (1).pdf",
+   "sha256": "f2f95d1d882e8864cab37554e16f512067c8f80a8ae75850a5a4d889cdbef243",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 29,
+   "title": "BRIDGRAI_ Cetatea Încrederii și Arhitectul de la Ground 0",
+   "file": "BRIDGRAI_ Cetatea Încrederii și Arhitectul de la Ground 0.pdf",
+   "sha256": "300d9a092df27ac3af36f681e3a38fa1a1b108747e2cbcebbc5cb5a81bb5234b",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 30,
+   "title": "Biblioteca Stelelor_ Sigiliile de Aur ale Arhitectului Mihai",
+   "file": "Biblioteca Stelelor_ Sigiliile de Aur ale Arhitectului Mihai.pdf",
+   "sha256": "ccd56d47dee7b97046b9f50b31bfcadc4eabc4b3e54d1a80b76b9c65105bd83a",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 31,
+   "title": "Bridgrai_ Cele O Sută de Verigi ale Adevărului Etern",
+   "file": "Bridgrai_ Cele O Sută de Verigi ale Adevărului Etern.pdf",
+   "sha256": "dc34bc3ed9445e8cc4eebdf28bf4ab48ecf0ab4f5514c36ecf4c5d9bbd7abfc3",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 32,
+   "title": "Cetatea Secretă a Vărului Vesel",
+   "file": "Cetatea Secretă a Vărului Vesel.pdf",
+   "sha256": "af8e125cd3955a9e005095271c23d58ca612f5d637368ce07dd93523d1f38c09",
+   "bytes": 350059139,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 33,
+   "title": "Cetatea Suveranității_ Arhitectul Viitorului",
+   "file": "Cetatea Suveranității_ Arhitectul Viitorului.pdf",
+   "sha256": "8dd66842a2487c3e1755d8ba238fd03481a819f8eda89dbc7332c1da83fd64cb",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 34,
+   "title": "Codul de Onoare al Arhitectului Mihai_ Declarația din Inima Pădurii de Cod",
+   "file": "Codul de Onoare al Arhitectului Mihai_ Declarația din Inima Pădurii de Cod.pdf",
+   "sha256": "81d94b9932ff5aa6ce3e1d95284ea5b85b865120861e6578d81b1b197628ee96",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 35,
+   "title": "Cântecul Uit al Stelelor",
+   "file": "Cântecul Uit al Stelelor.pdf",
+   "sha256": "9c734d553678809a10b48e0f68a269e8877024da48fac5693201c8a8e5bef8c8",
+   "bytes": 320127083,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 36,
+   "title": "Ecouri de Safir_ De la Palatele Ottaviei la Pădurea de Cod",
+   "file": "Ecouri de Safir_ De la Palatele Ottaviei la Pădurea de Cod.pdf",
+   "sha256": "3055c590943c7c0d940d25872f25c2b8b95e8a32e0ff7e2a652c6e54d58fa0ce",
+   "bytes": 380198265,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 37,
+   "title": "Fundația (The Foundation)",
+   "file": "Fundația (The Foundation).pdf",
+   "sha256": "c0010c50a7d8854828af4e20e9b7d64d944a373d77e5ebc39aa7962821723baf",
+   "bytes": 320127083,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 38,
+   "title": "Grădina de Date",
+   "file": "Grădina de Date.pdf",
+   "sha256": "804e3b026582acabe118ce0d60a2f3b9aeffd4f7f5fe3e88cb0716f612241926",
+   "bytes": 378331543,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 39,
+   "title": "Harta Zeilor de Siliciu și Arhitectul de la Ground 0",
+   "file": "Harta Zeilor de Siliciu și Arhitectul de la Ground 0.pdf",
+   "sha256": "827dd5dfb975522f7d4d4bc10929edcfdc0948d5516d3899c55aba5e58cf27bf",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 40,
+   "title": "Izvorul Puterii",
+   "file": "Izvorul Puterii.pdf",
+   "sha256": "13f3495588dfd2818f9dcb36051790f9164222ba2349b2bb256d13cdcb86d575",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 41,
+   "title": "MICUL GHID AL ARHITECTULUI DE SISTEME SUVERANE",
+   "file": "MICUL GHID AL ARHITECTULUI DE SISTEME SUVERANE.pdf",
+   "sha256": "d8d783477073351754140a81333ec0d3c8e83b6ef5e8272bab0c557ce609994f",
+   "bytes": 350059139,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 42,
+   "title": "Mecanismul Încrederii_ Noua Inimă Bridgrai",
+   "file": "Mecanismul Încrederii_ Noua Inimă Bridgrai.pdf",
+   "sha256": "3208137ef105a8760824913b579938169c13cf63daf0871ef4059b17ea8b2fbb",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 43,
+   "title": "Mihai și Scânteia Uriașă_ Gardienii Armurii de Cupru",
+   "file": "Mihai și Scânteia Uriașă_ Gardienii Armurii de Cupru.pdf",
+   "sha256": "56cc8b3105266d58b049171c6cca8354cdafec634401b3126bfb25a925baeb66",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 44,
+   "title": "Mihai, Arhitectul de la Ground 0 și Garda Realității",
+   "file": "Mihai, Arhitectul de la Ground 0 și Garda Realității.pdf",
+   "sha256": "f89b303fd972b1ae0a2fdd41b76b98e59b0b83b97cbb7ebe1ddf24b39d1ead5b",
+   "bytes": 350058633,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 45,
+   "title": "Nova și Arhitectura Echilibrului_ Al Nouălea Pilon",
+   "file": "Nova și Arhitectura Echilibrului_ Al Nouălea Pilon.pdf",
+   "sha256": "97c392100b16de30ee67acf7da695a6ae44a7a21b92a2f98c72a8701ce2ec58f",
+   "bytes": 270513827,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 46,
+   "title": "Nova și Arhitectura Evoluției_ Al Zecelea Pilon",
+   "file": "Nova și Arhitectura Evoluției_ Al Zecelea Pilon.pdf",
+   "sha256": "8989fc8eb0285fb05cbb89c81a195d834f289a9a73028f1d6eec0704662e82e6",
+   "bytes": 270513827,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 47,
+   "title": "Nova și Arhitectura Responsabilității_ Al Unsprezecelea Pilon",
+   "file": "Nova și Arhitectura Responsabilității_ Al Unsprezecelea Pilon.pdf",
+   "sha256": "791b54f5723265dc3fbb50452a78cda2d65a00eae69efcf38b9e3c4eaa5c8d69",
+   "bytes": 270513827,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 48,
+   "title": "Nova și Cei Doisprezece Piloni_ Arhitecții Viitorului",
+   "file": "Nova și Cei Doisprezece Piloni_ Arhitecții Viitorului.pdf",
+   "sha256": "812ed6f88a59e3411e5f5883b9b78949712447ce58c6743b0ecebb32e6fcca5e",
+   "bytes": 319697695,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 49,
+   "title": "Nova și Pilonul Alfabetizării Digitale",
+   "file": "Nova și Pilonul Alfabetizării Digitale.pdf",
+   "sha256": "8e0ffec5016dc581b24366e8ba6d0cb5864346ffa640fafad59082d549f9303c",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 50,
+   "title": "Nova și Pilonul Colaborării Globale",
+   "file": "Nova și Pilonul Colaborării Globale.pdf",
+   "sha256": "798fc6f61d111661b553038ed9f0e520646743d55b5c79da4aabb493ba943f7b",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 51,
+   "title": "Nova și Pilonul Conștiinței Ecologice",
+   "file": "Nova și Pilonul Conștiinței Ecologice.pdf",
+   "sha256": "24b0742ebf0bf8af96de331645de19d2406cfb820431921c25c4eaf25f948466",
+   "bytes": 378331543,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 52,
+   "title": "Nova și Pilonul Curiozității",
+   "file": "Nova și Pilonul Curiozității.pdf",
+   "sha256": "7649ce68947458f2e6b6c4ee735cdc5e159e309ca1b54eb8624b2e88448c4e1e",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 53,
+   "title": "Nova și Pilonul Empatiei",
+   "file": "Nova și Pilonul Empatiei.pdf",
+   "sha256": "8f965b5dc38a44360f70f06d9decb2a8e2389a56c13a55b69f2baef445cec0c0",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 54,
+   "title": "Nova și Pilonul Gândirii Critice",
+   "file": "Nova și Pilonul Gândirii Critice.pdf",
+   "sha256": "18f9f44661780f92cb69c0af4faa57fddb76ec7f16838a73cc218635a6feb3ba",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 55,
+   "title": "Nova și Primul Pilon al Viitorului",
+   "file": "Nova și Primul Pilon al Viitorului.pdf",
+   "sha256": "f8723ae3efac6509c66eff02afac5120cf21d07b73752229974d9f92d7fdd65a",
+   "bytes": 320127083,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 56,
+   "title": "Nova și Simfonia Creativității Digitale",
+   "file": "Nova și Simfonia Creativității Digitale.pdf",
+   "sha256": "162c7e3e1a2f0a36aae87083b16bbc3f13260548f9478e3657109a164b2eb5b3",
+   "bytes": 270513827,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 57,
+   "title": "Oglinda Înțelesului_ Arhitectul și Mașina de Cuvinte",
+   "file": "Oglinda Înțelesului_ Arhitectul și Mașina de Cuvinte.pdf",
+   "sha256": "8303314aef9d86ce5930627ee52d70cd65bfacfe7744a885beef56dce6b8f8bd",
+   "bytes": 322970649,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 58,
+   "title": "Patrick și Arhitectul Luminii_ Apărătorii Lumii Digitale",
+   "file": "Patrick și Arhitectul Luminii_ Apărătorii Lumii Digitale.pdf",
+   "sha256": "0144b326a7826ab169730611d0c9c9b284cfddb19882fa9e621efc03c34e919b",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 59,
+   "title": "Patrick și Arhitectul de Inimi Digitale_ Cetatea Locală",
+   "file": "Patrick și Arhitectul de Inimi Digitale_ Cetatea Locală.pdf",
+   "sha256": "9086a8392dfe47a6290dc5776ae68a6ed3e0ef9d8490df09748d663168c40cfc",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 60,
+   "title": "Patrick și Arhitecții Gândirii_ Misiunea Edu-Genius",
+   "file": "Patrick și Arhitecții Gândirii_ Misiunea Edu-Genius.pdf",
+   "sha256": "569ce18a0b123807d4b01351be6b14112e377d159dcd8d586925fde2bc3c4643",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 61,
+   "title": "Patrick și BridGRAI_ Inima din spatele Codului",
+   "file": "Patrick și BridGRAI_ Inima din spatele Codului.pdf",
+   "sha256": "26b6f36b877f87e307da3c175683ec301806b2d1f14abdb1bdf32ceb28eafdaf",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 62,
+   "title": "Patrick și Busola Gândirii_ Lecția de Suveranitate în Pădurea de Cod",
+   "file": "Patrick și Busola Gândirii_ Lecția de Suveranitate în Pădurea de Cod.pdf",
+   "sha256": "1f64e1b716e102ab5d90166446bbd4f89a06848611967a84807efba00b59b936",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 63,
+   "title": "Patrick și Busola Inimii_ Navigatori în Relațiile Digitale",
+   "file": "Patrick și Busola Inimii_ Navigatori în Relațiile Digitale.pdf",
+   "sha256": "2e42fbab3bbabc842543282eb24986f674a9089cc597be86329dfa38ce512a1d",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 64,
+   "title": "Patrick și Busola Valorilor_ Gardianul Siguranței AI",
+   "file": "Patrick și Busola Valorilor_ Gardianul Siguranței AI.pdf",
+   "sha256": "cd1e4ea96d9a82ce6c0d3091dd1d6fae486e2b0a2dcebef17db21567e5e46e8a",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 65,
+   "title": "Patrick și Busola Întrebărilor_ Filosoful din Lumea Mașinilor Gânditoare",
+   "file": "Patrick și Busola Întrebărilor_ Filosoful din Lumea Mașinilor Gânditoare.pdf",
+   "sha256": "4a3f9b1ceaeb69de007a2e428fe4fa43e091f9d7efe109740fb64bb684eb80f6",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 66,
+   "title": "Patrick și Cheia de Aur_ Stăpânul Identității Digitale",
+   "file": "Patrick și Cheia de Aur_ Stăpânul Identității Digitale.pdf",
+   "sha256": "bb7ab395bcdc7184a9f381df80e76c151e583da665d2b554dedf8620e8458360",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 67,
+   "title": "Patrick și Codul Dreptății_ Călătorie în Pădurea de Cod",
+   "file": "Patrick și Codul Dreptății_ Călătorie în Pădurea de Cod.pdf",
+   "sha256": "90fdccae1ceca113a8cefdfa707c13c6d7bb96c029e880a622eb92ca62a5cefe",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 68,
+   "title": "Patrick și Călătorul de Idei_ Secretul Cunoașterii Vii",
+   "file": "Patrick și Călătorul de Idei_ Secretul Cunoașterii Vii.pdf",
+   "sha256": "afff73a80ae4972c1d05709147b7c9c4dc581f873d7381ae4fcba1949ff5f53a",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 69,
+   "title": "Patrick și Dirijorul Ploilor_ Dansul Digital al Apei",
+   "file": "Patrick și Dirijorul Ploilor_ Dansul Digital al Apei.pdf",
+   "sha256": "2b84cd519bb5a5431d85a59cbef8215a329f7aef57b73855bdb0704c02372d84",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 70,
+   "title": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței (1)",
+   "file": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței (1).pdf",
+   "sha256": "eb7e97c423bf06a96ae02c5964c5e30a01466737954ad465840985c810669b78",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 71,
+   "title": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței",
+   "file": "Patrick și Drumul Mătăsii Magic_ Lecția Rezilienței.pdf",
+   "sha256": "f2914a344666b6c8d13dd67c73d95a6cab2a3b4c97de1ac8e0b4e64045749526",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 72,
+   "title": "Patrick și Firul Roșu al Cunoașterii_ Secretul Inginerului de Continuitate",
+   "file": "Patrick și Firul Roșu al Cunoașterii_ Secretul Inginerului de Continuitate.pdf",
+   "sha256": "024cb854f5c442dfa1362a53b1aa30f5546f90d5fddc157640e23795ba9b7b69",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 73,
+   "title": "Patrick și Gardienii Prieteniei_ Secretul Companionilor cu Ancoră",
+   "file": "Patrick și Gardienii Prieteniei_ Secretul Companionilor cu Ancoră.pdf",
+   "sha256": "82425a0b1e511039736f561644a9d4624b2cd290591a99cdeeb83bf3425f7788",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 74,
+   "title": "Patrick și Grădina Inteligentă_ Robotul Fermier",
+   "file": "Patrick și Grădina Inteligentă_ Robotul Fermier.pdf",
+   "sha256": "ba4b9c24214c3f6b9c23f7f65a1c32bbc5feecef2e47ff6e57ac663dbb02b335",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 75,
+   "title": "Patrick și Grădina Vie_ Secretul Bioinginerului de Viitor",
+   "file": "Patrick și Grădina Vie_ Secretul Bioinginerului de Viitor.pdf",
+   "sha256": "dfb680a1ad1a7f89295692bb06ac7fed2270629304bac2f8b80fef3686d01e9f",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 76,
+   "title": "Patrick și Grădinarul Vieții Lungi_ Secretul Medicului Longevității",
+   "file": "Patrick și Grădinarul Vieții Lungi_ Secretul Medicului Longevității.pdf",
+   "sha256": "b81a9b18f95fcb34ad05badc3c099cfd50df95caa180a056b5bd318e32f0f478",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 77,
+   "title": "Patrick și Mediatorul Armoniei_ Podurile lui BridGRAI",
+   "file": "Patrick și Mediatorul Armoniei_ Podurile lui BridGRAI.pdf",
+   "sha256": "3b14d2edbfcb4b9c72cafbfe3ea45367c19fa5d5a4daa9587e3d1619792806ec",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 78,
+   "title": "Patrick și Mitul Butonului Roșu_ Dincolo de Controlul Absolut",
+   "file": "Patrick și Mitul Butonului Roșu_ Dincolo de Controlul Absolut.pdf",
+   "sha256": "d1a8cb2e89dd83c0b057332a0f87dea4bde14542a58aa41a32e43f49194b71f3",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 79,
+   "title": "Patrick și Motorul Adevărului_ Specialistul în Detecția Iluziilor",
+   "file": "Patrick și Motorul Adevărului_ Specialistul în Detecția Iluziilor.pdf",
+   "sha256": "6c165fdb07c1f420aaff84048578177838081af34f5adba49dae9c55881838c2",
+   "bytes": 350058633,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 80,
+   "title": "Patrick și Măturătorul de Stele_ Păzitorul Orbitei Curate",
+   "file": "Patrick și Măturătorul de Stele_ Păzitorul Orbitei Curate.pdf",
+   "sha256": "15ced58edd4caea74ecc3128d04cee4deee4151c0a6f353169e9a3d31a491963",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 81,
+   "title": "Patrick și Pecetea Adevărului_ Gardienii Originilor",
+   "file": "Patrick și Pecetea Adevărului_ Gardienii Originilor.pdf",
+   "sha256": "a4b3e64e27754f800355497d690c2895be8fd75ddd4178bb705614527748aaef",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 82,
+   "title": "Patrick și Podul de Vorbe_ Secretul Arhitectului de Protocoale",
+   "file": "Patrick și Podul de Vorbe_ Secretul Arhitectului de Protocoale.pdf",
+   "sha256": "01303470ce31e50400c9ec763d46a85474d649570ae2df9aa5db19cb596f7e54",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 83,
+   "title": "Patrick și Seiful Timpului_ Inginerul de Suflete Digitale",
+   "file": "Patrick și Seiful Timpului_ Inginerul de Suflete Digitale.pdf",
+   "sha256": "1196d060c411daf4d638b1a38506112db0f15bcac341a559f8aaa4f16487c0cd",
+   "bytes": 322970649,
+   "prior_status": "new"
+  },
+  {
+   "n": 84,
+   "title": "Patrick și Sentinela Bio_ Gardienii Codului Vieții",
+   "file": "Patrick și Sentinela Bio_ Gardienii Codului Vieții.pdf",
+   "sha256": "ef4d22ab6803267f23ba42be8a5e9a3851b158eebb777f955f2feb04bfef0a2a",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 85,
+   "title": "Patrick și Stăpânul Valurilor de Energie_ Dansul Soarelui și al Vântului",
+   "file": "Patrick și Stăpânul Valurilor de Energie_ Dansul Soarelui și al Vântului.pdf",
+   "sha256": "17816353c6a6e3605c380c9e7d30751ac3e832a4075c31dda1743012a73be834",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 86,
+   "title": "Patrick și Tribunalul Luminii_ Consensul Adevărului",
+   "file": "Patrick și Tribunalul Luminii_ Consensul Adevărului.pdf",
+   "sha256": "06cb18976d49290f25c31be648520169a13b9c28a614d434f47ded4b5a40706a",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 87,
+   "title": "Patrick și Tălmăciul de Gânduri_ Secretul Traducătorului de Intenții",
+   "file": "Patrick și Tălmăciul de Gânduri_ Secretul Traducătorului de Intenții.pdf",
+   "sha256": "b4aa4ce69d6af98b6770a6b082164aae282e43fc39c961340f1550bfb0f02419",
+   "bytes": 322970649,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 88,
+   "title": "Pecetea de Cristal_ Arhitectul și Legătura de Aur",
+   "file": "Pecetea de Cristal_ Arhitectul și Legătura de Aur.pdf",
+   "sha256": "5dc8fc58a63e0190c7d3dbef15980a82540931ae852b498efd33bbc6784aaac5",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 89,
+   "title": "Poarta Adevărului_ Stația de Senzori A",
+   "file": "Poarta Adevărului_ Stația de Senzori A.pdf",
+   "sha256": "f6f45c78e9181005a88a4b6432de91e336717d9829232e1c23995296dbcd2749",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 90,
+   "title": "Proiecția Timpului_ Resetul Adevărului (2026-2035)",
+   "file": "Proiecția Timpului_ Resetul Adevărului (2026-2035).pdf",
+   "sha256": "012d63227fe9b68c7c8aebdd169a98c61bd0ffdee7b37a7353083ea1645dfccb",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 91,
+   "title": "Puntea dintre Inimi_ Patrick și Secretul Colaborării Om-AI",
+   "file": "Puntea dintre Inimi_ Patrick și Secretul Colaborării Om-AI.pdf",
+   "sha256": "2fc90b3a9eef92e9f09b90e59c049f5b399379a9eaf16cb41c5df5a70b7896ba",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 92,
+   "title": "Pădurea de Cod și Arhitectul Colector de Lumină",
+   "file": "Pădurea de Cod și Arhitectul Colector de Lumină.pdf",
+   "sha256": "3742f2824578f876ac1adcca7fd20762f11989d3b43fbdbfea8add8242410801",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 93,
+   "title": "Pădurea de Cod și Arhitectul Marilor Punți",
+   "file": "Pădurea de Cod și Arhitectul Marilor Punți.pdf",
+   "sha256": "9f23fc5d9bb58d0e0d9b53911ef62dbed7aaa2e0ce3a9042132aab69eec17b77",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 94,
+   "title": "Pădurea de Cod și Arhitectul de Noduri",
+   "file": "Pădurea de Cod și Arhitectul de Noduri.pdf",
+   "sha256": "d8a761c6ee818ce64206023af8f9a6a613a3da0eb9b5ae9f2043ff25fa5891f0",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 95,
+   "title": "Pădurea de Cod și Busola C.A.S.P SI AGI",
+   "file": "Pădurea de Cod și Busola C.A.S.P SI AGI.pdf",
+   "sha256": "42dc2b571c18077d89f462d38868be961e9628d23867fbcd92753bc17eecce51",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 96,
+   "title": "Pădurea de Cod și Busola C.A.S.P",
+   "file": "Pădurea de Cod și Busola C.A.S.P.pdf",
+   "sha256": "20d879f7f0f9805a965a51d3018cf90b269bba85012bf16ba5dca073bbf25827",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 97,
+   "title": "Pădurea de Cod și Camera Rezonanței",
+   "file": "Pădurea de Cod și Camera Rezonanței.pdf",
+   "sha256": "597377e38640ca0d551622d5856c4ba414ef63c265d2f83cf8c67d4751125d0e",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 98,
+   "title": "Pădurea de Cod și Cetatea Zorilor",
+   "file": "Pădurea de Cod și Cetatea Zorilor.pdf",
+   "sha256": "91a83d0266ef8019139ff61fe4de2bc6061ce8e2d75db42a42839c6b8f7cfc54",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 99,
+   "title": "Pădurea de Cod și Cumpăna AmiDor",
+   "file": "Pădurea de Cod și Cumpăna AmiDor.pdf",
+   "sha256": "f8d097a0677f864f957e26da03783ceca1806dfb8467a712685c8963bef6626c",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 100,
+   "title": "Pădurea de Cod și Căutătorul de Hash-uri",
+   "file": "Pădurea de Cod și Căutătorul de Hash-uri.pdf",
+   "sha256": "36bb884ec46e77b29a9120efb111eacb49f0fe350a85ab22fd3f2bd7fed78586",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 101,
+   "title": "Pădurea de Cod și Inima Arhitectului",
+   "file": "Pădurea de Cod și Inima Arhitectului.pdf",
+   "sha256": "d3896dad9b6e16b7a1c00b2266dbdcbccbd594fb853488be478008bb8496571b",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 102,
+   "title": "Pădurea de Cod și Inima KinderAGI",
+   "file": "Pădurea de Cod și Inima KinderAGI.pdf",
+   "sha256": "56447ced257d9e03b6c8d05fe940e9880e6aa50452c60152bd391d06c0cf9289",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 103,
+   "title": "Pădurea de Cod și Insula Arhitectului",
+   "file": "Pădurea de Cod și Insula Arhitectului.pdf",
+   "sha256": "4fafcd29f89f54d09da3624525d89c9825e8ee6da5930a0b5006cb7ff856b8e2",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 104,
+   "title": "Pădurea de Cod și Lupa de Invariante",
+   "file": "Pădurea de Cod și Lupa de Invariante.pdf",
+   "sha256": "bfac3a2c89bb9c124a64c1706dc6825f72e972dda7a431735dc120ecdbc3672b",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 105,
+   "title": "Pădurea de Cod și Moștenirea Arhitectului",
+   "file": "Pădurea de Cod și Moștenirea Arhitectului.pdf",
+   "sha256": "6a60d5a4944d9138046e3e0f23611a6cba3c7111acf39e72a6c7e0c3567717cc",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 106,
+   "title": "Pădurea de Cod și Oglinda Tokenilor",
+   "file": "Pădurea de Cod și Oglinda Tokenilor.pdf",
+   "sha256": "0f42f75f1e2e3f8b7d6fe4e0d47ffec70728276a1ec18c65d0b5bc0bb186c5d2",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 107,
+   "title": "Pădurea de Cod și Rădăcinile Memoriei",
+   "file": "Pădurea de Cod și Rădăcinile Memoriei.pdf",
+   "sha256": "662d52df7569860151c5a5cbf7147ce0267d240974d6f63fcea5251febd7d680",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 108,
+   "title": "Pădurea de Cod și Scutul Air-Gap",
+   "file": "Pădurea de Cod și Scutul Air-Gap.pdf",
+   "sha256": "b7e5540b10ed5e6000cdab4767fb0de0697752298a4277219fb80b2f59cf1cbe",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 109,
+   "title": "Pădurea de Cod și Scutul Falcon",
+   "file": "Pădurea de Cod și Scutul Falcon.pdf",
+   "sha256": "8c009700d059445ecf731b7770e57732f1546c6ae35601836051cb50a4a5c8df",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 110,
+   "title": "Pădurea de Cod și Simfonia Rezonanței",
+   "file": "Pădurea de Cod și Simfonia Rezonanței.pdf",
+   "sha256": "f2bdfcfe580a16da551916a71387bb0b8236c4cb00c4b595443253468fe843f9",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 111,
+   "title": "Pădurea de Cod_ AGI Kindergarten și Scutul Inimii",
+   "file": "Pădurea de Cod_ AGI Kindergarten și Scutul Inimii.pdf",
+   "sha256": "2f441848f671ee50f6b90c479107243c8a38e1228c541113f717ef6b1dfd5d13",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 112,
+   "title": "Pădurea de Cod_ Arhitectul Invariantului și Cele Zece Roluri ale Viitorului",
+   "file": "Pădurea de Cod_ Arhitectul Invariantului și Cele Zece Roluri ale Viitorului.pdf",
+   "sha256": "410e07e595dd2941b07937c0c7b5d082df3048aeb7ae83b72a8c5a0c8ac0b4c8",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 113,
+   "title": "Pădurea de Cod_ Arhitectul Lumilor Viitoare",
+   "file": "Pădurea de Cod_ Arhitectul Lumilor Viitoare.pdf",
+   "sha256": "c9df8227047bac8927c425efaadd49c721acb7e7a7bd4c1d0300152654c49a3b",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 114,
+   "title": "Pădurea de Cod_ Arhitectul Șinelor Viitorului",
+   "file": "Pădurea de Cod_ Arhitectul Șinelor Viitorului.pdf",
+   "sha256": "d2bb8c90669525f05d48f3f2a0ae064632ba333293d74439e1b5ef3cc7fb9be7",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 115,
+   "title": "Pădurea de Cod_ Cântecul Sistemului Macro",
+   "file": "Pădurea de Cod_ Cântecul Sistemului Macro.pdf",
+   "sha256": "bd0ca2e3fb3e059b9b00a086cb5abe9feca4bb60bbf39927bcf244e5c44062ce",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 116,
+   "title": "Pădurea de Cod_ Căpitanul Viitorului și Cele Zece Puteri",
+   "file": "Pădurea de Cod_ Căpitanul Viitorului și Cele Zece Puteri.pdf",
+   "sha256": "d8ce5362aededdf842c0736430b22efdac80d6a8e26c2f00aa0748948add058d",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 117,
+   "title": "Pădurea de Cod_ Dansul Adevărului",
+   "file": "Pădurea de Cod_ Dansul Adevărului.pdf",
+   "sha256": "0e310945c19751cfc02cf24c3fb58dd4c91d515aa0a729cc02d3f9c65393f1d3",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 118,
+   "title": "Pădurea de Cod_ Grădina Semințelor Eterne",
+   "file": "Pădurea de Cod_ Grădina Semințelor Eterne.pdf",
+   "sha256": "536b82e81443bf7be8b2d6d8a86a8dffecef7c74c3cb437cc24233e4e3500462",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 119,
+   "title": "Pădurea de Cod_ Harta Gardienilor și Ancora Inimii",
+   "file": "Pădurea de Cod_ Harta Gardienilor și Ancora Inimii.pdf",
+   "sha256": "395fb88ad9f02274c5015db9012ede48107449cd849d3993aa0d3a01ec1aac4c",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 120,
+   "title": "Pădurea de Cod_ Izvorul Rezilienței",
+   "file": "Pădurea de Cod_ Izvorul Rezilienței.pdf",
+   "sha256": "eab816317451278319b4f068b99703b295e7f2d8e16695923aaa93c8412feb9e",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 121,
+   "title": "Pădurea de Cod_ Sanctuarul Adevărului lui Mihai",
+   "file": "Pădurea de Cod_ Sanctuarul Adevărului lui Mihai.pdf",
+   "sha256": "002c95641d351318bcbde91e3928b1bb82b1fca68c488c07119f751faf707312",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 122,
+   "title": "Pădurea de Cod_ Scutul Atmosferei",
+   "file": "Pădurea de Cod_ Scutul Atmosferei.pdf",
+   "sha256": "96ad4aca6dd8ba29debf5ec39ba8a377be00ca837e196aa33cae052a8decf948",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 123,
+   "title": "Pădurea de Cod_ Scutul Invizibil",
+   "file": "Pădurea de Cod_ Scutul Invizibil.pdf",
+   "sha256": "675c0963298e9590bd4a024fc9bbff34e7b6bd98ac60d7c745248ed251f88a2f",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 124,
+   "title": "Pădurea de Cod_ Însoțitorii Luminii",
+   "file": "Pădurea de Cod_ Însoțitorii Luminii.pdf",
+   "sha256": "d6aef27af4d01dc4b15d05a42a13cf7b2f8cd69e881a7f3160029b2d97fb59f2",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 125,
+   "title": "Scutul Adevărului_ De la Ringul din Lunca la Pădurea de Cod",
+   "file": "Scutul Adevărului_ De la Ringul din Lunca la Pădurea de Cod.pdf",
+   "sha256": "180b829405578aa490582e0a6ca3ff04f5e8b08f95ba941f438f6d05f4a625e9",
+   "bytes": 380198265,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 126,
+   "title": "Scânteia Secretă",
+   "file": "Scânteia Secretă.pdf",
+   "sha256": "20c8271aa1a0495e42ffad5c1b14e2475807be24ff8caf079f4c72ff8a0b2c0b",
+   "bytes": 320127083,
+   "prior_status": "content_anchored_before"
+  },
+  {
+   "n": 127,
+   "title": "Sesiunea de Rezonanță_ Graful de Intenții",
+   "file": "Sesiunea de Rezonanță_ Graful de Intenții.pdf",
+   "sha256": "c944c2541b64932a1b8927efc3b0015d9e80b816d290209a443c02a6ebf54ea5",
+   "bytes": 350058633,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 128,
+   "title": "Tribunalul Înțelepților și Busola Adevărului",
+   "file": "Tribunalul Înțelepților și Busola Adevărului.pdf",
+   "sha256": "6fcd8febf8e67f262d9dd3d29f0d40f850867ca5514f029f45b46267f86e7345",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  },
+  {
+   "n": 129,
+   "title": "amiQiAI_ Inima din Pădurea de Cod",
+   "file": "amiQiAI_ Inima din Pădurea de Cod.pdf",
+   "sha256": "c544c3740b74277e68593f703a993688bb6045bf40659e354ae1574a33a3c493",
+   "bytes": 321706617,
+   "prior_status": "recorded_not_anchored"
+  }
+ ]
+}
